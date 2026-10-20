@@ -107,3 +107,4 @@ InitTestScene*.unity*
 
 # Ignore specific editor settings files
 **/UserSettings/EditorUserSettings.asset
+.vscode/

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: OutlineMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 7eae599cddbe22d48a95e54dae19e18d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: cbf5e8f3c4d897f45a7cca743ff7ec33, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
   m_ValidKeywords: []
@@ -49,7 +49,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 70a77abda853dd941a0c8debf1de9b04, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9bb2f0fc137cfe4468c7100c47482053, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTexture:

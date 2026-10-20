@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-//[RequireComponent(typeof(Collider))]
+[RequireComponent(typeof(Collider2D))]
 //[RequireComponent (typeof(Rigidbody))]
 
 public class CursorObject : MonoBehaviour

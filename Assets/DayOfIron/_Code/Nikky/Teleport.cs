@@ -1,12 +1,11 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.Serialization;
+
 
 public class Teleport : MonoBehaviour
 {
+    [SerializeField] private EventChannelSO _interruptMoveChannel;
     [SerializeField] private GameObject _portal;
-    [SerializeField] private GameObject _player;
     [SerializeField] private float _teleportTime=1;
     private bool _canTeleport=true;
 
@@ -14,13 +13,14 @@ public class Teleport : MonoBehaviour
     {
         if (other.CompareTag("Player") && _canTeleport)
         {
-            _canTeleport=false;
-            _player.transform.position= new Vector2(_portal.transform.position.x, _portal.transform.position.y);
-            StartCoroutine(Teleporter());
+            _canTeleport = false;
+            _interruptMoveChannel.EventChannel?.Invoke();
+            other.gameObject.transform.position = new Vector2(_portal.transform.position.x, _portal.transform.position.y);
+            StartCoroutine(TeleportCooldown());
         }
     }
 
-    private IEnumerator Teleporter()
+    private IEnumerator TeleportCooldown()
     {
         yield return new WaitForSeconds(_teleportTime);
         _canTeleport=true;

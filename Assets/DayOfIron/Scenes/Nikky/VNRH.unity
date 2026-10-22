@@ -426,8 +426,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c8a25120126e746aa7c20fd1fffc6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleport
+  _interruptMoveChannel: {fileID: 11400000, guid: 9fe21c43223998f408f57bf81adfcaa1, type: 2}
   _portal: {fileID: 1825010981}
-  _player: {fileID: 1742332575}
   _teleportTime: 1
 --- !u!212 &773350323
 SpriteRenderer:
@@ -811,8 +811,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96c8a25120126e746aa7c20fd1fffc6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Teleport
+  _interruptMoveChannel: {fileID: 11400000, guid: 9fe21c43223998f408f57bf81adfcaa1, type: 2}
   _portal: {fileID: 98137696}
-  _player: {fileID: 1742332575}
   _teleportTime: 1
 --- !u!212 &1061628537
 SpriteRenderer:
@@ -1529,6 +1529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 112f5a8178bdc0042b04e2c3dc90c00a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickToMove
+  _interruptMoveChannel: {fileID: 11400000, guid: 9fe21c43223998f408f57bf81adfcaa1, type: 2}
   _moveClick:
     m_Name: Move Click
     m_Type: 0

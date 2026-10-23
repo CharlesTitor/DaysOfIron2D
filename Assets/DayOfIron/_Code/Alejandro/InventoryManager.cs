@@ -25,7 +25,7 @@ public class InventoryManager : MonoBehaviour
     private void Start()
     {
 
-        GetComponent<HotbarManager>().RefreshHotbar();
+        //GetComponent<HotbarManager>().RefreshHotbar();
         GetComponent<InventoryManagerUI>().RefreshInventoryUI();
     }
 

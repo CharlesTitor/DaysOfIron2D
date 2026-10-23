@@ -184,7 +184,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -222,7 +222,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -243,6 +243,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -250,10 +263,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 740
-        width: 128
-        height: 128
+        x: 32
+        y: 779
+        width: 53
+        height: 59
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +285,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_1
       rect:
         serializedVersion: 2
-        x: 128
-        y: 740
-        width: 128
-        height: 128
+        x: 190
+        y: 769
+        width: 38
+        height: 52
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +307,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_2
       rect:
         serializedVersion: 2
-        x: 256
-        y: 740
-        width: 128
-        height: 128
+        x: 299
+        y: 773
+        width: 46
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +329,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_3
       rect:
         serializedVersion: 2
-        x: 384
-        y: 740
-        width: 128
-        height: 128
+        x: 423
+        y: 775
+        width: 53
+        height: 42
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,10 +351,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_4
       rect:
         serializedVersion: 2
-        x: 512
-        y: 740
-        width: 128
-        height: 128
+        x: 517
+        y: 768
+        width: 124
+        height: 75
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,10 +373,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_5
       rect:
         serializedVersion: 2
-        x: 640
-        y: 740
-        width: 128
-        height: 128
+        x: 649
+        y: 758
+        width: 110
+        height: 86
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -382,10 +395,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_6
       rect:
         serializedVersion: 2
-        x: 768
-        y: 740
-        width: 128
-        height: 128
+        x: 817
+        y: 757
+        width: 40
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -404,10 +417,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_7
       rect:
         serializedVersion: 2
-        x: 896
-        y: 740
-        width: 128
-        height: 128
+        x: 943
+        y: 775
+        width: 40
+        height: 40
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -426,10 +439,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_8
       rect:
         serializedVersion: 2
-        x: 0
-        y: 612
-        width: 128
-        height: 128
+        x: 31
+        y: 644
+        width: 55
+        height: 43
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -448,10 +461,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_9
       rect:
         serializedVersion: 2
-        x: 128
-        y: 612
-        width: 128
-        height: 128
+        x: 171
+        y: 644
+        width: 39
+        height: 63
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -470,10 +483,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_10
       rect:
         serializedVersion: 2
-        x: 256
-        y: 612
-        width: 128
-        height: 128
+        x: 293
+        y: 611
+        width: 64
+        height: 130
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -492,10 +505,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_11
       rect:
         serializedVersion: 2
-        x: 384
-        y: 612
-        width: 128
-        height: 128
+        x: 431
+        y: 626
+        width: 44
+        height: 64
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -514,10 +527,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_12
       rect:
         serializedVersion: 2
-        x: 512
-        y: 612
-        width: 128
-        height: 128
+        x: 517
+        y: 610
+        width: 113
+        height: 90
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -536,10 +549,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_13
       rect:
         serializedVersion: 2
-        x: 640
-        y: 612
-        width: 128
-        height: 128
+        x: 646
+        y: 618
+        width: 118
+        height: 98
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -558,10 +571,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_14
       rect:
         serializedVersion: 2
-        x: 768
-        y: 612
-        width: 128
-        height: 128
+        x: 810
+        y: 641
+        width: 54
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -580,10 +593,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_15
       rect:
         serializedVersion: 2
-        x: 896
-        y: 612
-        width: 128
-        height: 128
+        x: 933
+        y: 650
+        width: 50
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -602,10 +615,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_16
       rect:
         serializedVersion: 2
-        x: 1024
-        y: 612
-        width: 128
-        height: 128
+        x: 1057
+        y: 640
+        width: 58
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -624,10 +637,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_17
       rect:
         serializedVersion: 2
-        x: 0
-        y: 484
-        width: 128
-        height: 128
+        x: 8
+        y: 511
+        width: 115
+        height: 62
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -646,10 +659,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_18
       rect:
         serializedVersion: 2
-        x: 128
-        y: 484
-        width: 128
-        height: 128
+        x: 133
+        y: 522
+        width: 8
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -668,10 +681,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_19
       rect:
         serializedVersion: 2
-        x: 256
-        y: 484
-        width: 128
-        height: 128
+        x: 161
+        y: 522
+        width: 8
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -690,10 +703,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_20
       rect:
         serializedVersion: 2
-        x: 384
-        y: 484
-        width: 128
-        height: 128
+        x: 190
+        y: 528
+        width: 62
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -712,10 +725,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_21
       rect:
         serializedVersion: 2
-        x: 512
-        y: 484
-        width: 128
-        height: 128
+        x: 293
+        y: 516
+        width: 42
+        height: 58
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -734,10 +747,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_22
       rect:
         serializedVersion: 2
-        x: 640
-        y: 484
-        width: 128
-        height: 128
+        x: 427
+        y: 517
+        width: 57
+        height: 45
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -756,10 +769,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_23
       rect:
         serializedVersion: 2
-        x: 768
-        y: 484
-        width: 128
-        height: 128
+        x: 542
+        y: 512
+        width: 64
+        height: 49
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -775,57 +788,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spriteshits TD final-Sheet_24
-      rect:
-        serializedVersion: 2
-        x: 896
-        y: 484
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dd284e9c99e65ab30800000000000000
-      internalID: 4297963026191254237
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteshits TD final-Sheet_25
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 484
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 29aaaf97b256d70e0800000000000000
-      internalID: -2270547399720392046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: spriteshits TD final-Sheet_26
       rect:
         serializedVersion: 2
-        x: 0
-        y: 356
-        width: 128
-        height: 128
+        x: 832
+        y: 513
+        width: 10
+        height: 57
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -844,10 +813,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_27
       rect:
         serializedVersion: 2
-        x: 128
-        y: 356
-        width: 128
-        height: 128
+        x: 927
+        y: 522
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -866,10 +835,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_28
       rect:
         serializedVersion: 2
-        x: 256
-        y: 356
-        width: 128
-        height: 128
+        x: 1058
+        y: 526
+        width: 64
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -885,57 +854,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: spriteshits TD final-Sheet_29
-      rect:
-        serializedVersion: 2
-        x: 384
-        y: 356
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 751e18410c2214ab0800000000000000
-      internalID: -5025697500795641513
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: spriteshits TD final-Sheet_30
-      rect:
-        serializedVersion: 2
-        x: 512
-        y: 356
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3dd8af31ff3c53af0800000000000000
-      internalID: -417211890142638637
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: spriteshits TD final-Sheet_31
       rect:
         serializedVersion: 2
-        x: 640
-        y: 356
-        width: 128
-        height: 128
+        x: 683
+        y: 512
+        width: 51
+        height: 46
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -954,10 +879,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_32
       rect:
         serializedVersion: 2
-        x: 768
-        y: 356
-        width: 128
-        height: 128
+        x: 20
+        y: 379
+        width: 86
+        height: 70
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -976,10 +901,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_33
       rect:
         serializedVersion: 2
-        x: 896
-        y: 356
-        width: 128
-        height: 128
+        x: 128
+        y: 373
+        width: 64
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -998,10 +923,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_34
       rect:
         serializedVersion: 2
-        x: 0
-        y: 228
-        width: 128
-        height: 128
+        x: 194
+        y: 372
+        width: 60
+        height: 56
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1020,10 +945,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_35
       rect:
         serializedVersion: 2
-        x: 128
-        y: 228
-        width: 128
-        height: 128
+        x: 269
+        y: 371
+        width: 111
+        height: 81
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1042,10 +967,10 @@ TextureImporter:
       name: spriteshits TD final-Sheet_36
       rect:
         serializedVersion: 2
-        x: 256
-        y: 228
-        width: 128
-        height: 128
+        x: 408
+        y: 361
+        width: 88
+        height: 119
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -1056,6 +981,182 @@ TextureImporter:
       bones: []
       spriteID: c980517a3ac115170800000000000000
       internalID: 8165339088607840412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 390
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6496fb52bb5d4274882a146f5c7900b0
+      internalID: -255880444512452599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 383
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d89bfdbc39379546bed05ee1084460d
+      internalID: 7175166608084391210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 389
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8337c930d963a1e4cb20605a39c046f3
+      internalID: 8718964803022421083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 388
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c30be75f36e83e4ea98f22444191550
+      internalID: -8900983405120407591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 244
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16665039e2020ae4fab9cdb0f94ec9f5
+      internalID: 7496300219475518081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 247
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5f7dcec247612419b376409a5bfa3e
+      internalID: -1726104747434223419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 244
+        width: 55
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0684068a3aa95a4e9d27d7c9371617c
+      internalID: 766337847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 34
+        width: 567
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7248ea1e13c924c8105a23dc747126
+      internalID: 547535819
       vertices: []
       indices: 
       edges: []
@@ -1074,7 +1175,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries:
       - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
       spriteshits TD final-Sheet_0: -4066314687048058534
       spriteshits TD final-Sheet_1: -7331828432687155938
@@ -1118,6 +1219,9 @@ TextureImporter:
       spriteshits TD final-Sheet_44: 7572240100121111748
       spriteshits TD final-Sheet_45: 7496300219475518081
       spriteshits TD final-Sheet_46: -1726104747434223419
+      spriteshits TD final-Sheet_47: -2101377431
+      spriteshits TD final-Sheet_48: 766337847
+      spriteshits TD final-Sheet_49: 547535819
       spriteshits TD final-Sheet_5: -3065558456505759040
       spriteshits TD final-Sheet_6: 3502025213996345419
       spriteshits TD final-Sheet_7: 2716515773968984867

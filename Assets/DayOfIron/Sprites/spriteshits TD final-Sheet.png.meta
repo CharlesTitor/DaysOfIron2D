@@ -1,0 +1,1234 @@
+fileFormatVersion: 2
+guid: 1c5096e8ef6705245ac4f35477c97cbc
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4066314687048058534
+    second: spriteshits TD final-Sheet_0
+  - first:
+      213: -7331828432687155938
+    second: spriteshits TD final-Sheet_1
+  - first:
+      213: 4105572676123315909
+    second: spriteshits TD final-Sheet_2
+  - first:
+      213: 5313544394292412916
+    second: spriteshits TD final-Sheet_3
+  - first:
+      213: 4127878270490205257
+    second: spriteshits TD final-Sheet_4
+  - first:
+      213: -3065558456505759040
+    second: spriteshits TD final-Sheet_5
+  - first:
+      213: 3502025213996345419
+    second: spriteshits TD final-Sheet_6
+  - first:
+      213: 2716515773968984867
+    second: spriteshits TD final-Sheet_7
+  - first:
+      213: 5723162502799258776
+    second: spriteshits TD final-Sheet_8
+  - first:
+      213: -7649275038322335203
+    second: spriteshits TD final-Sheet_9
+  - first:
+      213: -1492370597929381124
+    second: spriteshits TD final-Sheet_10
+  - first:
+      213: -5567567723853023992
+    second: spriteshits TD final-Sheet_11
+  - first:
+      213: -5124607507682839780
+    second: spriteshits TD final-Sheet_12
+  - first:
+      213: 2923716969144127245
+    second: spriteshits TD final-Sheet_13
+  - first:
+      213: -4666763044398321615
+    second: spriteshits TD final-Sheet_14
+  - first:
+      213: -1383396963576473502
+    second: spriteshits TD final-Sheet_15
+  - first:
+      213: 6702568005434850902
+    second: spriteshits TD final-Sheet_16
+  - first:
+      213: -5886137376390124299
+    second: spriteshits TD final-Sheet_17
+  - first:
+      213: 7009469029865944290
+    second: spriteshits TD final-Sheet_18
+  - first:
+      213: -8930797199251748573
+    second: spriteshits TD final-Sheet_19
+  - first:
+      213: 1394831629326937443
+    second: spriteshits TD final-Sheet_20
+  - first:
+      213: -7912715609008473107
+    second: spriteshits TD final-Sheet_21
+  - first:
+      213: 2059311940823778671
+    second: spriteshits TD final-Sheet_22
+  - first:
+      213: -2073734406412880
+    second: spriteshits TD final-Sheet_23
+  - first:
+      213: 4297963026191254237
+    second: spriteshits TD final-Sheet_24
+  - first:
+      213: -2270547399720392046
+    second: spriteshits TD final-Sheet_25
+  - first:
+      213: -2519884763516608446
+    second: spriteshits TD final-Sheet_26
+  - first:
+      213: -3726398901895339245
+    second: spriteshits TD final-Sheet_27
+  - first:
+      213: -4621814771904851585
+    second: spriteshits TD final-Sheet_28
+  - first:
+      213: -5025697500795641513
+    second: spriteshits TD final-Sheet_29
+  - first:
+      213: -417211890142638637
+    second: spriteshits TD final-Sheet_30
+  - first:
+      213: -7097500898705281085
+    second: spriteshits TD final-Sheet_31
+  - first:
+      213: -7519423576285160264
+    second: spriteshits TD final-Sheet_32
+  - first:
+      213: 2647369767523126983
+    second: spriteshits TD final-Sheet_33
+  - first:
+      213: 5545296410054266036
+    second: spriteshits TD final-Sheet_34
+  - first:
+      213: -3626483987961228012
+    second: spriteshits TD final-Sheet_35
+  - first:
+      213: 8165339088607840412
+    second: spriteshits TD final-Sheet_36
+  - first:
+      213: -255880444512452599
+    second: spriteshits TD final-Sheet_37
+  - first:
+      213: 7175166608084391210
+    second: spriteshits TD final-Sheet_38
+  - first:
+      213: 8718964803022421083
+    second: spriteshits TD final-Sheet_39
+  - first:
+      213: -8900983405120407591
+    second: spriteshits TD final-Sheet_40
+  - first:
+      213: -6675060489248579730
+    second: spriteshits TD final-Sheet_41
+  - first:
+      213: 2660555247662463229
+    second: spriteshits TD final-Sheet_42
+  - first:
+      213: 312015524393730273
+    second: spriteshits TD final-Sheet_43
+  - first:
+      213: 7572240100121111748
+    second: spriteshits TD final-Sheet_44
+  - first:
+      213: 7496300219475518081
+    second: spriteshits TD final-Sheet_45
+  - first:
+      213: -1726104747434223419
+    second: spriteshits TD final-Sheet_46
+  - first:
+      213: 8676239099019512619
+    second: spriteshits TD final-Sheet_47
+  - first:
+      213: 1347066744181117891
+    second: spriteshits TD final-Sheet_48
+  - first:
+      213: -7638354275518523406
+    second: spriteshits TD final-Sheet_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 779
+        width: 53
+        height: 59
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a59fb8d165c8197c0800000000000000
+      internalID: -4066314687048058534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 769
+        width: 38
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e15b29bd2ec104a90800000000000000
+      internalID: -7331828432687155938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 773
+        width: 46
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ce41efb89ce9f830800000000000000
+      internalID: 4105572676123315909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 423
+        y: 775
+        width: 53
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f1411869708db940800000000000000
+      internalID: 5313544394292412916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 768
+        width: 124
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94c5f94aa6b294930800000000000000
+      internalID: 4127878270490205257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 758
+        width: 110
+        height: 86
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca87c963d2f475d0800000000000000
+      internalID: -3065558456505759040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 817
+        y: 757
+        width: 40
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48a6baa061b99030800000000000000
+      internalID: 3502025213996345419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 775
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32baa2624b003b520800000000000000
+      internalID: 2716515773968984867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 644
+        width: 55
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8947f2349f1cc6f40800000000000000
+      internalID: 5723162502799258776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 171
+        y: 644
+        width: 39
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d12e88751e058d590800000000000000
+      internalID: -7649275038322335203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 611
+        width: 64
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cf29e2d19d80a4be0800000000000000
+      internalID: -1492370597929381124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 431
+        y: 626
+        width: 44
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8057fc447a60cb2b0800000000000000
+      internalID: -5567567723853023992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 517
+        y: 610
+        width: 113
+        height: 90
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c13b3438f9cb1e8b0800000000000000
+      internalID: -5124607507682839780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 646
+        y: 618
+        width: 118
+        height: 98
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d0f0e99c711239820800000000000000
+      internalID: 2923716969144127245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 641
+        width: 54
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 130b7b79cb35c3fb0800000000000000
+      internalID: -4666763044398321615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 650
+        width: 50
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2689baa8acf2dcce0800000000000000
+      internalID: -1383396963576473502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1057
+        y: 640
+        width: 58
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65eb7d6d61e440d50800000000000000
+      internalID: 6702568005434850902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 511
+        width: 115
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5fced150e3d305ea0800000000000000
+      internalID: -5886137376390124299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 133
+        y: 522
+        width: 8
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e4f245e1f2a64160800000000000000
+      internalID: 7009469029865944290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 522
+        width: 8
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 329cb81c34f6f0480800000000000000
+      internalID: -8930797199251748573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 528
+        width: 62
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36de28b0aff6b5310800000000000000
+      internalID: 1394831629326937443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 293
+        y: 516
+        width: 42
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deb7c54b313603290800000000000000
+      internalID: -7912715609008473107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 427
+        y: 517
+        width: 57
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65858aac45249c10800000000000000
+      internalID: 2059311940823778671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_23
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 512
+        width: 64
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b5e85513f1a8fff0800000000000000
+      internalID: -2073734406412880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_26
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 513
+        width: 10
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2406ca39822970dd0800000000000000
+      internalID: -2519884763516608446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_27
+      rect:
+        serializedVersion: 2
+        x: 927
+        y: 522
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3136f1921fb294cc0800000000000000
+      internalID: -3726398901895339245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1058
+        y: 526
+        width: 64
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7155fec3f30cdfb0800000000000000
+      internalID: -4621814771904851585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_31
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 512
+        width: 51
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfe7ab698c908d90800000000000000
+      internalID: -7097500898705281085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_32
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 379
+        width: 86
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bc53d3d814a5a790800000000000000
+      internalID: -7519423576285160264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_33
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 373
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ce0356f6c85db420800000000000000
+      internalID: 2647369767523126983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_34
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 372
+        width: 60
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4bc888764b9d4fc40800000000000000
+      internalID: 5545296410054266036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_35
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 371
+        width: 111
+        height: 81
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 415dde1e6042cadc0800000000000000
+      internalID: -3626483987961228012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_36
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 361
+        width: 88
+        height: 119
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c980517a3ac115170800000000000000
+      internalID: 8165339088607840412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_37
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 390
+        width: 50
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6496fb52bb5d4274882a146f5c7900b0
+      internalID: -255880444512452599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_38
+      rect:
+        serializedVersion: 2
+        x: 682
+        y: 383
+        width: 60
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d89bfdbc39379546bed05ee1084460d
+      internalID: 7175166608084391210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_39
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 389
+        width: 51
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8337c930d963a1e4cb20605a39c046f3
+      internalID: 8718964803022421083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_40
+      rect:
+        serializedVersion: 2
+        x: 936
+        y: 388
+        width: 44
+        height: 62
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c30be75f36e83e4ea98f22444191550
+      internalID: -8900983405120407591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_45
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 244
+        width: 64
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16665039e2020ae4fab9cdb0f94ec9f5
+      internalID: 7496300219475518081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_46
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 247
+        width: 64
+        height: 97
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e5f7dcec247612419b376409a5bfa3e
+      internalID: -1726104747434223419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_48
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 244
+        width: 55
+        height: 87
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0684068a3aa95a4e9d27d7c9371617c
+      internalID: 766337847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: spriteshits TD final-Sheet_49
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 34
+        width: 567
+        height: 256
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e7248ea1e13c924c8105a23dc747126
+      internalID: 547535819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 8c64ca427fe0e5041aef27d2027e9330
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":128.0,"y":128.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      spriteshits TD final-Sheet_0: -4066314687048058534
+      spriteshits TD final-Sheet_1: -7331828432687155938
+      spriteshits TD final-Sheet_10: -1492370597929381124
+      spriteshits TD final-Sheet_11: -5567567723853023992
+      spriteshits TD final-Sheet_12: -5124607507682839780
+      spriteshits TD final-Sheet_13: 2923716969144127245
+      spriteshits TD final-Sheet_14: -4666763044398321615
+      spriteshits TD final-Sheet_15: -1383396963576473502
+      spriteshits TD final-Sheet_16: 6702568005434850902
+      spriteshits TD final-Sheet_17: -5886137376390124299
+      spriteshits TD final-Sheet_18: 7009469029865944290
+      spriteshits TD final-Sheet_19: -8930797199251748573
+      spriteshits TD final-Sheet_2: 4105572676123315909
+      spriteshits TD final-Sheet_20: 1394831629326937443
+      spriteshits TD final-Sheet_21: -7912715609008473107
+      spriteshits TD final-Sheet_22: 2059311940823778671
+      spriteshits TD final-Sheet_23: -2073734406412880
+      spriteshits TD final-Sheet_24: 4297963026191254237
+      spriteshits TD final-Sheet_25: -2270547399720392046
+      spriteshits TD final-Sheet_26: -2519884763516608446
+      spriteshits TD final-Sheet_27: -3726398901895339245
+      spriteshits TD final-Sheet_28: -4621814771904851585
+      spriteshits TD final-Sheet_29: -5025697500795641513
+      spriteshits TD final-Sheet_3: 5313544394292412916
+      spriteshits TD final-Sheet_30: -417211890142638637
+      spriteshits TD final-Sheet_31: -7097500898705281085
+      spriteshits TD final-Sheet_32: -7519423576285160264
+      spriteshits TD final-Sheet_33: 2647369767523126983
+      spriteshits TD final-Sheet_34: 5545296410054266036
+      spriteshits TD final-Sheet_35: -3626483987961228012
+      spriteshits TD final-Sheet_36: 8165339088607840412
+      spriteshits TD final-Sheet_37: -255880444512452599
+      spriteshits TD final-Sheet_38: 7175166608084391210
+      spriteshits TD final-Sheet_39: 8718964803022421083
+      spriteshits TD final-Sheet_4: 4127878270490205257
+      spriteshits TD final-Sheet_40: -8900983405120407591
+      spriteshits TD final-Sheet_41: -6675060489248579730
+      spriteshits TD final-Sheet_42: 2660555247662463229
+      spriteshits TD final-Sheet_43: 312015524393730273
+      spriteshits TD final-Sheet_44: 7572240100121111748
+      spriteshits TD final-Sheet_45: 7496300219475518081
+      spriteshits TD final-Sheet_46: -1726104747434223419
+      spriteshits TD final-Sheet_47: -2101377431
+      spriteshits TD final-Sheet_48: 766337847
+      spriteshits TD final-Sheet_49: 547535819
+      spriteshits TD final-Sheet_5: -3065558456505759040
+      spriteshits TD final-Sheet_6: 3502025213996345419
+      spriteshits TD final-Sheet_7: 2716515773968984867
+      spriteshits TD final-Sheet_8: 5723162502799258776
+      spriteshits TD final-Sheet_9: -7649275038322335203
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

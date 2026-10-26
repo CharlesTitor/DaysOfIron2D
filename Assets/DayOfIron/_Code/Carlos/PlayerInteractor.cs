@@ -34,6 +34,8 @@ public class PlayerInteractor : MonoBehaviour , IInteractor
         {
             interactable = hitInformation.collider.GetComponent<IInteractable>();
 
+            Debug.Log("Interaction click");
+
             if( interactable != null )
             {
                 return true;

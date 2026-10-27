@@ -24,9 +24,12 @@ public class ClickToMove : MonoBehaviour, IInteractor
     private Vector2 _mousePosition;
     private Vector3 _mouseWorldPosition;
 
+    private Rigidbody2D _rigidbody;
+
     private void Awake()
     {
         _camera = Camera.main;
+        _rigidbody = GetComponent<Rigidbody2D>();
     }
 
     private void OnEnable()
@@ -130,7 +133,8 @@ public class ClickToMove : MonoBehaviour, IInteractor
                 _speed * Time.deltaTime
             );
 
-            transform.position = _destination;
+            //transform.position = _destination;
+            _rigidbody.MovePosition(_destination);
 
             yield return null;
         }

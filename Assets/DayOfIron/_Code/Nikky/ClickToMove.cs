@@ -100,6 +100,8 @@ public class ClickToMove : MonoBehaviour, IInteractor
             new Vector2(mouseWorldPosition.x, mouseWorldPosition.y)
         );
 
+        Debug.Log("interaction");
+
         if (hitCollider == null)
         {
             return;

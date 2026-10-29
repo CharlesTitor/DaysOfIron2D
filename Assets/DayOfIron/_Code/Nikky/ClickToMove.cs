@@ -37,16 +37,16 @@ public class ClickToMove : MonoBehaviour, IInteractor
         _moveClick.Enable();
         _interactClick.Enable();
 
-        _moveClick.performed += Move;
-        _interactClick.performed += ClickInteract;
+        _moveClick.performed +=Move;
+        _interactClick.performed +=ClickInteract;
 
         _interruptMoveChannel.EventChannel.AddListener(InterruptMovement);
     }
 
     private void OnDisable()
     {
-        _moveClick.performed -= Move;
-        _interactClick.performed -= ClickInteract;
+        _moveClick.performed -=Move;
+        _interactClick.performed -=ClickInteract;
 
         _moveClick.Disable();
         _interactClick.Disable();
@@ -56,18 +56,12 @@ public class ClickToMove : MonoBehaviour, IInteractor
 
     private Vector3 GetMouseWorldPosition()
     {
-        _mousePosition = Mouse.current.position.ReadValue();
+        _mousePosition= Mouse.current.position.ReadValue();
 
-        float distanceFromCamera =
-            Mathf.Abs(_camera.transform.position.z - transform.position.z);
+        float distanceFromCamera =Mathf.Abs(_camera.transform.position.z-transform.position.z);
 
         _mouseWorldPosition = _camera.ScreenToWorldPoint(
-            new Vector3(
-                _mousePosition.x,
-                _mousePosition.y,
-                distanceFromCamera
-            )
-        );
+            new Vector3(_mousePosition.x,_mousePosition.y,distanceFromCamera));
 
         _mouseWorldPosition.z = transform.position.z;
 
@@ -76,7 +70,7 @@ public class ClickToMove : MonoBehaviour, IInteractor
 
     private void Move(InputAction.CallbackContext context)
     {
-        Vector3 mouseWorldPosition = GetMouseWorldPosition();
+        Vector3 mouseWorldPosition= GetMouseWorldPosition();
 
         if (_coroutine != null)
         {
@@ -84,12 +78,10 @@ public class ClickToMove : MonoBehaviour, IInteractor
         }
 
         _moveIndicator.SetActive(true);
-        _moveIndicator.transform.position = mouseWorldPosition;
+        _moveIndicator.transform.position= mouseWorldPosition;
 
-        _targetUbication = mouseWorldPosition;
-        _coroutine = StartCoroutine(
-            PlayerMoveTowards(mouseWorldPosition)
-        );
+        _targetUbication =mouseWorldPosition;
+        _coroutine = StartCoroutine(PlayerMoveTowards(mouseWorldPosition));
     }
 
     private void ClickInteract(InputAction.CallbackContext context)
@@ -99,6 +91,8 @@ public class ClickToMove : MonoBehaviour, IInteractor
         Collider2D hitCollider = Physics2D.OverlapPoint(
             new Vector2(mouseWorldPosition.x, mouseWorldPosition.y)
         );
+
+        Debug.Log("interaction");
 
         if (hitCollider == null)
         {
@@ -110,8 +104,7 @@ public class ClickToMove : MonoBehaviour, IInteractor
 
         if (currentInteractable == null)
         {
-            currentInteractable =
-                hitCollider.GetComponentInParent<IInteractable>();
+            currentInteractable = hitCollider.GetComponentInParent<IInteractable>();
         }
 
         if (currentInteractable != null)
@@ -127,11 +120,7 @@ public class ClickToMove : MonoBehaviour, IInteractor
     {
         while (Vector3.Distance(transform.position, target) > 0.1f)
         {
-            _destination = Vector3.MoveTowards(
-                transform.position,
-                target,
-                _speed * Time.deltaTime
-            );
+            _destination = Vector3.MoveTowards(transform.position,target,_speed*Time.deltaTime);
 
             //transform.position = _destination;
             _rigidbody.MovePosition(_destination);

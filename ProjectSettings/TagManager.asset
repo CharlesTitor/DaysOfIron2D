@@ -41,6 +41,27 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Piso
+    uniqueID: 2887483011
+    locked: 0
+  - name: Props grandes
+    uniqueID: 2981759611
+    locked: 0
+  - name: Edificios
+    uniqueID: 2778510139
+    locked: 0
+  - name: Personajes
+    uniqueID: 3681907209
+    locked: 0
+  - name: "Props peque\xF1os"
+    uniqueID: 3294781127
+    locked: 0
+  - name: Teleporters
+    uniqueID: 1483274725
+    locked: 0
+  - name: Cielo
+    uniqueID: 1480720115
+    locked: 0
   m_RenderingLayers:
   - Default
   m_MigratedRenderPipelines: []

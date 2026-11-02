@@ -32,7 +32,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -7.2077866, y: 3.293624, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.75866044, y: 0.75866044, z: 0.75866044}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2032544898971387823}
@@ -83,8 +83,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -613060087
+  m_SortingLayer: 4
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6986679559077003075, guid: 6a02e8d7f940bc14ab9725cd8eaba03f, type: 3}
@@ -111,6 +111,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ClickToMove
   _interruptMoveChannel: {fileID: 11400000, guid: 9fe21c43223998f408f57bf81adfcaa1, type: 2}
+  _moveIndicator: {fileID: 0}
   _moveClick:
     m_Name: Move Click
     m_Type: 0
@@ -129,11 +130,28 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
-  _speed: 0.5
+  _interactClick:
+    m_Name: Interact Click
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 67a388bf-4fb6-439f-bf53-751aa015a174
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 7a2bba37-b9bc-431e-8e9a-72165f4c69ec
+      m_Path: <Mouse>/rightButton
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Interact Click
+      m_Flags: 0
+    m_Flags: 0
+    m_Priority: 0
+  _speed: 1.3
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  _moveIndicator: {fileID: 0}
 --- !u!95 &2369207599350637521
 Animator:
   serializedVersion: 7
@@ -185,7 +203,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -196,7 +214,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 3
+  m_Constraints: 4
 --- !u!70 &8798544989549587508
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -277,8 +295,8 @@ Camera:
   m_GameObject: {fileID: 7664633697679736436}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_ClearFlags: 2
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -303,7 +321,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0.57
+  orthographic size: 0.44
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

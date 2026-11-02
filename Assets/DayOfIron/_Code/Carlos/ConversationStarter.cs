@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class ConversationStarter : MonoBehaviour , IInteractable
 {
-    [SerializeField] private NPCConversation _NPCConversation;
+    [SerializeField] private NPCConversation _npcConversation;
     [SerializeField] private float _interactionDistance = 1f;
 
     public bool CanInteract(IInteractor interactor)
@@ -14,6 +14,6 @@ public class ConversationStarter : MonoBehaviour , IInteractable
 
     public void Interact(IInteractor interactor)
     {
-        ConversationManager.Instance.StartConversation(_NPCConversation);
+        ConversationManager.Instance.StartConversation(_npcConversation);
     }
 }

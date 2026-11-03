@@ -26,7 +26,7 @@ public class Dialogue : MonoBehaviour
         if(collision.gameObject.CompareTag("Player"))
         {
              isPlayerInRange =false;
-             Debug.Log("No se puede inicia un dialogo")
+             Debug.Log("No se puede inicia un dialogo");
         }
 
     }

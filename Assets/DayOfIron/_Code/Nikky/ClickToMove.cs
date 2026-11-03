@@ -2,6 +2,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.EventSystems;
 
 public class ClickToMove : MonoBehaviour, IInteractor
 {
@@ -68,8 +69,18 @@ public class ClickToMove : MonoBehaviour, IInteractor
         return _mouseWorldPosition;
     }
 
+    private bool IsPointerOverUI()
+    {
+        return EventSystem.current !=null && EventSystem.current.IsPointerOverGameObject();
+    }
+
     private void Move(InputAction.CallbackContext context)
     {
+        if (IsPointerOverUI())
+        {
+            return;
+        }
+
         Vector3 mouseWorldPosition= GetMouseWorldPosition();
 
         if (_coroutine != null)

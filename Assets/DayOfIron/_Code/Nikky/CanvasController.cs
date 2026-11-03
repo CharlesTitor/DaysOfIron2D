@@ -4,10 +4,12 @@ public class CanvasController : MonoBehaviour
 {
     public GameObject InventoryCanvas;
 
+    /*
     private void Start()
     {
         InventoryCanvas.SetActive(false);
     }
+    */
 
     public void OpenCloseInventory()
     {

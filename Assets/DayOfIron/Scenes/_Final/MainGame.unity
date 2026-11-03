@@ -130,6 +130,7 @@ GameObject:
   - component: {fileID: 9089402}
   - component: {fileID: 9089404}
   - component: {fileID: 9089403}
+  - component: {fileID: 9089405}
   m_Layer: 0
   m_Name: Roca M (9)
   m_TagString: Untagged
@@ -271,6 +272,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &9089405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9089401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1001 &40262459
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -324,6 +340,10 @@ PrefabInstance:
       value: Kael
       objectReference: {fileID: 0}
     - target: {fileID: 6539148976040500048, guid: 1f53d5b6c4361ec4686778c89a10d571, type: 3}
+      propertyPath: _speed
+      value: 1.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539148976040500048, guid: 1f53d5b6c4361ec4686778c89a10d571, type: 3}
       propertyPath: _moveIndicator
       value: 
       objectReference: {fileID: 516609906}
@@ -343,6 +363,7 @@ GameObject:
   - component: {fileID: 47344392}
   - component: {fileID: 47344394}
   - component: {fileID: 47344393}
+  - component: {fileID: 47344395}
   m_Layer: 0
   m_Name: Muro __
   m_TagString: Untagged
@@ -471,6 +492,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &47344395
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 47344391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &77256812
 GameObject:
   m_ObjectHideFlags: 0
@@ -482,6 +518,7 @@ GameObject:
   - component: {fileID: 77256813}
   - component: {fileID: 77256815}
   - component: {fileID: 77256814}
+  - component: {fileID: 77256816}
   m_Layer: 0
   m_Name: Roca M (2)
   m_TagString: Untagged
@@ -623,6 +660,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &77256816
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 77256812}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &93657553
 GameObject:
   m_ObjectHideFlags: 0
@@ -634,6 +686,7 @@ GameObject:
   - component: {fileID: 93657554}
   - component: {fileID: 93657556}
   - component: {fileID: 93657555}
+  - component: {fileID: 93657557}
   m_Layer: 0
   m_Name: Lider de aldea
   m_TagString: Untagged
@@ -650,7 +703,7 @@ Transform:
   m_GameObject: {fileID: 93657553}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.3980999, y: -0.1839304, z: 0}
+  m_LocalPosition: {x: -8.924, y: 4.033, z: 0}
   m_LocalScale: {x: 0.56866, y: 0.56866, z: 0.56866}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -753,6 +806,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &93657557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93657553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &93995886
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +832,7 @@ GameObject:
   - component: {fileID: 93995887}
   - component: {fileID: 93995889}
   - component: {fileID: 93995888}
+  - component: {fileID: 93995890}
   m_Layer: 0
   m_Name: Roca M (5)
   m_TagString: Untagged
@@ -905,6 +974,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &93995890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93995886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &97286051
 GameObject:
   m_ObjectHideFlags: 0
@@ -916,6 +1000,7 @@ GameObject:
   - component: {fileID: 97286052}
   - component: {fileID: 97286054}
   - component: {fileID: 97286053}
+  - component: {fileID: 97286055}
   m_Layer: 0
   m_Name: Muro | (3)
   m_TagString: Untagged
@@ -1044,6 +1129,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &97286055
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 97286051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &126627473
 GameObject:
   m_ObjectHideFlags: 0
@@ -1055,6 +1155,7 @@ GameObject:
   - component: {fileID: 126627474}
   - component: {fileID: 126627476}
   - component: {fileID: 126627475}
+  - component: {fileID: 126627477}
   m_Layer: 0
   m_Name: Roca M-S (7)
   m_TagString: Untagged
@@ -1194,6 +1295,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &126627477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 126627473}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &136933967
 GameObject:
   m_ObjectHideFlags: 0
@@ -1205,6 +1321,7 @@ GameObject:
   - component: {fileID: 136933968}
   - component: {fileID: 136933970}
   - component: {fileID: 136933969}
+  - component: {fileID: 136933971}
   m_Layer: 0
   m_Name: Roca Tall (5)
   m_TagString: Untagged
@@ -1347,6 +1464,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &136933971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 136933967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &148621706
 GameObject:
   m_ObjectHideFlags: 0
@@ -1657,6 +1789,7 @@ GameObject:
   - component: {fileID: 158884532}
   - component: {fileID: 158884534}
   - component: {fileID: 158884533}
+  - component: {fileID: 158884535}
   m_Layer: 0
   m_Name: Roca G (11)
   m_TagString: Untagged
@@ -1798,6 +1931,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &158884535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 158884531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &161036127
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,6 +2203,7 @@ GameObject:
   - component: {fileID: 177557033}
   - component: {fileID: 177557035}
   - component: {fileID: 177557034}
+  - component: {fileID: 177557036}
   m_Layer: 0
   m_Name: Roca M (6)
   m_TagString: Untagged
@@ -2196,6 +2345,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &177557036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 177557032}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &182971427
 GameObject:
   m_ObjectHideFlags: 0
@@ -2207,6 +2371,7 @@ GameObject:
   - component: {fileID: 182971428}
   - component: {fileID: 182971430}
   - component: {fileID: 182971429}
+  - component: {fileID: 182971431}
   m_Layer: 0
   m_Name: Roca G (1)
   m_TagString: Untagged
@@ -2348,6 +2513,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &182971431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 182971427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &188528177
 GameObject:
   m_ObjectHideFlags: 0
@@ -2498,6 +2678,7 @@ GameObject:
   - component: {fileID: 198691232}
   - component: {fileID: 198691234}
   - component: {fileID: 198691233}
+  - component: {fileID: 198691235}
   m_Layer: 0
   m_Name: arbol seco (4)
   m_TagString: Untagged
@@ -2641,6 +2822,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &198691235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 198691231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &208552799
 GameObject:
   m_ObjectHideFlags: 0
@@ -2652,6 +2848,7 @@ GameObject:
   - component: {fileID: 208552800}
   - component: {fileID: 208552802}
   - component: {fileID: 208552801}
+  - component: {fileID: 208552803}
   m_Layer: 0
   m_Name: Roca Tall (7)
   m_TagString: Untagged
@@ -2794,6 +2991,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &208552803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 208552799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &209101337
 GameObject:
   m_ObjectHideFlags: 0
@@ -2805,6 +3017,7 @@ GameObject:
   - component: {fileID: 209101338}
   - component: {fileID: 209101340}
   - component: {fileID: 209101339}
+  - component: {fileID: 209101341}
   m_Layer: 0
   m_Name: Muro | (2)
   m_TagString: Untagged
@@ -2933,6 +3146,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &209101341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 209101337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &218758358
 GameObject:
   m_ObjectHideFlags: 0
@@ -3092,6 +3320,7 @@ GameObject:
   - component: {fileID: 221869128}
   - component: {fileID: 221869130}
   - component: {fileID: 221869129}
+  - component: {fileID: 221869131}
   m_Layer: 0
   m_Name: Roca S (1)
   m_TagString: Untagged
@@ -3232,6 +3461,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &221869131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221869127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &232786494
 GameObject:
   m_ObjectHideFlags: 0
@@ -3335,6 +3579,7 @@ GameObject:
   - component: {fileID: 276517556}
   - component: {fileID: 276517558}
   - component: {fileID: 276517557}
+  - component: {fileID: 276517559}
   m_Layer: 0
   m_Name: Roca S (4)
   m_TagString: Untagged
@@ -3475,6 +3720,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &276517559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 276517555}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &287780103
 GameObject:
   m_ObjectHideFlags: 0
@@ -3486,6 +3746,7 @@ GameObject:
   - component: {fileID: 287780104}
   - component: {fileID: 287780106}
   - component: {fileID: 287780105}
+  - component: {fileID: 287780107}
   m_Layer: 0
   m_Name: Roca S (9)
   m_TagString: Untagged
@@ -3626,6 +3887,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &287780107
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287780103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &289202662
 GameObject:
   m_ObjectHideFlags: 0
@@ -3637,6 +3913,7 @@ GameObject:
   - component: {fileID: 289202663}
   - component: {fileID: 289202665}
   - component: {fileID: 289202664}
+  - component: {fileID: 289202666}
   m_Layer: 0
   m_Name: Roca S (8)
   m_TagString: Untagged
@@ -3777,6 +4054,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &289202666
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 289202662}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &292560077
 GameObject:
   m_ObjectHideFlags: 0
@@ -3859,6 +4151,7 @@ GameObject:
   - component: {fileID: 292759642}
   - component: {fileID: 292759644}
   - component: {fileID: 292759643}
+  - component: {fileID: 292759645}
   m_Layer: 0
   m_Name: Roca Tall (3)
   m_TagString: Untagged
@@ -4001,6 +4294,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &292759645
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 292759641}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &316298609
 GameObject:
   m_ObjectHideFlags: 0
@@ -4872,6 +5180,7 @@ GameObject:
   - component: {fileID: 380589560}
   - component: {fileID: 380589562}
   - component: {fileID: 380589561}
+  - component: {fileID: 380589563}
   m_Layer: 0
   m_Name: Arbol frondoso (7)
   m_TagString: Untagged
@@ -5012,6 +5321,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &380589563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 380589559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &381769084
 GameObject:
   m_ObjectHideFlags: 0
@@ -5162,6 +5486,7 @@ GameObject:
   - component: {fileID: 384243690}
   - component: {fileID: 384243692}
   - component: {fileID: 384243691}
+  - component: {fileID: 384243693}
   m_Layer: 0
   m_Name: Chica A
   m_TagString: Untagged
@@ -5281,6 +5606,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &384243693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 384243689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &388132047
 GameObject:
   m_ObjectHideFlags: 0
@@ -5292,6 +5632,7 @@ GameObject:
   - component: {fileID: 388132048}
   - component: {fileID: 388132050}
   - component: {fileID: 388132049}
+  - component: {fileID: 388132051}
   m_Layer: 0
   m_Name: Roca G (5)
   m_TagString: Untagged
@@ -5433,6 +5774,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &388132051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388132047}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &427688807
 GameObject:
   m_ObjectHideFlags: 0
@@ -5444,6 +5800,7 @@ GameObject:
   - component: {fileID: 427688808}
   - component: {fileID: 427688810}
   - component: {fileID: 427688809}
+  - component: {fileID: 427688811}
   m_Layer: 0
   m_Name: Muro |
   m_TagString: Untagged
@@ -5572,6 +5929,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &427688811
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 427688807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &428159855
 GameObject:
   m_ObjectHideFlags: 0
@@ -5583,6 +5955,7 @@ GameObject:
   - component: {fileID: 428159856}
   - component: {fileID: 428159858}
   - component: {fileID: 428159857}
+  - component: {fileID: 428159859}
   m_Layer: 0
   m_Name: Roca M (4)
   m_TagString: Untagged
@@ -5724,6 +6097,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &428159859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 428159855}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &435282122
 GameObject:
   m_ObjectHideFlags: 0
@@ -5735,6 +6123,7 @@ GameObject:
   - component: {fileID: 435282123}
   - component: {fileID: 435282125}
   - component: {fileID: 435282124}
+  - component: {fileID: 435282126}
   m_Layer: 0
   m_Name: Bus __
   m_TagString: Untagged
@@ -5879,6 +6268,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &435282126
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435282122}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &440595439
 GameObject:
   m_ObjectHideFlags: 0
@@ -5890,6 +6294,7 @@ GameObject:
   - component: {fileID: 440595440}
   - component: {fileID: 440595442}
   - component: {fileID: 440595441}
+  - component: {fileID: 440595443}
   m_Layer: 0
   m_Name: Roca Tall (1)
   m_TagString: Untagged
@@ -6032,6 +6437,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &440595443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440595439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &449616051
 GameObject:
   m_ObjectHideFlags: 0
@@ -6182,6 +6602,7 @@ GameObject:
   - component: {fileID: 453357068}
   - component: {fileID: 453357070}
   - component: {fileID: 453357069}
+  - component: {fileID: 453357071}
   m_Layer: 0
   m_Name: arbol seco (2)
   m_TagString: Untagged
@@ -6325,6 +6746,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &453357071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453357067}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &455830681
 GameObject:
   m_ObjectHideFlags: 0
@@ -6336,6 +6772,7 @@ GameObject:
   - component: {fileID: 455830682}
   - component: {fileID: 455830684}
   - component: {fileID: 455830683}
+  - component: {fileID: 455830685}
   m_Layer: 0
   m_Name: Roca Tall (1)
   m_TagString: Untagged
@@ -6478,6 +6915,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &455830685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 455830681}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &462132865
 GameObject:
   m_ObjectHideFlags: 0
@@ -6489,6 +6941,7 @@ GameObject:
   - component: {fileID: 462132866}
   - component: {fileID: 462132868}
   - component: {fileID: 462132867}
+  - component: {fileID: 462132869}
   m_Layer: 0
   m_Name: Roca M-S (1)
   m_TagString: Untagged
@@ -6628,6 +7081,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &462132869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462132865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &479791949
 GameObject:
   m_ObjectHideFlags: 0
@@ -6639,6 +7107,7 @@ GameObject:
   - component: {fileID: 479791950}
   - component: {fileID: 479791952}
   - component: {fileID: 479791951}
+  - component: {fileID: 479791953}
   m_Layer: 0
   m_Name: Tenazas_0
   m_TagString: Untagged
@@ -6767,6 +7236,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &479791953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479791949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 2100000, guid: 681467d1c71272b468e8fe3d8c358869, type: 2}
+  _cursorType: 1
 --- !u!1 &516609906
 GameObject:
   m_ObjectHideFlags: 0
@@ -6948,6 +7432,7 @@ GameObject:
   - component: {fileID: 520623932}
   - component: {fileID: 520623934}
   - component: {fileID: 520623933}
+  - component: {fileID: 520623935}
   m_Layer: 0
   m_Name: Porton
   m_TagString: Untagged
@@ -7076,6 +7561,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &520623935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 520623931}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &523151645
 GameObject:
   m_ObjectHideFlags: 0
@@ -7260,6 +7760,63 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1001 &538246853
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3350711151053856707, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_Name
+      value: == Managers ==
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -7.46541
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.97176
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
 --- !u!1 &559976084
 GameObject:
   m_ObjectHideFlags: 0
@@ -7271,6 +7828,7 @@ GameObject:
   - component: {fileID: 559976085}
   - component: {fileID: 559976087}
   - component: {fileID: 559976086}
+  - component: {fileID: 559976088}
   m_Layer: 0
   m_Name: Arbol (6)
   m_TagString: Untagged
@@ -7445,6 +8003,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &559976088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559976084}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &588406244
 GameObject:
   m_ObjectHideFlags: 0
@@ -7685,6 +8258,7 @@ GameObject:
   - component: {fileID: 604890909}
   - component: {fileID: 604890911}
   - component: {fileID: 604890910}
+  - component: {fileID: 604890912}
   m_Layer: 0
   m_Name: Muro |
   m_TagString: Untagged
@@ -7813,6 +8387,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &604890912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 604890908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &616285327
 GameObject:
   m_ObjectHideFlags: 0
@@ -7824,6 +8413,7 @@ GameObject:
   - component: {fileID: 616285328}
   - component: {fileID: 616285330}
   - component: {fileID: 616285329}
+  - component: {fileID: 616285331}
   m_Layer: 0
   m_Name: "Ni\xF1o"
   m_TagString: Untagged
@@ -7943,6 +8533,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &616285331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 616285327}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &634134264
 GameObject:
   m_ObjectHideFlags: 0
@@ -8201,6 +8806,7 @@ GameObject:
   - component: {fileID: 692788964}
   - component: {fileID: 692788966}
   - component: {fileID: 692788965}
+  - component: {fileID: 692788967}
   m_Layer: 0
   m_Name: Roca M (3)
   m_TagString: Untagged
@@ -8342,6 +8948,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &692788967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 692788963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &700175452
 GameObject:
   m_ObjectHideFlags: 0
@@ -8353,6 +8974,7 @@ GameObject:
   - component: {fileID: 700175453}
   - component: {fileID: 700175455}
   - component: {fileID: 700175454}
+  - component: {fileID: 700175456}
   m_Layer: 0
   m_Name: Roca M (10)
   m_TagString: Untagged
@@ -8494,6 +9116,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &700175456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 700175452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &702070286
 GameObject:
   m_ObjectHideFlags: 0
@@ -8597,6 +9234,7 @@ GameObject:
   - component: {fileID: 710972858}
   - component: {fileID: 710972860}
   - component: {fileID: 710972859}
+  - component: {fileID: 710972861}
   m_Layer: 0
   m_Name: Roca M (7)
   m_TagString: Untagged
@@ -8738,6 +9376,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &710972861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 710972857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &715816020
 GameObject:
   m_ObjectHideFlags: 0
@@ -8888,6 +9541,7 @@ GameObject:
   - component: {fileID: 744280284}
   - component: {fileID: 744280286}
   - component: {fileID: 744280285}
+  - component: {fileID: 744280287}
   m_Layer: 0
   m_Name: Molino
   m_TagString: Untagged
@@ -9037,6 +9691,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &744280287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 744280283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 744280286}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &751395598
 GameObject:
   m_ObjectHideFlags: 0
@@ -9048,6 +9717,7 @@ GameObject:
   - component: {fileID: 751395599}
   - component: {fileID: 751395601}
   - component: {fileID: 751395600}
+  - component: {fileID: 751395602}
   m_Layer: 0
   m_Name: Roca S (5)
   m_TagString: Untagged
@@ -9188,6 +9858,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &751395602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 751395598}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &754910793
 GameObject:
   m_ObjectHideFlags: 0
@@ -9255,7 +9940,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: -0.13738748}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -9265,7 +9950,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.64, y: 0.96}
+  m_Size: {x: 0.64, y: 0.68522495}
   m_EdgeRadius: 0
 --- !u!212 &754910796
 SpriteRenderer:
@@ -9338,6 +10023,7 @@ GameObject:
   - component: {fileID: 755714834}
   - component: {fileID: 755714836}
   - component: {fileID: 755714835}
+  - component: {fileID: 755714837}
   m_Layer: 0
   m_Name: Roca G (3)
   m_TagString: Untagged
@@ -9479,6 +10165,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &755714837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755714833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &755956418
 GameObject:
   m_ObjectHideFlags: 0
@@ -9490,6 +10191,7 @@ GameObject:
   - component: {fileID: 755956419}
   - component: {fileID: 755956421}
   - component: {fileID: 755956420}
+  - component: {fileID: 755956422}
   m_Layer: 0
   m_Name: Roca M (4)
   m_TagString: Untagged
@@ -9631,6 +10333,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &755956422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755956418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &777769334
 GameObject:
   m_ObjectHideFlags: 0
@@ -9642,6 +10359,7 @@ GameObject:
   - component: {fileID: 777769335}
   - component: {fileID: 777769337}
   - component: {fileID: 777769336}
+  - component: {fileID: 777769338}
   m_Layer: 0
   m_Name: Roca S (3)
   m_TagString: Untagged
@@ -9782,6 +10500,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &777769338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 777769334}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &778673119
 GameObject:
   m_ObjectHideFlags: 0
@@ -10030,6 +10763,7 @@ GameObject:
   - component: {fileID: 781672784}
   - component: {fileID: 781672786}
   - component: {fileID: 781672785}
+  - component: {fileID: 781672787}
   m_Layer: 0
   m_Name: Roca Tall (6)
   m_TagString: Untagged
@@ -10172,6 +10906,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &781672787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781672783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &784811732
 GameObject:
   m_ObjectHideFlags: 0
@@ -10183,6 +10932,7 @@ GameObject:
   - component: {fileID: 784811733}
   - component: {fileID: 784811735}
   - component: {fileID: 784811734}
+  - component: {fileID: 784811736}
   m_Layer: 0
   m_Name: Muro |
   m_TagString: Untagged
@@ -10311,6 +11061,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &784811736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 784811732}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &787204365
 GameObject:
   m_ObjectHideFlags: 0
@@ -10322,6 +11087,7 @@ GameObject:
   - component: {fileID: 787204366}
   - component: {fileID: 787204368}
   - component: {fileID: 787204367}
+  - component: {fileID: 787204369}
   m_Layer: 0
   m_Name: Roca G (5)
   m_TagString: Untagged
@@ -10463,6 +11229,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &787204369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 787204365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &793038565
 GameObject:
   m_ObjectHideFlags: 0
@@ -10613,6 +11394,7 @@ GameObject:
   - component: {fileID: 797053961}
   - component: {fileID: 797053963}
   - component: {fileID: 797053962}
+  - component: {fileID: 797053964}
   m_Layer: 0
   m_Name: Tractor
   m_TagString: Untagged
@@ -10757,6 +11539,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &797053964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797053960}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &814337055
 GameObject:
   m_ObjectHideFlags: 0
@@ -11223,6 +12020,7 @@ GameObject:
   - component: {fileID: 826127273}
   - component: {fileID: 826127272}
   - component: {fileID: 826127271}
+  - component: {fileID: 826127274}
   m_Layer: 0
   m_Name: Iron (2)
   m_TagString: Untagged
@@ -11357,6 +12155,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &826127274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 826127269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 2100000, guid: 681467d1c71272b468e8fe3d8c358869, type: 2}
+  _cursorType: 1
 --- !u!1 &827005406
 GameObject:
   m_ObjectHideFlags: 0
@@ -11368,6 +12181,7 @@ GameObject:
   - component: {fileID: 827005407}
   - component: {fileID: 827005409}
   - component: {fileID: 827005408}
+  - component: {fileID: 827005410}
   m_Layer: 0
   m_Name: Roca M-S (2)
   m_TagString: Untagged
@@ -11507,6 +12321,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &827005410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 827005406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &855468605
 GameObject:
   m_ObjectHideFlags: 0
@@ -11610,6 +12439,7 @@ GameObject:
   - component: {fileID: 858554883}
   - component: {fileID: 858554885}
   - component: {fileID: 858554884}
+  - component: {fileID: 858554886}
   m_Layer: 0
   m_Name: Roca S (2)
   m_TagString: Untagged
@@ -11750,6 +12580,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &858554886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 858554882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &866508917
 GameObject:
   m_ObjectHideFlags: 0
@@ -11900,6 +12745,7 @@ GameObject:
   - component: {fileID: 872342966}
   - component: {fileID: 872342968}
   - component: {fileID: 872342967}
+  - component: {fileID: 872342969}
   m_Layer: 0
   m_Name: Arbol frondoso (6)
   m_TagString: Untagged
@@ -12040,6 +12886,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &872342969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 872342965}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &880664980
 GameObject:
   m_ObjectHideFlags: 0
@@ -12051,6 +12912,7 @@ GameObject:
   - component: {fileID: 880664981}
   - component: {fileID: 880664983}
   - component: {fileID: 880664982}
+  - component: {fileID: 880664984}
   m_Layer: 0
   m_Name: Roca Tall (5)
   m_TagString: Untagged
@@ -12193,6 +13055,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &880664984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880664980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &883925513
 GameObject:
   m_ObjectHideFlags: 0
@@ -12204,6 +13081,7 @@ GameObject:
   - component: {fileID: 883925514}
   - component: {fileID: 883925516}
   - component: {fileID: 883925515}
+  - component: {fileID: 883925517}
   m_Layer: 0
   m_Name: Roca M-S (9)
   m_TagString: Untagged
@@ -12343,6 +13221,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &883925517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 883925513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &884876439
 GameObject:
   m_ObjectHideFlags: 0
@@ -12354,6 +13247,7 @@ GameObject:
   - component: {fileID: 884876440}
   - component: {fileID: 884876442}
   - component: {fileID: 884876441}
+  - component: {fileID: 884876443}
   m_Layer: 0
   m_Name: Edificio alto
   m_TagString: Untagged
@@ -12482,6 +13376,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &884876443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884876439}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &888537768
 GameObject:
   m_ObjectHideFlags: 0
@@ -12493,6 +13402,7 @@ GameObject:
   - component: {fileID: 888537769}
   - component: {fileID: 888537771}
   - component: {fileID: 888537770}
+  - component: {fileID: 888537772}
   m_Layer: 0
   m_Name: Arbol frondoso
   m_TagString: Untagged
@@ -12633,6 +13543,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &888537772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888537768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &896012488
 GameObject:
   m_ObjectHideFlags: 0
@@ -12644,6 +13569,7 @@ GameObject:
   - component: {fileID: 896012489}
   - component: {fileID: 896012491}
   - component: {fileID: 896012490}
+  - component: {fileID: 896012492}
   m_Layer: 0
   m_Name: Roca G (6)
   m_TagString: Untagged
@@ -12785,6 +13711,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &896012492
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896012488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &905230034
 GameObject:
   m_ObjectHideFlags: 0
@@ -12796,6 +13737,7 @@ GameObject:
   - component: {fileID: 905230035}
   - component: {fileID: 905230037}
   - component: {fileID: 905230036}
+  - component: {fileID: 905230038}
   m_Layer: 0
   m_Name: Arbol frondoso (2)
   m_TagString: Untagged
@@ -12936,6 +13878,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &905230038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 905230034}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &914068009
 GameObject:
   m_ObjectHideFlags: 0
@@ -13031,6 +13988,7 @@ GameObject:
   - component: {fileID: 935486339}
   - component: {fileID: 935486341}
   - component: {fileID: 935486340}
+  - component: {fileID: 935486342}
   m_Layer: 0
   m_Name: Roca M (7)
   m_TagString: Untagged
@@ -13172,6 +14130,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &935486342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935486338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &957828657
 GameObject:
   m_ObjectHideFlags: 0
@@ -13283,6 +14256,7 @@ GameObject:
   - component: {fileID: 970500991}
   - component: {fileID: 970500993}
   - component: {fileID: 970500992}
+  - component: {fileID: 970500994}
   m_Layer: 0
   m_Name: Chica B
   m_TagString: Untagged
@@ -13402,6 +14376,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &970500994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 970500990}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &975066736
 GameObject:
   m_ObjectHideFlags: 0
@@ -13413,6 +14402,7 @@ GameObject:
   - component: {fileID: 975066737}
   - component: {fileID: 975066739}
   - component: {fileID: 975066738}
+  - component: {fileID: 975066740}
   m_Layer: 0
   m_Name: 'Muro Musgo__ '
   m_TagString: Untagged
@@ -13541,6 +14531,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &975066740
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 975066736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &977260387
 GameObject:
   m_ObjectHideFlags: 0
@@ -13644,6 +14649,7 @@ GameObject:
   - component: {fileID: 1003450327}
   - component: {fileID: 1003450329}
   - component: {fileID: 1003450328}
+  - component: {fileID: 1003450330}
   m_Layer: 0
   m_Name: Roca M-S (10)
   m_TagString: Untagged
@@ -13783,6 +14789,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1003450330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1003450326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1009942389
 GameObject:
   m_ObjectHideFlags: 0
@@ -13933,6 +14954,7 @@ GameObject:
   - component: {fileID: 1071042460}
   - component: {fileID: 1071042462}
   - component: {fileID: 1071042461}
+  - component: {fileID: 1071042463}
   m_Layer: 0
   m_Name: Roca S (2)
   m_TagString: Untagged
@@ -14073,6 +15095,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1071042463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071042459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1077603609
 GameObject:
   m_ObjectHideFlags: 0
@@ -14084,6 +15121,7 @@ GameObject:
   - component: {fileID: 1077603610}
   - component: {fileID: 1077603612}
   - component: {fileID: 1077603611}
+  - component: {fileID: 1077603613}
   m_Layer: 0
   m_Name: Cortafrio_0
   m_TagString: Untagged
@@ -14212,6 +15250,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1077603613
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1077603609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 2100000, guid: 681467d1c71272b468e8fe3d8c358869, type: 2}
+  _cursorType: 1
 --- !u!1 &1105971624
 GameObject:
   m_ObjectHideFlags: 0
@@ -14340,6 +15393,7 @@ GameObject:
   - component: {fileID: 1153471378}
   - component: {fileID: 1153471380}
   - component: {fileID: 1153471379}
+  - component: {fileID: 1153471381}
   m_Layer: 0
   m_Name: Roca M-S (6)
   m_TagString: Untagged
@@ -14479,6 +15533,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1153471381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1153471377}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1162459564
 GameObject:
   m_ObjectHideFlags: 0
@@ -14490,6 +15559,7 @@ GameObject:
   - component: {fileID: 1162459565}
   - component: {fileID: 1162459567}
   - component: {fileID: 1162459566}
+  - component: {fileID: 1162459568}
   m_Layer: 0
   m_Name: Chica C
   m_TagString: Untagged
@@ -14609,6 +15679,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1162459568
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162459564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &1166653522
 GameObject:
   m_ObjectHideFlags: 0
@@ -14654,6 +15739,7 @@ GameObject:
   - component: {fileID: 1191088130}
   - component: {fileID: 1191088132}
   - component: {fileID: 1191088131}
+  - component: {fileID: 1191088133}
   m_Layer: 0
   m_Name: Roca M (11)
   m_TagString: Untagged
@@ -14795,6 +15881,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1191088133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1191088129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1211448515
 GameObject:
   m_ObjectHideFlags: 0
@@ -14806,6 +15907,7 @@ GameObject:
   - component: {fileID: 1211448516}
   - component: {fileID: 1211448518}
   - component: {fileID: 1211448517}
+  - component: {fileID: 1211448519}
   m_Layer: 0
   m_Name: Roca M-S (4)
   m_TagString: Untagged
@@ -14945,6 +16047,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1211448519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211448515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1213230265
 GameObject:
   m_ObjectHideFlags: 0
@@ -14956,6 +16073,7 @@ GameObject:
   - component: {fileID: 1213230266}
   - component: {fileID: 1213230268}
   - component: {fileID: 1213230267}
+  - component: {fileID: 1213230269}
   m_Layer: 0
   m_Name: Roca M-S (8)
   m_TagString: Untagged
@@ -15095,6 +16213,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1213230269
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1213230265}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1214495306
 GameObject:
   m_ObjectHideFlags: 0
@@ -15106,6 +16239,7 @@ GameObject:
   - component: {fileID: 1214495307}
   - component: {fileID: 1214495309}
   - component: {fileID: 1214495308}
+  - component: {fileID: 1214495310}
   m_Layer: 0
   m_Name: Muro | (1)
   m_TagString: Untagged
@@ -15234,6 +16368,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1214495310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1214495306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1216948906
 GameObject:
   m_ObjectHideFlags: 0
@@ -15245,6 +16394,7 @@ GameObject:
   - component: {fileID: 1216948907}
   - component: {fileID: 1216948909}
   - component: {fileID: 1216948908}
+  - component: {fileID: 1216948910}
   m_Layer: 0
   m_Name: Roca Tall (4)
   m_TagString: Untagged
@@ -15387,6 +16537,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1216948910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216948906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1219378439
 GameObject:
   m_ObjectHideFlags: 0
@@ -15474,6 +16639,7 @@ GameObject:
   - component: {fileID: 1223621215}
   - component: {fileID: 1223621217}
   - component: {fileID: 1223621216}
+  - component: {fileID: 1223621218}
   m_Layer: 0
   m_Name: Roca M (2)
   m_TagString: Untagged
@@ -15615,6 +16781,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1223621218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1223621214}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1224377417
 GameObject:
   m_ObjectHideFlags: 0
@@ -15626,6 +16807,7 @@ GameObject:
   - component: {fileID: 1224377418}
   - component: {fileID: 1224377420}
   - component: {fileID: 1224377419}
+  - component: {fileID: 1224377421}
   m_Layer: 0
   m_Name: Roca M-S (3)
   m_TagString: Untagged
@@ -15765,6 +16947,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1224377421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1224377417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1225837783
 GameObject:
   m_ObjectHideFlags: 0
@@ -15776,6 +16973,7 @@ GameObject:
   - component: {fileID: 1225837784}
   - component: {fileID: 1225837786}
   - component: {fileID: 1225837785}
+  - component: {fileID: 1225837787}
   m_Layer: 0
   m_Name: Roca G (3)
   m_TagString: Untagged
@@ -15917,6 +17115,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1225837787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1225837783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1229257157
 GameObject:
   m_ObjectHideFlags: 0
@@ -15928,6 +17141,7 @@ GameObject:
   - component: {fileID: 1229257158}
   - component: {fileID: 1229257160}
   - component: {fileID: 1229257159}
+  - component: {fileID: 1229257161}
   m_Layer: 0
   m_Name: Roca M (10)
   m_TagString: Untagged
@@ -16069,6 +17283,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1229257161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1229257157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1234384030
 GameObject:
   m_ObjectHideFlags: 0
@@ -16080,6 +17309,7 @@ GameObject:
   - component: {fileID: 1234384031}
   - component: {fileID: 1234384033}
   - component: {fileID: 1234384032}
+  - component: {fileID: 1234384034}
   m_Layer: 0
   m_Name: Roca M-S
   m_TagString: Untagged
@@ -16219,6 +17449,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1234384034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234384030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1264808382
 GameObject:
   m_ObjectHideFlags: 0
@@ -16230,6 +17475,7 @@ GameObject:
   - component: {fileID: 1264808383}
   - component: {fileID: 1264808385}
   - component: {fileID: 1264808384}
+  - component: {fileID: 1264808386}
   m_Layer: 0
   m_Name: Roca M (8)
   m_TagString: Untagged
@@ -16371,6 +17617,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1264808386
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1264808382}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1267499927
 GameObject:
   m_ObjectHideFlags: 0
@@ -16383,6 +17644,7 @@ GameObject:
   - component: {fileID: 1267499931}
   - component: {fileID: 1267499930}
   - component: {fileID: 1267499929}
+  - component: {fileID: 1267499932}
   m_Layer: 0
   m_Name: Iron (1)
   m_TagString: Untagged
@@ -16517,6 +17779,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1267499932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1267499927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 2100000, guid: 681467d1c71272b468e8fe3d8c358869, type: 2}
+  _cursorType: 1
 --- !u!1 &1272057894
 GameObject:
   m_ObjectHideFlags: 0
@@ -16528,6 +17805,7 @@ GameObject:
   - component: {fileID: 1272057895}
   - component: {fileID: 1272057897}
   - component: {fileID: 1272057896}
+  - component: {fileID: 1272057898}
   m_Layer: 0
   m_Name: Roca S (7)
   m_TagString: Untagged
@@ -16668,6 +17946,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1272057898
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272057894}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1278882479
 GameObject:
   m_ObjectHideFlags: 0
@@ -16679,6 +17972,7 @@ GameObject:
   - component: {fileID: 1278882480}
   - component: {fileID: 1278882482}
   - component: {fileID: 1278882481}
+  - component: {fileID: 1278882483}
   m_Layer: 0
   m_Name: Roca G (2)
   m_TagString: Untagged
@@ -16820,6 +18114,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1278882483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1278882479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1279280157
 GameObject:
   m_ObjectHideFlags: 0
@@ -16970,6 +18279,7 @@ GameObject:
   - component: {fileID: 1279931412}
   - component: {fileID: 1279931414}
   - component: {fileID: 1279931413}
+  - component: {fileID: 1279931415}
   m_Layer: 0
   m_Name: Arbol
   m_TagString: Untagged
@@ -17144,6 +18454,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1279931415
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1279931411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1293526488
 GameObject:
   m_ObjectHideFlags: 0
@@ -17247,6 +18572,7 @@ GameObject:
   - component: {fileID: 1293961028}
   - component: {fileID: 1293961030}
   - component: {fileID: 1293961029}
+  - component: {fileID: 1293961031}
   m_Layer: 0
   m_Name: Roca G (7)
   m_TagString: Untagged
@@ -17388,6 +18714,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1293961031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1293961027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1325783757
 GameObject:
   m_ObjectHideFlags: 0
@@ -17491,6 +18832,7 @@ GameObject:
   - component: {fileID: 1342794624}
   - component: {fileID: 1342794626}
   - component: {fileID: 1342794625}
+  - component: {fileID: 1342794627}
   m_Layer: 0
   m_Name: arbol seco (5)
   m_TagString: Untagged
@@ -17634,6 +18976,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1342794627
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1342794623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1349616066
 GameObject:
   m_ObjectHideFlags: 0
@@ -17815,6 +19172,7 @@ GameObject:
   - component: {fileID: 1358216066}
   - component: {fileID: 1358216068}
   - component: {fileID: 1358216067}
+  - component: {fileID: 1358216069}
   m_Layer: 0
   m_Name: Roca M (5)
   m_TagString: Untagged
@@ -17956,6 +19314,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1358216069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1358216065}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1360424457
 GameObject:
   m_ObjectHideFlags: 0
@@ -17967,6 +19340,7 @@ GameObject:
   - component: {fileID: 1360424458}
   - component: {fileID: 1360424460}
   - component: {fileID: 1360424459}
+  - component: {fileID: 1360424461}
   m_Layer: 0
   m_Name: Roca S (7)
   m_TagString: Untagged
@@ -18107,6 +19481,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1360424461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1360424457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1365532036
 GameObject:
   m_ObjectHideFlags: 0
@@ -18386,6 +19775,7 @@ GameObject:
   - component: {fileID: 1371504560}
   - component: {fileID: 1371504562}
   - component: {fileID: 1371504561}
+  - component: {fileID: 1371504563}
   m_Layer: 0
   m_Name: Roca G (7)
   m_TagString: Untagged
@@ -18527,6 +19917,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1371504563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1371504559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1381948111
 GameObject:
   m_ObjectHideFlags: 0
@@ -18538,6 +19943,7 @@ GameObject:
   - component: {fileID: 1381948112}
   - component: {fileID: 1381948114}
   - component: {fileID: 1381948113}
+  - component: {fileID: 1381948115}
   m_Layer: 0
   m_Name: Arbol (4)
   m_TagString: Untagged
@@ -18712,6 +20118,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1381948115
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1381948111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1410652600
 GameObject:
   m_ObjectHideFlags: 0
@@ -18723,6 +20144,7 @@ GameObject:
   - component: {fileID: 1410652601}
   - component: {fileID: 1410652603}
   - component: {fileID: 1410652602}
+  - component: {fileID: 1410652604}
   m_Layer: 0
   m_Name: Muro __ (1)
   m_TagString: Untagged
@@ -18851,6 +20273,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1410652604
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410652600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1414499094
 GameObject:
   m_ObjectHideFlags: 0
@@ -18862,6 +20299,7 @@ GameObject:
   - component: {fileID: 1414499095}
   - component: {fileID: 1414499097}
   - component: {fileID: 1414499096}
+  - component: {fileID: 1414499098}
   m_Layer: 0
   m_Name: 'Muro Musgo __ '
   m_TagString: Untagged
@@ -18990,6 +20428,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1414499098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1414499094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1416548500
 GameObject:
   m_ObjectHideFlags: 0
@@ -19001,6 +20454,7 @@ GameObject:
   - component: {fileID: 1416548501}
   - component: {fileID: 1416548503}
   - component: {fileID: 1416548502}
+  - component: {fileID: 1416548504}
   m_Layer: 0
   m_Name: arbol seco
   m_TagString: Untagged
@@ -19144,6 +20598,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1416548504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416548500}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1418748806
 GameObject:
   m_ObjectHideFlags: 0
@@ -19155,6 +20624,7 @@ GameObject:
   - component: {fileID: 1418748807}
   - component: {fileID: 1418748809}
   - component: {fileID: 1418748808}
+  - component: {fileID: 1418748810}
   m_Layer: 0
   m_Name: Roca G (9)
   m_TagString: Untagged
@@ -19296,6 +20766,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1418748810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1418748806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1419686446
 GameObject:
   m_ObjectHideFlags: 0
@@ -19307,6 +20792,7 @@ GameObject:
   - component: {fileID: 1419686447}
   - component: {fileID: 1419686449}
   - component: {fileID: 1419686448}
+  - component: {fileID: 1419686450}
   m_Layer: 0
   m_Name: Muro |
   m_TagString: Untagged
@@ -19435,6 +20921,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1419686450
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1419686446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1422807436
 GameObject:
   m_ObjectHideFlags: 0
@@ -19446,6 +20947,7 @@ GameObject:
   - component: {fileID: 1422807437}
   - component: {fileID: 1422807439}
   - component: {fileID: 1422807438}
+  - component: {fileID: 1422807440}
   m_Layer: 0
   m_Name: Chik
   m_TagString: Untagged
@@ -19565,6 +21067,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1422807440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1422807436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!4 &1443135513 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 215618036229412360, guid: 1f53d5b6c4361ec4686778c89a10d571, type: 3}
@@ -19581,6 +21098,7 @@ GameObject:
   - component: {fileID: 1463165182}
   - component: {fileID: 1463165184}
   - component: {fileID: 1463165183}
+  - component: {fileID: 1463165185}
   m_Layer: 0
   m_Name: Edificio verde
   m_TagString: Untagged
@@ -19709,6 +21227,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1463165185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1463165181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1465651515
 GameObject:
   m_ObjectHideFlags: 0
@@ -19720,6 +21253,7 @@ GameObject:
   - component: {fileID: 1465651516}
   - component: {fileID: 1465651518}
   - component: {fileID: 1465651517}
+  - component: {fileID: 1465651519}
   m_Layer: 0
   m_Name: Roca M-S (1)
   m_TagString: Untagged
@@ -19859,6 +21393,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1465651519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1465651515}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1467437474
 GameObject:
   m_ObjectHideFlags: 0
@@ -20017,6 +21566,7 @@ GameObject:
   - component: {fileID: 1468268304}
   - component: {fileID: 1468268306}
   - component: {fileID: 1468268305}
+  - component: {fileID: 1468268307}
   m_Layer: 0
   m_Name: Arbol (2)
   m_TagString: Untagged
@@ -20191,6 +21741,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1468268307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1468268303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1470657479
 GameObject:
   m_ObjectHideFlags: 0
@@ -20356,6 +21921,7 @@ GameObject:
   - component: {fileID: 1481864274}
   - component: {fileID: 1481864276}
   - component: {fileID: 1481864275}
+  - component: {fileID: 1481864277}
   m_Layer: 0
   m_Name: Roca G (8)
   m_TagString: Untagged
@@ -20497,6 +22063,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1481864277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1481864273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1483298274
 GameObject:
   m_ObjectHideFlags: 0
@@ -20508,6 +22089,7 @@ GameObject:
   - component: {fileID: 1483298275}
   - component: {fileID: 1483298277}
   - component: {fileID: 1483298276}
+  - component: {fileID: 1483298278}
   m_Layer: 0
   m_Name: Roca G (10)
   m_TagString: Untagged
@@ -20649,6 +22231,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1483298278
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1483298274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1491864747
 GameObject:
   m_ObjectHideFlags: 0
@@ -20752,6 +22349,7 @@ GameObject:
   - component: {fileID: 1496340141}
   - component: {fileID: 1496340143}
   - component: {fileID: 1496340142}
+  - component: {fileID: 1496340144}
   m_Layer: 0
   m_Name: Arbol frondoso (4)
   m_TagString: Untagged
@@ -20892,6 +22490,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1496340144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1496340140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1497088503
 GameObject:
   m_ObjectHideFlags: 0
@@ -21093,6 +22706,7 @@ GameObject:
   - component: {fileID: 1510037292}
   - component: {fileID: 1510037294}
   - component: {fileID: 1510037293}
+  - component: {fileID: 1510037295}
   m_Layer: 0
   m_Name: Roca S (6)
   m_TagString: Untagged
@@ -21233,6 +22847,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1510037295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1510037291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1518117534
 GameObject:
   m_ObjectHideFlags: 0
@@ -21244,6 +22873,7 @@ GameObject:
   - component: {fileID: 1518117535}
   - component: {fileID: 1518117537}
   - component: {fileID: 1518117536}
+  - component: {fileID: 1518117538}
   m_Layer: 0
   m_Name: Roca Tall (2)
   m_TagString: Untagged
@@ -21386,6 +23016,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1518117538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518117534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1526907502
 GameObject:
   m_ObjectHideFlags: 0
@@ -21397,6 +23042,7 @@ GameObject:
   - component: {fileID: 1526907503}
   - component: {fileID: 1526907505}
   - component: {fileID: 1526907504}
+  - component: {fileID: 1526907506}
   m_Layer: 0
   m_Name: Roca G (10)
   m_TagString: Untagged
@@ -21538,6 +23184,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1526907506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1526907502}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1531706885
 GameObject:
   m_ObjectHideFlags: 0
@@ -21549,6 +23210,7 @@ GameObject:
   - component: {fileID: 1531706886}
   - component: {fileID: 1531706888}
   - component: {fileID: 1531706887}
+  - component: {fileID: 1531706889}
   m_Layer: 0
   m_Name: Muro |
   m_TagString: Untagged
@@ -21677,6 +23339,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1531706889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531706885}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1564216916
 GameObject:
   m_ObjectHideFlags: 0
@@ -21827,6 +23504,7 @@ GameObject:
   - component: {fileID: 1566481591}
   - component: {fileID: 1566481593}
   - component: {fileID: 1566481592}
+  - component: {fileID: 1566481594}
   m_Layer: 0
   m_Name: Roca Tall
   m_TagString: Untagged
@@ -21969,6 +23647,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1566481594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1566481590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1571214062
 GameObject:
   m_ObjectHideFlags: 0
@@ -22243,6 +23936,7 @@ GameObject:
   - component: {fileID: 1588473420}
   - component: {fileID: 1588473422}
   - component: {fileID: 1588473421}
+  - component: {fileID: 1588473423}
   m_Layer: 0
   m_Name: Arbol frondoso (3)
   m_TagString: Untagged
@@ -22383,6 +24077,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1588473423
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588473419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1596520154
 GameObject:
   m_ObjectHideFlags: 0
@@ -22394,6 +24103,7 @@ GameObject:
   - component: {fileID: 1596520155}
   - component: {fileID: 1596520157}
   - component: {fileID: 1596520156}
+  - component: {fileID: 1596520158}
   m_Layer: 0
   m_Name: Roca M-S (1)
   m_TagString: Untagged
@@ -22533,6 +24243,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1596520158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1596520154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1598622491
 GameObject:
   m_ObjectHideFlags: 0
@@ -22544,6 +24269,7 @@ GameObject:
   - component: {fileID: 1598622492}
   - component: {fileID: 1598622494}
   - component: {fileID: 1598622493}
+  - component: {fileID: 1598622495}
   m_Layer: 0
   m_Name: 'Muro Musgo__ '
   m_TagString: Untagged
@@ -22672,6 +24398,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1598622495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1598622491}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1617213793
 GameObject:
   m_ObjectHideFlags: 0
@@ -22683,6 +24424,7 @@ GameObject:
   - component: {fileID: 1617213794}
   - component: {fileID: 1617213796}
   - component: {fileID: 1617213795}
+  - component: {fileID: 1617213797}
   m_Layer: 0
   m_Name: Muro __ (2)
   m_TagString: Untagged
@@ -22811,6 +24553,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1617213797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1617213793}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1623980840
 GameObject:
   m_ObjectHideFlags: 0
@@ -22822,6 +24579,7 @@ GameObject:
   - component: {fileID: 1623980841}
   - component: {fileID: 1623980843}
   - component: {fileID: 1623980842}
+  - component: {fileID: 1623980844}
   m_Layer: 0
   m_Name: arbol seco (6)
   m_TagString: Untagged
@@ -22965,6 +24723,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1623980844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623980840}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1647139300
 GameObject:
   m_ObjectHideFlags: 0
@@ -22976,6 +24749,7 @@ GameObject:
   - component: {fileID: 1647139301}
   - component: {fileID: 1647139303}
   - component: {fileID: 1647139302}
+  - component: {fileID: 1647139304}
   m_Layer: 0
   m_Name: Arbol (1)
   m_TagString: Untagged
@@ -23150,6 +24924,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1647139304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1647139300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1651999139
 GameObject:
   m_ObjectHideFlags: 0
@@ -23161,6 +24950,7 @@ GameObject:
   - component: {fileID: 1651999140}
   - component: {fileID: 1651999142}
   - component: {fileID: 1651999141}
+  - component: {fileID: 1651999143}
   m_Layer: 0
   m_Name: Roca G
   m_TagString: Untagged
@@ -23302,6 +25092,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1651999143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1651999139}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1664439890
 GameObject:
   m_ObjectHideFlags: 0
@@ -23313,6 +25118,7 @@ GameObject:
   - component: {fileID: 1664439891}
   - component: {fileID: 1664439893}
   - component: {fileID: 1664439892}
+  - component: {fileID: 1664439894}
   m_Layer: 0
   m_Name: Roca M-S (4)
   m_TagString: Untagged
@@ -23452,6 +25258,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1664439894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1664439890}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1674551908
 GameObject:
   m_ObjectHideFlags: 0
@@ -23602,6 +25423,7 @@ GameObject:
   - component: {fileID: 1681686972}
   - component: {fileID: 1681686974}
   - component: {fileID: 1681686973}
+  - component: {fileID: 1681686975}
   m_Layer: 0
   m_Name: arbol seco (3)
   m_TagString: Untagged
@@ -23745,6 +25567,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1681686975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1681686971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1684399141
 GameObject:
   m_ObjectHideFlags: 0
@@ -23756,6 +25593,7 @@ GameObject:
   - component: {fileID: 1684399142}
   - component: {fileID: 1684399144}
   - component: {fileID: 1684399143}
+  - component: {fileID: 1684399145}
   m_Layer: 0
   m_Name: Roca M-S (3)
   m_TagString: Untagged
@@ -23895,6 +25733,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1684399145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684399141}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1687751997
 GameObject:
   m_ObjectHideFlags: 0
@@ -24294,6 +26147,7 @@ GameObject:
   - component: {fileID: 1703440912}
   - component: {fileID: 1703440914}
   - component: {fileID: 1703440913}
+  - component: {fileID: 1703440915}
   m_Layer: 0
   m_Name: Roca M-S (5)
   m_TagString: Untagged
@@ -24433,6 +26287,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1703440915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1703440911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1705286900
 GameObject:
   m_ObjectHideFlags: 0
@@ -24444,6 +26313,7 @@ GameObject:
   - component: {fileID: 1705286901}
   - component: {fileID: 1705286903}
   - component: {fileID: 1705286902}
+  - component: {fileID: 1705286904}
   m_Layer: 0
   m_Name: Granjera
   m_TagString: Untagged
@@ -24563,6 +26433,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1705286904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705286900}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &1705552256
 GameObject:
   m_ObjectHideFlags: 0
@@ -24574,6 +26459,7 @@ GameObject:
   - component: {fileID: 1705552257}
   - component: {fileID: 1705552259}
   - component: {fileID: 1705552258}
+  - component: {fileID: 1705552260}
   m_Layer: 0
   m_Name: Roca M (1)
   m_TagString: Untagged
@@ -24715,6 +26601,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1705552260
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705552256}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1708715074
 GameObject:
   m_ObjectHideFlags: 0
@@ -24877,6 +26778,7 @@ GameObject:
   - component: {fileID: 1713795590}
   - component: {fileID: 1713795592}
   - component: {fileID: 1713795591}
+  - component: {fileID: 1713795593}
   m_Layer: 0
   m_Name: Roca M-S (7)
   m_TagString: Untagged
@@ -25016,6 +26918,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1713795593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1713795589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1718104371
 GameObject:
   m_ObjectHideFlags: 0
@@ -25027,6 +26944,7 @@ GameObject:
   - component: {fileID: 1718104372}
   - component: {fileID: 1718104374}
   - component: {fileID: 1718104373}
+  - component: {fileID: 1718104375}
   m_Layer: 0
   m_Name: Roca G (3)
   m_TagString: Untagged
@@ -25168,6 +27086,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1718104375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1718104371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1721648940
 GameObject:
   m_ObjectHideFlags: 0
@@ -25179,6 +27112,7 @@ GameObject:
   - component: {fileID: 1721648941}
   - component: {fileID: 1721648943}
   - component: {fileID: 1721648942}
+  - component: {fileID: 1721648944}
   m_Layer: 0
   m_Name: Roca G (4)
   m_TagString: Untagged
@@ -25320,6 +27254,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1721648944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1721648940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1730859614
 GameObject:
   m_ObjectHideFlags: 0
@@ -25331,6 +27280,7 @@ GameObject:
   - component: {fileID: 1730859615}
   - component: {fileID: 1730859617}
   - component: {fileID: 1730859616}
+  - component: {fileID: 1730859618}
   m_Layer: 0
   m_Name: Roca M (6)
   m_TagString: Untagged
@@ -25472,6 +27422,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1730859618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1730859614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1736221017
 GameObject:
   m_ObjectHideFlags: 0
@@ -25484,6 +27449,7 @@ GameObject:
   - component: {fileID: 1736221021}
   - component: {fileID: 1736221020}
   - component: {fileID: 1736221019}
+  - component: {fileID: 1736221022}
   m_Layer: 0
   m_Name: Iron (3)
   m_TagString: Untagged
@@ -25618,6 +27584,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1736221022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1736221017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 2100000, guid: 681467d1c71272b468e8fe3d8c358869, type: 2}
+  _cursorType: 1
 --- !u!1 &1738352707
 GameObject:
   m_ObjectHideFlags: 0
@@ -25722,6 +27703,7 @@ GameObject:
   - component: {fileID: 1741721410}
   - component: {fileID: 1741721409}
   - component: {fileID: 1741721408}
+  - component: {fileID: 1741721411}
   m_Layer: 0
   m_Name: Iron
   m_TagString: Untagged
@@ -25856,6 +27838,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1741721411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741721406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 2100000, guid: 681467d1c71272b468e8fe3d8c358869, type: 2}
+  _cursorType: 1
 --- !u!1 &1745496618
 GameObject:
   m_ObjectHideFlags: 0
@@ -25959,6 +27956,7 @@ GameObject:
   - component: {fileID: 1746405858}
   - component: {fileID: 1746405860}
   - component: {fileID: 1746405859}
+  - component: {fileID: 1746405861}
   m_Layer: 0
   m_Name: Arbol frondoso (5)
   m_TagString: Untagged
@@ -26099,6 +28097,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1746405861
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1746405857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1748990789
 GameObject:
   m_ObjectHideFlags: 0
@@ -26110,6 +28123,7 @@ GameObject:
   - component: {fileID: 1748990790}
   - component: {fileID: 1748990792}
   - component: {fileID: 1748990791}
+  - component: {fileID: 1748990793}
   m_Layer: 0
   m_Name: Caballero (1)
   m_TagString: Untagged
@@ -26229,6 +28243,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1748990793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748990789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &1751724038
 GameObject:
   m_ObjectHideFlags: 0
@@ -26240,6 +28269,7 @@ GameObject:
   - component: {fileID: 1751724039}
   - component: {fileID: 1751724041}
   - component: {fileID: 1751724040}
+  - component: {fileID: 1751724042}
   m_Layer: 0
   m_Name: Roca M (3)
   m_TagString: Untagged
@@ -26381,6 +28411,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1751724042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751724038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1763943737
 GameObject:
   m_ObjectHideFlags: 0
@@ -26484,6 +28529,7 @@ GameObject:
   - component: {fileID: 1782804527}
   - component: {fileID: 1782804529}
   - component: {fileID: 1782804528}
+  - component: {fileID: 1782804530}
   m_Layer: 0
   m_Name: Roca M (9)
   m_TagString: Untagged
@@ -26625,6 +28671,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1782804530
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1782804526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1783318960
 GameObject:
   m_ObjectHideFlags: 0
@@ -26728,6 +28789,7 @@ GameObject:
   - component: {fileID: 1798169686}
   - component: {fileID: 1798169688}
   - component: {fileID: 1798169687}
+  - component: {fileID: 1798169689}
   m_Layer: 0
   m_Name: "Pap\xE1"
   m_TagString: Untagged
@@ -26870,6 +28932,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1798169689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798169685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &1845692323
 GameObject:
   m_ObjectHideFlags: 0
@@ -26881,6 +28958,7 @@ GameObject:
   - component: {fileID: 1845692324}
   - component: {fileID: 1845692326}
   - component: {fileID: 1845692325}
+  - component: {fileID: 1845692327}
   m_Layer: 0
   m_Name: Roca Tall (3)
   m_TagString: Untagged
@@ -27023,6 +29101,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1845692327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845692323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1847997420
 GameObject:
   m_ObjectHideFlags: 0
@@ -27034,6 +29127,7 @@ GameObject:
   - component: {fileID: 1847997421}
   - component: {fileID: 1847997423}
   - component: {fileID: 1847997422}
+  - component: {fileID: 1847997424}
   m_Layer: 0
   m_Name: Roca M-S (2)
   m_TagString: Untagged
@@ -27173,6 +29267,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1847997424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1847997420}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1852649240
 GameObject:
   m_ObjectHideFlags: 0
@@ -27339,6 +29448,7 @@ GameObject:
   - component: {fileID: 1854060415}
   - component: {fileID: 1854060417}
   - component: {fileID: 1854060416}
+  - component: {fileID: 1854060418}
   m_Layer: 0
   m_Name: Roca M (3)
   m_TagString: Untagged
@@ -27480,6 +29590,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1854060418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1854060414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1857167669
 GameObject:
   m_ObjectHideFlags: 0
@@ -27722,6 +29847,7 @@ GameObject:
   - component: {fileID: 1873325018}
   - component: {fileID: 1873325020}
   - component: {fileID: 1873325019}
+  - component: {fileID: 1873325021}
   m_Layer: 0
   m_Name: Roca G (2)
   m_TagString: Untagged
@@ -27863,6 +29989,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1873325021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1873325017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1878357921
 GameObject:
   m_ObjectHideFlags: 0
@@ -28013,6 +30154,7 @@ GameObject:
   - component: {fileID: 1893968883}
   - component: {fileID: 1893968885}
   - component: {fileID: 1893968884}
+  - component: {fileID: 1893968886}
   m_Layer: 0
   m_Name: Muro Musgo__
   m_TagString: Untagged
@@ -28141,6 +30283,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1893968886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893968882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1917259494
 GameObject:
   m_ObjectHideFlags: 0
@@ -28152,6 +30309,7 @@ GameObject:
   - component: {fileID: 1917259495}
   - component: {fileID: 1917259497}
   - component: {fileID: 1917259496}
+  - component: {fileID: 1917259498}
   m_Layer: 0
   m_Name: Roca Tall (2)
   m_TagString: Untagged
@@ -28294,6 +30452,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1917259498
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1917259494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1919728645
 GameObject:
   m_ObjectHideFlags: 0
@@ -28397,6 +30570,7 @@ GameObject:
   - component: {fileID: 1931422424}
   - component: {fileID: 1931422426}
   - component: {fileID: 1931422425}
+  - component: {fileID: 1931422427}
   m_Layer: 0
   m_Name: 'Muro __ '
   m_TagString: Untagged
@@ -28525,6 +30699,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1931422427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1931422423}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &1974067409
 GameObject:
   m_ObjectHideFlags: 0
@@ -28628,6 +30817,7 @@ GameObject:
   - component: {fileID: 1974322037}
   - component: {fileID: 1974322039}
   - component: {fileID: 1974322038}
+  - component: {fileID: 1974322040}
   m_Layer: 0
   m_Name: camion sprtieshit_0
   m_TagString: Untagged
@@ -28772,6 +30962,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &1974322040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1974322036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2001031203
 GameObject:
   m_ObjectHideFlags: 0
@@ -28922,6 +31127,7 @@ GameObject:
   - component: {fileID: 2011003842}
   - component: {fileID: 2011003844}
   - component: {fileID: 2011003843}
+  - component: {fileID: 2011003845}
   m_Layer: 0
   m_Name: Roca M-S (4)
   m_TagString: Untagged
@@ -29061,6 +31267,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2011003845
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011003841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2011202834
 GameObject:
   m_ObjectHideFlags: 0
@@ -29072,6 +31293,7 @@ GameObject:
   - component: {fileID: 2011202835}
   - component: {fileID: 2011202837}
   - component: {fileID: 2011202836}
+  - component: {fileID: 2011202838}
   m_Layer: 0
   m_Name: Muro |
   m_TagString: Untagged
@@ -29200,6 +31422,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2011202838
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011202834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2014925580
 GameObject:
   m_ObjectHideFlags: 0
@@ -29211,6 +31448,7 @@ GameObject:
   - component: {fileID: 2014925581}
   - component: {fileID: 2014925583}
   - component: {fileID: 2014925582}
+  - component: {fileID: 2014925584}
   m_Layer: 0
   m_Name: Martillo_0
   m_TagString: Untagged
@@ -29339,6 +31577,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2014925584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2014925580}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 2100000, guid: 681467d1c71272b468e8fe3d8c358869, type: 2}
+  _cursorType: 1
 --- !u!1 &2015906463
 GameObject:
   m_ObjectHideFlags: 0
@@ -29442,6 +31695,7 @@ GameObject:
   - component: {fileID: 2018226611}
   - component: {fileID: 2018226613}
   - component: {fileID: 2018226612}
+  - component: {fileID: 2018226614}
   m_Layer: 0
   m_Name: Roca G (12)
   m_TagString: Untagged
@@ -29583,6 +31837,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2018226614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2018226610}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2024007180
 GameObject:
   m_ObjectHideFlags: 0
@@ -29733,6 +32002,7 @@ GameObject:
   - component: {fileID: 2041531249}
   - component: {fileID: 2041531251}
   - component: {fileID: 2041531250}
+  - component: {fileID: 2041531252}
   m_Layer: 0
   m_Name: Muro Musgo__  (1)
   m_TagString: Untagged
@@ -29861,6 +32131,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2041531252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2041531248}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2042461837
 GameObject:
   m_ObjectHideFlags: 0
@@ -29872,6 +32157,7 @@ GameObject:
   - component: {fileID: 2042461838}
   - component: {fileID: 2042461840}
   - component: {fileID: 2042461839}
+  - component: {fileID: 2042461841}
   m_Layer: 0
   m_Name: Roca G (4)
   m_TagString: Untagged
@@ -30013,6 +32299,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2042461841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2042461837}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2052100453
 GameObject:
   m_ObjectHideFlags: 0
@@ -30024,6 +32325,7 @@ GameObject:
   - component: {fileID: 2052100454}
   - component: {fileID: 2052100456}
   - component: {fileID: 2052100455}
+  - component: {fileID: 2052100457}
   m_Layer: 0
   m_Name: Torre de vigilancia
   m_TagString: Untagged
@@ -30152,6 +32454,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2052100457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052100453}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2065406060
 GameObject:
   m_ObjectHideFlags: 0
@@ -30163,6 +32480,7 @@ GameObject:
   - component: {fileID: 2065406061}
   - component: {fileID: 2065406063}
   - component: {fileID: 2065406062}
+  - component: {fileID: 2065406064}
   m_Layer: 0
   m_Name: Arbol (5)
   m_TagString: Untagged
@@ -30337,6 +32655,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2065406064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2065406060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2071411184
 GameObject:
   m_ObjectHideFlags: 0
@@ -30778,6 +33111,7 @@ GameObject:
   - component: {fileID: 2090960017}
   - component: {fileID: 2090960019}
   - component: {fileID: 2090960018}
+  - component: {fileID: 2090960020}
   m_Layer: 0
   m_Name: Casa de Kael
   m_TagString: Untagged
@@ -30922,6 +33256,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2090960020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2090960016}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2091428480
 GameObject:
   m_ObjectHideFlags: 0
@@ -31088,6 +33437,7 @@ GameObject:
   - component: {fileID: 2091500203}
   - component: {fileID: 2091500205}
   - component: {fileID: 2091500204}
+  - component: {fileID: 2091500206}
   m_Layer: 0
   m_Name: Roca G (6)
   m_TagString: Untagged
@@ -31229,6 +33579,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2091500206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2091500202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2097920982
 GameObject:
   m_ObjectHideFlags: 0
@@ -31240,6 +33605,7 @@ GameObject:
   - component: {fileID: 2097920983}
   - component: {fileID: 2097920985}
   - component: {fileID: 2097920984}
+  - component: {fileID: 2097920986}
   m_Layer: 0
   m_Name: Roca M-S (6)
   m_TagString: Untagged
@@ -31379,6 +33745,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2097920986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2097920982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2102410548
 GameObject:
   m_ObjectHideFlags: 0
@@ -31541,6 +33922,7 @@ GameObject:
   - component: {fileID: 2115391514}
   - component: {fileID: 2115391516}
   - component: {fileID: 2115391515}
+  - component: {fileID: 2115391517}
   m_Layer: 0
   m_Name: Roca G (13)
   m_TagString: Untagged
@@ -31682,6 +34064,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2115391517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2115391513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2130929158
 GameObject:
   m_ObjectHideFlags: 0
@@ -31693,6 +34090,7 @@ GameObject:
   - component: {fileID: 2130929159}
   - component: {fileID: 2130929161}
   - component: {fileID: 2130929160}
+  - component: {fileID: 2130929162}
   m_Layer: 0
   m_Name: Roca Tall (4)
   m_TagString: Untagged
@@ -31835,6 +34233,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2130929162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2130929158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2144069936
 GameObject:
   m_ObjectHideFlags: 0
@@ -31846,6 +34259,7 @@ GameObject:
   - component: {fileID: 2144069937}
   - component: {fileID: 2144069939}
   - component: {fileID: 2144069938}
+  - component: {fileID: 2144069940}
   m_Layer: 0
   m_Name: Roca M (8)
   m_TagString: Untagged
@@ -31987,6 +34401,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2144069940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2144069936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1 &2145596774
 GameObject:
   m_ObjectHideFlags: 0
@@ -31998,6 +34427,7 @@ GameObject:
   - component: {fileID: 2145596775}
   - component: {fileID: 2145596777}
   - component: {fileID: 2145596776}
+  - component: {fileID: 2145596778}
   m_Layer: 0
   m_Name: Roca M-S (5)
   m_TagString: Untagged
@@ -32137,6 +34567,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &2145596778
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2145596774}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 3
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -32148,3 +34593,4 @@ SceneRoots:
   - {fileID: 1105971629}
   - {fileID: 320693059}
   - {fileID: 40262459}
+  - {fileID: 538246853}

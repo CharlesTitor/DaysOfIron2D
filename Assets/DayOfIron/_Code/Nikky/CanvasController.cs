@@ -9,15 +9,7 @@ public class CanvasController : MonoBehaviour
         InventoryCanvas.SetActive(false);
     }
 
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.I))
-        {
-            OpenCloseInventory();
-        }
-    }
-
-    private void OpenCloseInventory()
+    public void OpenCloseInventory()
     {
         if (InventoryCanvas.activeSelf == true)
         {

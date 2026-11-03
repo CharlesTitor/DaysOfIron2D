@@ -10,7 +10,6 @@ public class ItemPickup : MonoBehaviour, IPickable
 
     private void OnMouseDown()
     {
-        //TODO : Change Camera.main.transform.position to player position
         if (Vector3.Distance(this.transform.position, _playerPosition.position) <= _pickupDistance)
         {
             PickUp();

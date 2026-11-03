@@ -14,6 +14,14 @@ public class CursorObject : MonoBehaviour
     [SerializeField] private CursorManager.CursorType _cursorType;
 
 
+    private void Awake()
+    {
+        if (!_renderer)
+        {
+            _renderer = GetComponent<Renderer>();
+        }
+    }
+
     private void OnMouseEnter()
     {
         if (!EventSystem.current.IsPointerOverGameObject())

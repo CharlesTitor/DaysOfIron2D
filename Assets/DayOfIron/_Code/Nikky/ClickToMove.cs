@@ -1,6 +1,7 @@
 
 using System.Collections;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.InputSystem;
 
 public class ClickToMove : MonoBehaviour, IInteractor
@@ -16,6 +17,8 @@ public class ClickToMove : MonoBehaviour, IInteractor
     [Header("Movement")]
     [SerializeField] private float _speed = 10f;
     [SerializeField] private LayerMask _groundLayer;
+
+    public bool CanMove = true;
 
     private Camera _camera;
     private Coroutine _coroutine;
@@ -70,7 +73,11 @@ public class ClickToMove : MonoBehaviour, IInteractor
 
     private void Move(InputAction.CallbackContext context)
     {
-        Vector3 mouseWorldPosition= GetMouseWorldPosition();
+        if(!CanMove)
+        {
+            return;
+        }
+        Vector3 mouseWorldPosition = GetMouseWorldPosition();
 
         if (_coroutine != null)
         {
@@ -78,10 +85,11 @@ public class ClickToMove : MonoBehaviour, IInteractor
         }
 
         _moveIndicator.SetActive(true);
-        _moveIndicator.transform.position= mouseWorldPosition;
+        _moveIndicator.transform.position = mouseWorldPosition;
 
-        _targetUbication =mouseWorldPosition;
+        _targetUbication = mouseWorldPosition;
         _coroutine = StartCoroutine(PlayerMoveTowards(mouseWorldPosition));
+
     }
 
     private void ClickInteract(InputAction.CallbackContext context)

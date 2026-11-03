@@ -5,6 +5,7 @@ public class ConversationStarter : MonoBehaviour , IInteractable
 {
     [SerializeField] private NPCConversation _npcConversation;
     [SerializeField] private float _interactionDistance = 1f;
+    [SerializeField] private EventChannelSO _interruptMoveChannel;
 
     public bool CanInteract(IInteractor interactor)
     {
@@ -14,6 +15,7 @@ public class ConversationStarter : MonoBehaviour , IInteractable
 
     public void Interact(IInteractor interactor)
     {
+        _interruptMoveChannel.EventChannel?.Invoke();
         ConversationManager.Instance.StartConversation(_npcConversation);
     }
 }

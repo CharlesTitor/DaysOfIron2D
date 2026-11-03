@@ -50,6 +50,9 @@ TagManager:
   - name: Edificios
     uniqueID: 2778510139
     locked: 0
+  - name: Verdura
+    uniqueID: 2852321291
+    locked: 0
   - name: Personajes
     uniqueID: 3681907209
     locked: 0

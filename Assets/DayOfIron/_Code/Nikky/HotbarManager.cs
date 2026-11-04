@@ -1,6 +1,7 @@
 
 using TMPro;
 using UnityEngine;
+//using UnityEngine.InputSystem;
 
 public class HotbarManager : MonoBehaviour
 {
@@ -15,6 +16,26 @@ public class HotbarManager : MonoBehaviour
     private int _repairedBombQuantity= 0;
 
     private bool _ifbombRepaired= false;
+
+    /*
+    private void Update()
+    {
+        if (Keyboard.current == null)
+        {
+            return;
+        }
+
+        if (Keyboard.current.digit1Key.wasPressedThisFrame)
+        {
+            AddIron(1);
+        }
+
+        if (Keyboard.current.digit2Key.wasPressedThisFrame)
+        {
+            AddBrokenBomb(1);
+        }
+    }
+    */
 
     private void Awake()
     {

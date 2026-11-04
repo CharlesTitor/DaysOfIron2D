@@ -1,54 +1,111 @@
+
+using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class HotbarManager : MonoBehaviour
 {
     public static HotbarManager Instance;
-    public Transform HotbarContainer;
-    public GameObject ItemSlotPrefab;
 
-    private int _slotQuantity=3;
+    [SerializeField] private TMP_Text _ironQuantityText;
+    [SerializeField] private TMP_Text _brokenBombQuantityText;
+    [SerializeField] private TMP_Text _repairedBombQuantityText;
+
+    private int _ironQuantity= 0;
+    private int _brokenBombQuantity= 0;
+    private int _repairedBombQuantity= 0;
+
+    private bool _ifbombRepaired= false;
 
     private void Awake()
     {
-        if (Instance == null)
+        if (Instance==null)
         {
-            Instance = this;
+            Instance =this;
             DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
+            return;
         }
+
+        UpdateHotbar();
     }
 
-    private void Update()
+    // SOLO TEMPORAL PARA PROBAR SI SIRVE
+    public void AddIron(int amountOfIron)
     {
-        RefreshHotbar();
+        if (amountOfIron<=0)
+        {
+            return;
+        }
+        _ironQuantity +=amountOfIron;
+        UpdateHotbar();
     }
 
-    public void RefreshHotbar()
+    public void AddBrokenBomb(int amountOfBrokenBomb)
     {
-        foreach (Transform slot in HotbarContainer)
+        if (amountOfBrokenBomb<=0)
         {
-            Destroy(slot.gameObject);
+            return;
         }
-
-        int numberOfSlots = Mathf.Min(_slotQuantity, InventoryManager.Instance.Inventory.Count);
-
-        
-        for (int i=0; i<numberOfSlots; i++)
-        {
-            Item item= InventoryManager.Instance.Inventory[i];
-
-            GameObject newItemSlot= Instantiate(ItemSlotPrefab, HotbarContainer);
-
-            ItemSlotUI itemSlotUI= newItemSlot.GetComponent<ItemSlotUI>();
-
-            itemSlotUI.ItemIconImage.sprite = item.ItemData.ItemIcon;
-            itemSlotUI.ItemNameText.text = item.ItemData.ItemName;
-            itemSlotUI.ItemQuantityText.text = "x" + item.ItemQuantity.ToString();
-        }
+        _brokenBombQuantity += amountOfBrokenBomb;
+        UpdateHotbar();
     }
 
+   //Cambia el 'x0'
+    private void UpdateHotbar()
+    {
+        //IGUAL
+        _ironQuantityText.text="x"+_ironQuantity;
+
+        _brokenBombQuantityText.text="x"+ _brokenBombQuantity;
+        _repairedBombQuantityText.text="x"+ _repairedBombQuantity;
+    }
+
+    
+    public bool TryRepairBomb(out string message)
+    {
+        if (_ifbombRepaired)
+        {
+            message= "Ya reparaste la bomba";
+            return false;
+        }
+
+        int missingIron=3-_ironQuantity;
+        bool ifmissingBrokenBomb= _brokenBombQuantity<1;
+
+        if (missingIron>0 || ifmissingBrokenBomb)
+        {
+            if (missingIron>0 && ifmissingBrokenBomb)
+            {
+                message="Te falta"+ missingIron+ " iron y necesitas una bomba rota";
+            }
+            else if (missingIron>0)
+            {
+                message="Te falta "+missingIron+" iron";
+            }
+            else
+            {
+                message="Necesitas una bomba rota";
+            }
+
+            return false;
+        }
+
+        //los quita
+        _ironQuantity-=3;
+        _brokenBombQuantity-=1;
+
+        //agrega la bomba
+        _repairedBombQuantity++;
+
+        //ya no deja hacer mas bombas
+        _ifbombRepaired=true;
+
+        UpdateHotbar();
+
+        message="Bomba reparada";
+        return true;
+    }
 }

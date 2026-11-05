@@ -10,6 +10,7 @@ public class ItemPickup : MonoBehaviour, IPickable
 
     private void OnMouseDown()
     {
+        Debug.Log(Vector3.Distance(this.transform.position, _playerPosition.position) + " " + _pickupDistance);
         if (Vector3.Distance(this.transform.position, _playerPosition.position) <= _pickupDistance)
         {
             PickUp();

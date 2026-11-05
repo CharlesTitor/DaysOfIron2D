@@ -17,6 +17,8 @@ public class HotbarManager : MonoBehaviour
 
     private bool _ifbombRepaired = false;
 
+    [SerializeField] private float _messageDuration=2f;
+
 
     private void Update()
     {
@@ -103,7 +105,7 @@ public class HotbarManager : MonoBehaviour
         {
             if (missingIron > 0 && ifmissingBrokenBomb)
             {
-                message = "Te falta" + missingIron + " iron y necesitas una bomba rota";
+                message = "Te falta " + missingIron + " iron y necesitas una bomba rota";
             }
             else if (missingIron > 0)
             {
@@ -130,6 +132,7 @@ public class HotbarManager : MonoBehaviour
         UpdateHotbar();
 
         message = "Bomba reparada";
+        new WaitForSeconds(_messageDuration);
         SceneManager.LoadScene(3);
         return true;
     }

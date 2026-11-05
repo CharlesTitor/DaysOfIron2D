@@ -1,7 +1,6 @@
-
 using TMPro;
 using UnityEngine;
-//using UnityEngine.InputSystem;
+using UnityEngine.InputSystem;
 
 public class HotbarManager : MonoBehaviour
 {
@@ -11,13 +10,13 @@ public class HotbarManager : MonoBehaviour
     [SerializeField] private TMP_Text _brokenBombQuantityText;
     [SerializeField] private TMP_Text _repairedBombQuantityText;
 
-    private int _ironQuantity= 0;
-    private int _brokenBombQuantity= 0;
-    private int _repairedBombQuantity= 0;
+    private int _ironQuantity = 0;
+    private int _brokenBombQuantity = 0;
+    private int _repairedBombQuantity = 0;
 
-    private bool _ifbombRepaired= false;
+    private bool _ifbombRepaired = false;
 
-    /*
+
     private void Update()
     {
         if (Keyboard.current == null)
@@ -35,13 +34,13 @@ public class HotbarManager : MonoBehaviour
             AddBrokenBomb(1);
         }
     }
-    */
+
 
     private void Awake()
     {
-        if (Instance==null)
+        if (Instance == null)
         {
-            Instance =this;
+            Instance = this;
             DontDestroyOnLoad(gameObject);
         }
         else
@@ -56,17 +55,19 @@ public class HotbarManager : MonoBehaviour
     // SOLO TEMPORAL PARA PROBAR SI SIRVE
     public void AddIron(int amountOfIron)
     {
-        if (amountOfIron<=0)
+        Debug.Log("Adding Iron");
+        if (amountOfIron <= 0)
         {
             return;
         }
-        _ironQuantity +=amountOfIron;
+        _ironQuantity += amountOfIron;
+        Debug.Log(amountOfIron + " added");
         UpdateHotbar();
     }
 
     public void AddBrokenBomb(int amountOfBrokenBomb)
     {
-        if (amountOfBrokenBomb<=0)
+        if (amountOfBrokenBomb <= 0)
         {
             return;
         }
@@ -74,59 +75,60 @@ public class HotbarManager : MonoBehaviour
         UpdateHotbar();
     }
 
-   //Cambia el 'x0'
-    private void UpdateHotbar()
+    //Cambia el 'x0'
+    public void UpdateHotbar()
     {
+        Debug.Log("Updating Hotbar");
         //IGUAL
-        _ironQuantityText.text="x"+_ironQuantity;
+        _ironQuantityText.text = "x" + _ironQuantity;
 
-        _brokenBombQuantityText.text="x"+ _brokenBombQuantity;
-        _repairedBombQuantityText.text="x"+ _repairedBombQuantity;
+        _brokenBombQuantityText.text = "x" + _brokenBombQuantity;
+        _repairedBombQuantityText.text = "x" + _repairedBombQuantity;
     }
 
-    
+
     public bool TryRepairBomb(out string message)
     {
         if (_ifbombRepaired)
         {
-            message= "Ya reparaste la bomba";
+            message = "Ya reparaste la bomba";
             return false;
         }
 
-        int missingIron=3-_ironQuantity;
-        bool ifmissingBrokenBomb= _brokenBombQuantity<1;
+        int missingIron = 3 - _ironQuantity;
+        bool ifmissingBrokenBomb = _brokenBombQuantity < 1;
 
-        if (missingIron>0 || ifmissingBrokenBomb)
+        if (missingIron > 0 || ifmissingBrokenBomb)
         {
-            if (missingIron>0 && ifmissingBrokenBomb)
+            if (missingIron > 0 && ifmissingBrokenBomb)
             {
-                message="Te falta"+ missingIron+ " iron y necesitas una bomba rota";
+                message = "Te falta" + missingIron + " iron y necesitas una bomba rota";
             }
-            else if (missingIron>0)
+            else if (missingIron > 0)
             {
-                message="Te falta "+missingIron+" iron";
+                message = "Te falta " + missingIron + " iron";
             }
             else
             {
-                message="Necesitas una bomba rota";
+                message = "Necesitas una bomba rota";
             }
 
             return false;
         }
 
         //los quita
-        _ironQuantity-=3;
-        _brokenBombQuantity-=1;
+        _ironQuantity -= 3;
+        _brokenBombQuantity -= 1;
 
         //agrega la bomba
         _repairedBombQuantity++;
 
         //ya no deja hacer mas bombas
-        _ifbombRepaired=true;
+        _ifbombRepaired = true;
 
         UpdateHotbar();
 
-        message="Bomba reparada";
+        message = "Bomba reparada";
         return true;
     }
 }

@@ -10,6 +10,7 @@ public class ItemPickup : MonoBehaviour, IPickable
 
     private void OnMouseDown()
     {
+        Debug.Log(Vector3.Distance(this.transform.position, _playerPosition.position) + " " + _pickupDistance);
         if (Vector3.Distance(this.transform.position, _playerPosition.position) <= _pickupDistance)
         {
             PickUp();
@@ -18,10 +19,18 @@ public class ItemPickup : MonoBehaviour, IPickable
 
     public void PickUp()
     {
-        InventoryManager.Instance.AddItem(ItemData, _quantity);
+        Debug.Log("Picking Up");
+        //InventoryManager.Instance.AddItem(ItemData, _quantity);
+        if (ItemData.ItemName == "Iron")
+        {
+            Debug.Log("It's Iron");
+            HotbarManager.Instance.AddIron(_quantity);
+        }
 
-        InventoryManagerUI.Instance.RefreshInventoryUI();
+        //InventoryManagerUI.Instance.RefreshInventoryUI();
+        //HotbarManager.Instance.UpdateHotbar();
 
+        Debug.Log("Destroying");
         Destroy(gameObject);
     }
 }

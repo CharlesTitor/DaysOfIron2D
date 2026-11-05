@@ -33,4 +33,9 @@ public class ItemPickup : MonoBehaviour, IPickable
         Debug.Log("Destroying");
         Destroy(gameObject);
     }
+
+    public void KeyItemGiver()
+    {
+        HotbarManager.Instance.AddBrokenBomb(_quantity);
+    }
 }

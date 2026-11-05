@@ -1,6 +1,7 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class HotbarManager : MonoBehaviour
 {
@@ -129,6 +130,7 @@ public class HotbarManager : MonoBehaviour
         UpdateHotbar();
 
         message = "Bomba reparada";
+        SceneManager.LoadScene(3);
         return true;
     }
 }

@@ -18,10 +18,18 @@ public class ItemPickup : MonoBehaviour, IPickable
 
     public void PickUp()
     {
-        InventoryManager.Instance.AddItem(ItemData, _quantity);
+        Debug.Log("Picking Up");
+        //InventoryManager.Instance.AddItem(ItemData, _quantity);
+        if (ItemData.ItemName == "Iron")
+        {
+            Debug.Log("It's Iron");
+            HotbarManager.Instance.AddIron(_quantity);
+        }
 
-        InventoryManagerUI.Instance.RefreshInventoryUI();
+        //InventoryManagerUI.Instance.RefreshInventoryUI();
+        //HotbarManager.Instance.UpdateHotbar();
 
+        Debug.Log("Destroying");
         Destroy(gameObject);
     }
 }

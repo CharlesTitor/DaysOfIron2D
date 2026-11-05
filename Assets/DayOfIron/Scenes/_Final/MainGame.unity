@@ -870,6 +870,7 @@ GameObject:
   - component: {fileID: 93657556}
   - component: {fileID: 93657555}
   - component: {fileID: 93657557}
+  - component: {fileID: 93657558}
   m_Layer: 0
   m_Name: Lider de aldea
   m_TagString: Untagged
@@ -1003,6 +1004,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConversationStarter
   _npcConversation: {fileID: 46680180}
   _interactionDistance: 1.6
+--- !u!114 &93657558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 93657553}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &93995886
 GameObject:
   m_ObjectHideFlags: 0
@@ -3932,6 +3948,7 @@ GameObject:
   - component: {fileID: 278353139}
   - component: {fileID: 278353138}
   - component: {fileID: 278353137}
+  - component: {fileID: 278353140}
   m_Layer: 0
   m_Name: Yunque
   m_TagString: Untagged
@@ -4082,6 +4099,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!114 &278353140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 278353135}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 2100000, guid: 681467d1c71272b468e8fe3d8c358869, type: 2}
+  _cursorType: 1
 --- !u!1 &287780103
 GameObject:
   m_ObjectHideFlags: 0
@@ -6552,7 +6584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -644, y: -412}
+  m_AnchoredPosition: {x: -643.99963, y: -411.99985}
   m_SizeDelta: {x: 19, y: 7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &384528644
@@ -8755,6 +8787,10 @@ PrefabInstance:
     - target: {fileID: 3350711151053856707, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
       propertyPath: m_Name
       value: == Managers ==
+      objectReference: {fileID: 0}
+    - target: {fileID: 7588560366239373781, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8712159385079565709, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
       propertyPath: m_LocalPosition.x
@@ -22297,7 +22333,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4a0bb0bb335f92b4d9488902179eea96, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -22364,7 +22400,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1306864592
@@ -32706,6 +32742,7 @@ GameObject:
   - component: {fileID: 1798169688}
   - component: {fileID: 1798169687}
   - component: {fileID: 1798169689}
+  - component: {fileID: 1798169690}
   m_Layer: 0
   m_Name: "Pap\xE1"
   m_TagString: Untagged
@@ -32862,6 +32899,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConversationStarter
   _npcConversation: {fileID: 46680180}
   _interactionDistance: 1.6
+--- !u!114 &1798169690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1798169685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff32934b83fd0e746af7f9ebf9bad57b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CursorObject
+  _renderer: {fileID: 0}
+  _outlineMaterial: {fileID: 0}
+  _cursorType: 2
 --- !u!1 &1845692323
 GameObject:
   m_ObjectHideFlags: 0
@@ -33210,7 +33262,7 @@ GameObject:
   - component: {fileID: 1852649243}
   - component: {fileID: 1852649242}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Tapete
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -33225,8 +33277,8 @@ Transform:
   m_GameObject: {fileID: 1852649240}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.962, y: 3.875, z: 0}
-  m_LocalScale: {x: 0.28681445, y: 0.11714956, z: 0.201982}
+  m_LocalPosition: {x: -5.962, y: 3.849, z: 0}
+  m_LocalScale: {x: 0.059630856, y: 0.048468973, z: 0.041993566}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1497088504}
@@ -33265,17 +33317,17 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.08061215, y: 0.045641065}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 4.52, y: 2.42}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.59, y: 0.49}
+  m_Size: {x: 1.66941, y: 0.9579642}
   m_EdgeRadius: 0
 --- !u!114 &1852649243
 MonoBehaviour:
@@ -33341,7 +33393,7 @@ SpriteRenderer:
   m_SortingLayer: 7
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: -5248089446956908412, guid: 86877ee55794c3c478860596862db61e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -36246,6 +36298,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 27.4
       objectReference: {fileID: 0}
+    - target: {fileID: 3526284463613949798, guid: cae73f65e1f0b224bb55d4a5f5c264ce, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3926520207765298722, guid: cae73f65e1f0b224bb55d4a5f5c264ce, type: 3}
       propertyPath: m_SizeDelta.x
       value: 5401.626
@@ -36300,7 +36356,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4812731131087932928, guid: cae73f65e1f0b224bb55d4a5f5c264ce, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -113.8
+      value: -58
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

@@ -56,11 +56,13 @@ public class HotbarManager : MonoBehaviour
     // SOLO TEMPORAL PARA PROBAR SI SIRVE
     public void AddIron(int amountOfIron)
     {
+        Debug.Log("Adding Iron");
         if (amountOfIron<=0)
         {
             return;
         }
         _ironQuantity +=amountOfIron;
+        Debug.Log(amountOfIron + " added");
         UpdateHotbar();
     }
 
@@ -75,8 +77,9 @@ public class HotbarManager : MonoBehaviour
     }
 
    //Cambia el 'x0'
-    private void UpdateHotbar()
+    public void UpdateHotbar()
     {
+        Debug.Log("Updating Hotbar");
         //IGUAL
         _ironQuantityText.text="x"+_ironQuantity;
 

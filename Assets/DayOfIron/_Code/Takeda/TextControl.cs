@@ -32,7 +32,7 @@ public class TextControl : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(_fadeCount+" "+_currentFadeState+" "+_timer);
+        //Debug.Log(_fadeCount+" "+_currentFadeState+" "+_timer);
         if (_fadeCount >= 2) { return; }
         _timer += Time.deltaTime;
         switch (_currentFadeState)

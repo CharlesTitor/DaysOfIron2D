@@ -4,17 +4,17 @@ using TMPro;
 public class QuestManager1 : MonoBehaviour
 {
     [Header("UI")]
-    public TextMeshProUGUI questTexto;
-    public TextMeshProUGUI inventarioTexto;
+    public TextMeshProUGUI questTexto; //CamelCase y español
+    public TextMeshProUGUI inventarioTexto; //CamelCase y español
 
     [Header("Items")]
-    public int bombaRota = 0;
+    public int bombaRota = 0; //CamelCase y español
 
     [Header("Quest Iron")]
-    public int ironActual = 0;
-    public int ironNecesario = 3;
+    public int ironActual = 0; //CamelCase y español
+    public int ironNecesario = 3; //CamelCase y español
 
-    bool questActiva = false;
+    bool questActiva = false; //Acceso, CamelCase y español
 
     public void ActivarQuestIron()
     {

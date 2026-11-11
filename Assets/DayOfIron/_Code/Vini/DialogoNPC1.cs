@@ -3,13 +3,13 @@ using TMPro;
 
 public class DialogoNPC1 : MonoBehaviour
 {
-    public TextMeshProUGUI dialogoTexto;
+    public TextMeshProUGUI dialogoTexto; //CamelCase y español
 
-    public string[] dialogos;
+    public string[] dialogos; //CamelCase y español
 
-    int lineaActual = 0;
+    int lineaActual = 0; //CamelCase y español
 
-    public QuestManager1 questManager;
+    public QuestManager1 questManager; //CamelCase
 
     void Start()
     {
@@ -24,7 +24,7 @@ public class DialogoNPC1 : MonoBehaviour
         }
     }
 
-    void SiguienteDialogo()
+    void SiguienteDialogo() // español
     {
         lineaActual++;
 

@@ -9,9 +9,13 @@ public class TextControl : MonoBehaviour
     [SerializeField] private GameObject _textElement;
     private CanvasGroup _uIGroup;
     private TMP_Text _text;
+    [Header("List of texts to display")]
+    [SerializeField] private string[] _textList;
     [Header("Parameters for fade transitions")]
     [SerializeField] private float _transitionInterval;
     [SerializeField] private float _transitionDuration;
+    [Header("The mask for progress bar")]
+    [SerializeField] private Image _mask;
     private int _fadeCount;
     private float _timer;
     private FadeState _currentFadeState;
@@ -28,12 +32,19 @@ public class TextControl : MonoBehaviour
         _fadeCount = 0;
         _timer = 0f;
         _currentFadeState = FadeState.Neutral;
+        try
+        {
+            _text.text = _textList[0];
+        }catch (Exception e)
+        {
+            Debug.Log(e.Message);
+        }
     }
 
     void Update()
     {
-        //Debug.Log(_fadeCount+" "+_currentFadeState+" "+_timer);
-        if (_fadeCount >= 2) { return; }
+        Debug.Log(_fadeCount+" "+_currentFadeState+" "+_timer);
+        if (_fadeCount >= _textList.Length) { return; }
         _timer += Time.deltaTime;
         switch (_currentFadeState)
         {
@@ -41,21 +52,27 @@ public class TextControl : MonoBehaviour
                 if (_timer >= _transitionInterval*(_fadeCount+1) && _timer < _transitionInterval * (_fadeCount + 2))
                 {
                     _currentFadeState++;
+                    _fadeCount++;
                 }
                 break;
             case FadeState.FadeOut:
                 _uIGroup.alpha -= Time.deltaTime / _transitionDuration;
                 if (_uIGroup.alpha <= 0) {
                     _currentFadeState++;
-                    switch (_fadeCount)
+                    /*switch (_fadeCount)
                     {
                         case 0:
-                            _text.text = "Allí vive Kael, un joven aprendiz de herrero que trabaja junto a su padre, Marek.\r\n\r\nSus días transcurren entre el fuego de la fragua, el sonido del martillo y las necesidades de sus vecinos. Repara herramientas, recupera metal y aprende a distinguir lo que todavía puede salvarse de aquello que debe abandonarse.\r\n\r\nPara Kael, el hierro es algo que sirve para construir.\r\n\r\nPero fuera de Yunque Rojo, otros han aprendido a utilizarlo para gobernar.\r\n\r\nY pronto descubrirá que incluso las manos que enseñan a construir pueden guardar secretos sobre aquello que alguna vez destruyeron.";
+                            _text.text = "";
                             break;
                         case 1:
                             _text.text = "Ve a casa";
                             _text.horizontalAlignment = HorizontalAlignmentOptions.Center;
                             break;
+                    }*/
+                    _text.text = _textList[_fadeCount];
+                    if (_fadeCount == _textList.Length-1)
+                    {
+                        _text.horizontalAlignment = HorizontalAlignmentOptions.Center;
                     }
                 }
                 break;
@@ -63,10 +80,19 @@ public class TextControl : MonoBehaviour
                 _uIGroup.alpha += Time.deltaTime / _transitionDuration;
                 if (_uIGroup.alpha >= 1) {
                     _currentFadeState = FadeState.Neutral;
-                    _fadeCount++;
                 }
                 break;
         }
         Math.Clamp(_uIGroup.alpha, 0, 1);
+        _mask.fillAmount = (_timer - _transitionInterval * _fadeCount) / _transitionInterval;
     }
+
+    public void GoToNextText()
+    {
+        Debug.Log("NextButtonPressed");
+        _timer += _transitionInterval;
+        //_fadeCount++;
+        _currentFadeState = FadeState.FadeOut;
+    }
+
 }

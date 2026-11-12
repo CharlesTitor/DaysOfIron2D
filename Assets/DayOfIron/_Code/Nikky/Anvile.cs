@@ -17,7 +17,7 @@ public class Anvil : MonoBehaviour, IInteractable
 
     public void Interact(IInteractor interactor)
     {
-        bool ifRepaired=HotbarManager.Instance.TryRepairBomb(out string message);
+        bool ifRepaired=ItemsManager.Instance.TryRepairBomb(out string message);
 
         ShowMessage(message);
     }

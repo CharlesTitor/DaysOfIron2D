@@ -7,8 +7,10 @@ public class Anvil : MonoBehaviour, IInteractable
 {
     [SerializeField] private TMP_Text _messageText;
     [SerializeField] private float _messageDuration=2f;
+    [SerializeField] private GameObject _bubbleImage;
 
     private Coroutine _messageCoroutine;
+
 
     public bool CanInteract(IInteractor interactor)
     {
@@ -17,7 +19,7 @@ public class Anvil : MonoBehaviour, IInteractable
 
     public void Interact(IInteractor interactor)
     {
-        bool ifRepaired=HotbarManager.Instance.TryRepairBomb(out string message);
+        bool ifRepaired=ItemsManager.Instance.TryRepairBomb(out string message);
 
         ShowMessage(message);
     }
@@ -30,6 +32,7 @@ public class Anvil : MonoBehaviour, IInteractable
         }
         _messageText.text = message;
         _messageText.gameObject.SetActive(true);
+        _bubbleImage.SetActive(true);
 
         _messageCoroutine = StartCoroutine(HideMessage());
     }
@@ -39,6 +42,7 @@ public class Anvil : MonoBehaviour, IInteractable
         yield return new WaitForSeconds(_messageDuration);
 
         _messageText.gameObject.SetActive(false);
+        _bubbleImage.SetActive(false);
         _messageCoroutine = null;
     }
 }

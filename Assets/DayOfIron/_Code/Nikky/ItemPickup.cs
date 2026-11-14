@@ -24,7 +24,7 @@ public class ItemPickup : MonoBehaviour, IPickable
         if (ItemData.ItemName == "Iron")
         {
             Debug.Log("It's Iron");
-            HotbarManager.Instance.AddIron(_quantity);
+            ItemsManager.Instance.AddIron(_quantity);
         }
 
         //InventoryManagerUI.Instance.RefreshInventoryUI();
@@ -36,6 +36,6 @@ public class ItemPickup : MonoBehaviour, IPickable
 
     public void KeyItemGiver()
     {
-        HotbarManager.Instance.AddBrokenBomb(_quantity);
+        ItemsManager.Instance.AddBrokenBomb(_quantity);
     }
 }

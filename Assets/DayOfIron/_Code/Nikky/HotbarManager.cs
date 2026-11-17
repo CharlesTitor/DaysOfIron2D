@@ -1,44 +1,15 @@
-using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class HotbarManager : MonoBehaviour
 {
     public static HotbarManager Instance;
 
-    [SerializeField] private TMP_Text _ironQuantityText;
-    [SerializeField] private TMP_Text _brokenBombQuantityText;
-    [SerializeField] private TMP_Text _repairedBombQuantityText;
+    [SerializeField] private GameObject _hotbarSlotPrefab;
+    [SerializeField] private Transform _hotbarContainer;
 
-    private int _ironQuantity = 0;
-    private int _brokenBombQuantity = 0;
-    private int _repairedBombQuantity = 0;
-
-    private bool _ifbombRepaired = false;
-
-    [SerializeField] private float _messageDuration=2f;
-
-
-    private void Update()
-    {
-        if (Keyboard.current == null)
-        {
-            return;
-        }
-
-        if (Keyboard.current.digit1Key.wasPressedThisFrame)
-        {
-            AddIron(1);
-        }
-
-        if (Keyboard.current.digit2Key.wasPressedThisFrame)
-        {
-            AddBrokenBomb(1);
-        }
-    }
-
-
+    private List<HotbarSlotUI> _hotbarSlots=new List<HotbarSlotUI>();
+    
     private void Awake()
     {
         if (Instance == null)
@@ -51,89 +22,61 @@ public class HotbarManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+    }
 
+    private void Start()
+    {
         UpdateHotbar();
     }
 
-    // SOLO TEMPORAL PARA PROBAR SI SIRVE
-    public void AddIron(int amountOfIron)
+    private void CreateHotbarSlot()
     {
-        Debug.Log("Adding Iron");
-        if (amountOfIron <= 0)
+        GameObject newSlot=Instantiate(_hotbarSlotPrefab, _hotbarContainer);
+
+        HotbarSlotUI hotbarSlot=newSlot.GetComponent<HotbarSlotUI>();
+
+        if (hotbarSlot==null)
         {
+            Destroy(newSlot);
             return;
         }
-        _ironQuantity += amountOfIron;
-        Debug.Log(amountOfIron + " added");
-        UpdateHotbar();
+
+        _hotbarSlots.Add(hotbarSlot);
     }
 
-    public void AddBrokenBomb(int amountOfBrokenBomb)
-    {
-        if (amountOfBrokenBomb <= 0)
-        {
-            return;
-        }
-        _brokenBombQuantity += amountOfBrokenBomb;
-        UpdateHotbar();
-    }
-
-    //Cambia el 'x0'
     public void UpdateHotbar()
     {
-        Debug.Log("Updating Hotbar");
-        //IGUAL
-        _ironQuantityText.text = "x" + _ironQuantity;
-
-        _brokenBombQuantityText.text = "x" + _brokenBombQuantity;
-        _repairedBombQuantityText.text = "x" + _repairedBombQuantity;
-    }
-
-
-    public bool TryRepairBomb(out string message)
-    {
-        if (_ifbombRepaired)
+        if (InventoryManager.Instance == null)
         {
-            message = "Ya reparaste la bomba";
-            return false;
+            return;
         }
-
-        int missingIron = 3 - _ironQuantity;
-        bool ifmissingBrokenBomb = _brokenBombQuantity < 1;
-
-        if (missingIron > 0 || ifmissingBrokenBomb)
+        
+        while (_hotbarSlots.Count<InventoryManager.Instance.Inventory.Count)
         {
-            if (missingIron > 0 && ifmissingBrokenBomb)
+            int previousCount=_hotbarSlots.Count;
+
+            CreateHotbarSlot();
+
+            if (_hotbarSlots.Count==previousCount)
             {
-                message = "Te falta " + missingIron + " iron y necesitas una bomba rota";
+                return;
             }
-            else if (missingIron > 0)
+        }
+        for (int i=0; i<_hotbarSlots.Count; i++)
+        {
+            if (i<InventoryManager.Instance.Inventory.Count)
             {
-                message = "Te falta " + missingIron + " iron";
+                _hotbarSlots[i].gameObject.SetActive(true);
+
+                Item item = InventoryManager.Instance.Inventory[i];
+
+                _hotbarSlots[i].SetItem(item);
             }
             else
             {
-                message = "Necesitas una bomba rota";
+                _hotbarSlots[i].ClearSlot();
+                _hotbarSlots[i].gameObject.SetActive(false);
             }
-
-            return false;
         }
-
-        //los quita
-        _ironQuantity -= 3;
-        _brokenBombQuantity -= 1;
-
-        //agrega la bomba
-        _repairedBombQuantity++;
-
-        //ya no deja hacer mas bombas
-        _ifbombRepaired = true;
-
-        UpdateHotbar();
-
-        message = "Bomba reparada";
-        new WaitForSeconds(_messageDuration);
-        SceneManager.LoadScene(3);
-        return true;
     }
 }

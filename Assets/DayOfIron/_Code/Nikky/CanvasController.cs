@@ -2,24 +2,26 @@ using UnityEngine;
 
 public class CanvasController : MonoBehaviour
 {
-    public GameObject InventoryCanvas;
+    [SerializeField] private GameObject _inventoryCanvas;
+    [SerializeField] private GameObject _hotbarPanel;
 
-    /*
     private void Start()
     {
-        InventoryCanvas.SetActive(false);
+        _inventoryCanvas.SetActive(false);
+        _hotbarPanel.SetActive(true);
     }
-    */
-
+    
     public void OpenCloseInventory()
     {
-        if (InventoryCanvas.activeSelf == true)
+        if (_inventoryCanvas.activeSelf == true)
         {
-            InventoryCanvas.SetActive(false);
+            _inventoryCanvas.SetActive(false);
+            _hotbarPanel.SetActive(true);
         }
         else
         {
-            InventoryCanvas.SetActive(true);
+            _inventoryCanvas.SetActive(true);
+            _hotbarPanel.SetActive(false);
         }
     }
 }

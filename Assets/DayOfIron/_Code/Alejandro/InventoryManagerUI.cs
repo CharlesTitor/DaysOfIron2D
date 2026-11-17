@@ -1,14 +1,17 @@
 using UnityEngine;
 using UnityEngine.Serialization;
+using System.Collections.Generic;
 
 public class InventoryManagerUI : MonoBehaviour
 {
     public static InventoryManagerUI Instance;
 
-    [FormerlySerializedAs("itemSlotPrefab")]
-    public GameObject ItemSlotPrefab;
-    [FormerlySerializedAs("inventoryContainer")]
-    public Transform InventoryContainer;
+    [FormerlySerializedAs("ItemSlotPrefab")]
+    [SerializeField] private GameObject _itemSlotPrefab;
+    [FormerlySerializedAs("InventoryContainer")]
+    [SerializeField] private Transform _inventoryContainer;
+
+    private List<ItemSlotUI> _itemSlots = new List<ItemSlotUI>();
 
     private void Awake()
     {
@@ -27,25 +30,54 @@ public class InventoryManagerUI : MonoBehaviour
     {
         RefreshInventoryUI();
     }
+    
+    private void CreateItemSlot()
+    {
+        GameObject newSlot=Instantiate(_itemSlotPrefab, _inventoryContainer);
+
+        ItemSlotUI itemSlot=newSlot.GetComponent<ItemSlotUI>();
+
+        _itemSlots.Add(itemSlot);
+    }
+
+     private void CheckSlots()
+    {
+        while (_itemSlots.Count < InventoryManager.Instance.Inventory.Count)
+        {
+            CreateItemSlot();
+        }
+    }
+
+    public void UpdateItemSlot(int index, Item item)
+    {
+        CheckSlots();
+
+        if (index < _itemSlots.Count)
+        {
+            _itemSlots[index].SetItem(item);
+        }
+    }
+
 
     public void RefreshInventoryUI()
     {
-        //0. Clear existing UI elements
-        foreach(Transform slot in InventoryContainer)
+        if (InventoryManager.Instance == null)
         {
-            Destroy(slot.gameObject);
+            return;
         }
 
-        //1. Create UI elements for each item in the inventory
-        foreach(Item item in InventoryManager.Instance.Inventory)
+        CheckSlots();
+
+        for (int i = 0; i < _itemSlots.Count; i++)
         {
-            GameObject newItemSlot = Instantiate(ItemSlotPrefab, InventoryContainer);
-
-            ItemSlotUI itemSlotUI = newItemSlot.GetComponent<ItemSlotUI>();
-
-            itemSlotUI.ItemIconImage.sprite = item.ItemData.ItemIcon;
-            itemSlotUI.ItemNameText.text = item.ItemData.ItemName;
-            itemSlotUI.ItemQuantityText.text = "x" + item.ItemQuantity.ToString();
+            if (i < InventoryManager.Instance.Inventory.Count)
+            {
+                _itemSlots[i].SetItem(InventoryManager.Instance.Inventory[i]);
+            }
+            else
+            {
+                _itemSlots[i].ClearSlot();
+            }
         }
     }
 }

@@ -20,6 +20,9 @@ public class CursorObject : MonoBehaviour
         {
             _renderer = GetComponent<Renderer>();
         }
+        if(!_originalMaterial){
+            _originalMaterial = _renderer.material;
+        }
     }
 
     private void OnMouseEnter()
@@ -31,7 +34,6 @@ public class CursorObject : MonoBehaviour
             {
                 //_startColor = _renderer.material.color;
                 //_renderer.material.color = Color.yellow;
-                _originalMaterial = _renderer.material;
                 _renderer.material = _outlineMaterial;
             }
         }

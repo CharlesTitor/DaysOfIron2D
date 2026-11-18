@@ -1,14 +1,16 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.SceneManagement;
 
 public class HotbarManager : MonoBehaviour
 {
     public static HotbarManager Instance;
-    public Transform HotbarContainer;
-    public GameObject ItemSlotPrefab;
 
-    private int _slotQuantity=3;
-
+    [SerializeField] private TMP_Text _ironQuantityText;
+    [SerializeField] private TMP_Text _brokenBombQuantityText;
+    [SerializeField] private TMP_Text _repairedBombQuantityText;
+    
     private void Awake()
     {
         if (Instance == null)
@@ -19,36 +21,20 @@ public class HotbarManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
+
+        UpdateHotbar();
     }
 
-    private void Update()
+    //Cambia el 'x0'
+    public void UpdateHotbar()
     {
-        RefreshHotbar();
+        Debug.Log("Updating Hotbar");
+        //IGUAL
+        _ironQuantityText.text = "x" + ItemsManager.Instance._ironQuantity;
+
+        _brokenBombQuantityText.text = "x" + ItemsManager.Instance._brokenBombQuantity;
+        _repairedBombQuantityText.text = "x" + ItemsManager.Instance._repairedBombQuantity;
     }
-
-    public void RefreshHotbar()
-    {
-        foreach (Transform slot in HotbarContainer)
-        {
-            Destroy(slot.gameObject);
-        }
-
-        int numberOfSlots = Mathf.Min(_slotQuantity, InventoryManager.Instance.Inventory.Count);
-
-        
-        for (int i=0; i<numberOfSlots; i++)
-        {
-            Item item= InventoryManager.Instance.Inventory[i];
-
-            GameObject newItemSlot= Instantiate(ItemSlotPrefab, HotbarContainer);
-
-            ItemSlotUI itemSlotUI= newItemSlot.GetComponent<ItemSlotUI>();
-
-            itemSlotUI.ItemIconImage.sprite = item.ItemData.ItemIcon;
-            itemSlotUI.ItemNameText.text = item.ItemData.ItemName;
-            itemSlotUI.ItemQuantityText.text = "x" + item.ItemQuantity.ToString();
-        }
-    }
-
 }

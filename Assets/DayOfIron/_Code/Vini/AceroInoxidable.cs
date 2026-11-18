@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class AceroInoxidable : MonoBehaviour
+public class AceroInoxidable : MonoBehaviour //Español
 {
     public QuestManager1 questManager;
 
@@ -8,7 +8,7 @@ public class AceroInoxidable : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            questManager.AgregarIron();
+            questManager.AgregarIron(); //Español
 
             Destroy(gameObject);
         }

@@ -12811,6 +12811,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &461880818 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3526284463613949798, guid: cae73f65e1f0b224bb55d4a5f5c264ce, type: 3}
+  m_PrefabInstance: {fileID: 107926246}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &463625227
 GameObject:
   m_ObjectHideFlags: 0
@@ -17112,8 +17117,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 910702016}
-  - {fileID: 1937970115}
-  - {fileID: 2007825068}
+  - {fileID: 1911345366}
   - {fileID: 1790387686}
   - {fileID: 31458505}
   m_Father: {fileID: 0}
@@ -21777,25 +21781,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
---- !u!1 &806752207 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2415485241364122564, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+--- !u!114 &806752215 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2326261842279203744, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
   m_PrefabInstance: {fileID: 1861431498}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &806752211
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 806752207}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: db1f9d1c34b28e24e9272e2cfe0736e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CanvasController
-  _inventoryCanvas: {fileID: 0}
-  _hotbarPanel: {fileID: 0}
 --- !u!1 &810662006
 GameObject:
   m_ObjectHideFlags: 0
@@ -25471,7 +25467,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 591634182}
+      - m_Target: {fileID: 806752215}
         m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
         m_MethodName: OpenCloseInventory
         m_Mode: 1
@@ -49327,10 +49323,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2415485241364122564, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
+    - target: {fileID: 2326261842279203744, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: _hotbarPanel
+      value: 
+      objectReference: {fileID: 1911345365}
+    - target: {fileID: 2326261842279203744, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: _inventoryCanvas
+      value: 
+      objectReference: {fileID: 2146624609}
     - target: {fileID: 2582127474253233612, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
       propertyPath: _playerPosition
       value: 
@@ -49339,14 +49339,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: == Managers ==
       objectReference: {fileID: 0}
+    - target: {fileID: 5577782467361812057, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
+      propertyPath: _hotbarContainer
+      value: 
+      objectReference: {fileID: 495078150}
     - target: {fileID: 6363643915510395757, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
       propertyPath: _hotbarPanel
       value: 
-      objectReference: {fileID: 2007825067}
+      objectReference: {fileID: 1911345365}
     - target: {fileID: 6363643915510395757, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
       propertyPath: _inventoryCanvas
       value: 
-      objectReference: {fileID: 2146624609}
+      objectReference: {fileID: 461880818}
     - target: {fileID: 6707197334462045045, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
       propertyPath: _inventoryContainer
       value: 
@@ -49394,33 +49398,8 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 7588560366239373781, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1861431500}
-    - targetCorrespondingSourceObject: {fileID: 2415485241364122564, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 806752211}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
---- !u!1 &1861431499 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7588560366239373781, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
-  m_PrefabInstance: {fileID: 1861431498}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1861431500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1861431499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99a6d782e28861d498a8ba2b6039edb2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::HotbarManager
-  _hotbarSlotPrefab: {fileID: 7490701471335770080, guid: 7d836d3390f2abc4caf88230f50a32bb, type: 3}
-  _hotbarContainer: {fileID: 495078150}
 --- !u!1 &1862716255
 GameObject:
   m_ObjectHideFlags: 0
@@ -49882,11 +49861,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DialogueEditor.NPCConversation
   CurrentIDCounter: 7
-  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":228.4,\"yPos\":22},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
-    quieres?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Marek\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":224.800323,\"yPos\":147.999878},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mientras
-    m\xE1s r\xE1pido termines m\xE1s r\xE1pido podr\xE1s descansar.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Marek\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":227.200317,\"yPos\":275.199219},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
-    que no recuerdo cuanto hierro necesitaba para repararlo.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kael\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":224.800323,\"yPos\":399.1993},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFMe
-    puedes recordar cuanto necesitaba?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kael\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":221.600281,\"yPos\":521.599365},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Marek\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":223.200287,\"yPos\":654.3997},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kael\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":223.200348,\"yPos\":786.3998},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Supongo
+  json: "{\"Options\":[],\"Parameters\":[],\"SpeechNodes\":[{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":1}],\"EditorInfo\":{\"isRoot\":true,\"xPos\":197.000015,\"yPos\":41.1999969},\"ID\":0,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFQu\xE9
+    quieres?\",\"parentUIDs\":[],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Marek\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":2}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.400345,\"yPos\":167.199875},\"ID\":1,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Mientras
+    m\xE1s r\xE1pido termines m\xE1s r\xE1pido podr\xE1s descansar.\",\"parentUIDs\":[0],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Marek\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":3}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":195.800339,\"yPos\":294.399},\"ID\":2,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Es
+    que no recuerdo cuanto hierro necesitaba para repararlo.\",\"parentUIDs\":[1],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kael\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":4}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":193.400345,\"yPos\":418.399048},\"ID\":3,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"\xBFMe
+    puedes recordar cuanto necesitaba?\",\"parentUIDs\":[2],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kael\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":5}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":190.2003,\"yPos\":540.799133},\"ID\":4,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[3],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Marek\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[{\"__type\":\"EditableSpeechConnection:#DialogueEditor\",\"Conditions\":[],\"NodeUID\":6}],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.800308,\"yPos\":673.599548},\"ID\":5,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"...\",\"parentUIDs\":[4],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kael\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0},{\"Connections\":[],\"EditorInfo\":{\"isRoot\":false,\"xPos\":191.800369,\"yPos\":805.599548},\"ID\":6,\"ParamActions\":[],\"TMPFontGUID\":null,\"Text\":\"Supongo
     que lo descubrir\xE9 por mi cuenta.\",\"parentUIDs\":[5],\"AdvanceDialogueAutomatically\":false,\"AudioGUID\":null,\"AutoAdvanceShouldDisplayOption\":false,\"IconGUID\":null,\"Name\":\"Kael\",\"OptionUIDs\":null,\"SpeechUID\":0,\"TimeUntilAdvance\":0,\"Volume\":0}]}"
   saveVersion: 110
   DefaultName: 
@@ -49904,7 +49883,19 @@ MonoBehaviour:
   EndConversationFont: {fileID: 0}
   Event:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 591634182}
+        m_TargetAssemblyTypeName: CanvasController, Assembly-CSharp
+        m_MethodName: OpenCloseInventory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1882837080
 GameObject:
   m_ObjectHideFlags: 0
@@ -51004,6 +50995,43 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &1911345365
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1911345366}
+  m_Layer: 5
+  m_Name: HotBar (with shadow)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1911345366
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1911345365}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1937970115}
+  - {fileID: 2007825068}
+  m_Father: {fileID: 625647100}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1919356981
 GameObject:
   m_ObjectHideFlags: 0
@@ -52626,7 +52654,7 @@ RectTransform:
   m_LocalScale: {x: 27.9725, y: 28.368872, z: 28.10993}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 625647100}
+  m_Father: {fileID: 1911345366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -54176,7 +54204,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 495078150}
-  m_Father: {fileID: 625647100}
+  m_Father: {fileID: 1911345366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

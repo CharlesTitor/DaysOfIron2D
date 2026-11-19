@@ -104,6 +104,7 @@ GameObject:
   - component: {fileID: 2611711449491181775}
   - component: {fileID: 6849421017013998382}
   - component: {fileID: 6707197334462045045}
+  - component: {fileID: 2326261842279203744}
   m_Layer: 0
   m_Name: InventoryManager
   m_TagString: Untagged
@@ -153,6 +154,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::InventoryManagerUI
   _itemSlotPrefab: {fileID: 6417904700899856496, guid: 62e0e568a8aa7a24e9c919f384a7b9d7, type: 3}
   _inventoryContainer: {fileID: 0}
+--- !u!114 &2326261842279203744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2415485241364122564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1f9d1c34b28e24e9272e2cfe0736e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CanvasController
+  _inventoryCanvas: {fileID: 0}
+  _hotbarPanel: {fileID: 0}
 --- !u!1 &3350711151053856707
 GameObject:
   m_ObjectHideFlags: 0
@@ -187,7 +202,6 @@ Transform:
   - {fileID: 5423610658574865466}
   - {fileID: 2984123703957263733}
   - {fileID: 1761667692193015225}
-  - {fileID: 9206575917684062606}
   - {fileID: 2611711449491181775}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -295,6 +309,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5423610658574865466}
+  - component: {fileID: 5577782467361812057}
   m_Layer: 0
   m_Name: HotBar Manager
   m_TagString: Untagged
@@ -317,51 +332,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8712159385079565709}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &9084237886536642260
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 9206575917684062606}
-  - component: {fileID: 3515767258601489586}
-  m_Layer: 0
-  m_Name: ItemsManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &9206575917684062606
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9084237886536642260}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.7407894, y: 1.1547, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8712159385079565709}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3515767258601489586
+--- !u!114 &5577782467361812057
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9084237886536642260}
+  m_GameObject: {fileID: 7588560366239373781}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9d357ef9eab29374496961de1a8a13f6, type: 3}
+  m_Script: {fileID: 11500000, guid: 99a6d782e28861d498a8ba2b6039edb2, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ItemsManager
-  _ironQuantity: 0
-  _brokenBombQuantity: 0
-  _repairedBombQuantity: 0
-  _messageDuration: 2
+  m_EditorClassIdentifier: Assembly-CSharp::HotbarManager
+  _hotbarSlotPrefab: {fileID: 7490701471335770080, guid: 7d836d3390f2abc4caf88230f50a32bb, type: 3}
+  _hotbarContainer: {fileID: 0}

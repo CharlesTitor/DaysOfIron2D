@@ -41,7 +41,7 @@ public class ItemPickup : MonoBehaviour, IPickable
             Debug.LogWarning("InventoryManager not found!");
             return;
         }
-
+        if (InventoryManager.Instance.HasItem(_keyItemData, 1)) { return; }
         InventoryManager.Instance.AddItem(_keyItemData, _quantity);
 
         Debug.Log("Key item received!");

@@ -1,14 +1,15 @@
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 public class HotbarManager : MonoBehaviour
 {
     public static HotbarManager Instance;
-    public Transform HotbarContainer;
-    public GameObject ItemSlotPrefab;
 
-    private int _slotQuantity=3;
+    [SerializeField] private GameObject _hotbarSlotPrefab;
+    [SerializeField] private Transform _hotbarContainer;
 
+    private List<HotbarSlotUI> _hotbarSlots=new List<HotbarSlotUI>();
+    
     private void Awake()
     {
         if (Instance == null)
@@ -19,36 +20,63 @@ public class HotbarManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            return;
         }
     }
 
-    private void Update()
+    private void Start()
     {
-        RefreshHotbar();
+        UpdateHotbar();
     }
 
-    public void RefreshHotbar()
+    private void CreateHotbarSlot()
     {
-        foreach (Transform slot in HotbarContainer)
+        GameObject newSlot=Instantiate(_hotbarSlotPrefab, _hotbarContainer);
+
+        HotbarSlotUI hotbarSlot=newSlot.GetComponent<HotbarSlotUI>();
+
+        if (hotbarSlot==null)
         {
-            Destroy(slot.gameObject);
+            Destroy(newSlot);
+            return;
         }
 
-        int numberOfSlots = Mathf.Min(_slotQuantity, InventoryManager.Instance.Inventory.Count);
+        _hotbarSlots.Add(hotbarSlot);
+    }
 
+    public void UpdateHotbar()
+    {
+        if (InventoryManager.Instance == null)
+        {
+            return;
+        }
         
-        for (int i=0; i<numberOfSlots; i++)
+        while (_hotbarSlots.Count<InventoryManager.Instance.Inventory.Count)
         {
-            Item item= InventoryManager.Instance.Inventory[i];
+            int previousCount=_hotbarSlots.Count;
 
-            GameObject newItemSlot= Instantiate(ItemSlotPrefab, HotbarContainer);
+            CreateHotbarSlot();
 
-            ItemSlotUI itemSlotUI= newItemSlot.GetComponent<ItemSlotUI>();
+            if (_hotbarSlots.Count==previousCount)
+            {
+                return;
+            }
+        }
+        for (int i=0; i<_hotbarSlots.Count; i++)
+        {
+            if (i<InventoryManager.Instance.Inventory.Count)
+            {
+                _hotbarSlots[i].gameObject.SetActive(true);
 
-            itemSlotUI.ItemIconImage.sprite = item.ItemData.ItemIcon;
-            itemSlotUI.ItemNameText.text = item.ItemData.ItemName;
-            itemSlotUI.ItemQuantityText.text = "x" + item.ItemQuantity.ToString();
+                Item item = InventoryManager.Instance.Inventory[i];
+
+                _hotbarSlots[i].SetItem(item);
+            }
+            else
+            {
+                _hotbarSlots[i].ClearSlot();
+                _hotbarSlots[i].gameObject.SetActive(false);
+            }
         }
     }
-
 }

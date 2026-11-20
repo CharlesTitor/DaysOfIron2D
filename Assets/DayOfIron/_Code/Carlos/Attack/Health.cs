@@ -4,10 +4,13 @@ using UnityEngine.Rendering;
 
 public class Health : MonoBehaviour, IDamageable
 {
-    [SerializeField] private float _maxHealth = 100f;
+    public float MaxHealth { get => _maxHealth; set => _maxHealth = value; }
+    public float CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
+    bool IDamageable.IsDead { get => _isDead; set => _isDead = value; }
+
+    private float _maxHealth = 100f;
     private float _currentHealth;
     private bool _isDead = false;
-
     void Awake()
     {
         _currentHealth = _maxHealth;

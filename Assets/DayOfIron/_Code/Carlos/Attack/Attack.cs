@@ -3,7 +3,7 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     [SerializeField] private float _damage = 20f;
-    [SerializeField] private Health _target;
+    private IDamageable _target;
 
     public void AttackAction()
     {;
@@ -14,8 +14,6 @@ public class Attack : MonoBehaviour
         }
 
         _target.TakeDamage(_damage);
-        
-
     }
 
 }

@@ -4,6 +4,7 @@ public class Hammer : MonoBehaviour
 {
     public HammerData weaponData;
     public SpriteRenderer spriteRenderer;
+    private TurnManager _turnState;
 
     [SerializeField] private Attack _attack;
 
@@ -33,6 +34,8 @@ public class Hammer : MonoBehaviour
         */
         _attack._attackData=weaponData.basicAttack;
         _attack.AttackAction();
+        _turnState.EndTurn();
+
         return weaponData.basicAttack;
     }
 
@@ -46,6 +49,8 @@ public class Hammer : MonoBehaviour
         
         _attack._attackData=weaponData.mediumAttack;
         _attack.AttackAction();
+        _turnState.EndTurn();
+
         return weaponData.mediumAttack;
 
     }
@@ -59,6 +64,8 @@ public class Hammer : MonoBehaviour
         
         _attack._attackData=weaponData.heavyAttack;
         _attack.AttackAction();
+        _turnState.EndTurn();
+        
         return weaponData.heavyAttack;
     }
     

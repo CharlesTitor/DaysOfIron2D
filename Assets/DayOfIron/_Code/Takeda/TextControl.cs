@@ -90,8 +90,9 @@ public class TextControl : MonoBehaviour
     public void GoToNextText()
     {
         Debug.Log("NextButtonPressed");
-        _timer += _transitionInterval;
-        //_fadeCount++;
+        //_timer += _transitionInterval;
+        _timer = _transitionInterval * (_fadeCount + 1);
+        _fadeCount++;
         _currentFadeState = FadeState.FadeOut;
     }
 

@@ -90,10 +90,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9bab17101941c941ae9f06cfebcdf9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CursorManager
-  _cursorTexture: {fileID: 2800000, guid: f43e61cfe7c439b44ad755ab876b6789, type: 3}
-  _interactTexture: {fileID: 2800000, guid: 458b084d17a54e9449eda77493ab49c2, type: 3}
-  _talkTexture: {fileID: 2800000, guid: d1a1f2e2ad96acb4aa6d9ae211ae97f4, type: 3}
-  _forbiddenTexture: {fileID: 2800000, guid: 93ea952f1dec14340a0e5a016d82a251, type: 3}
+  _cursorTexture: {fileID: 2800000, guid: c2957f4475fdbcd40a10271410af70cd, type: 3}
+  _interactTexture: {fileID: 2800000, guid: 105af3f295999864dbb49f1122a63627, type: 3}
+  _talkTexture: {fileID: 2800000, guid: 9037b3fb709c63e449e9f9b2b2c5699d, type: 3}
+  _forbiddenTexture: {fileID: 2800000, guid: 4cf55e5ee8883aa4f929c139b7ea9d1b, type: 3}
 --- !u!1 &2415485241364122564
 GameObject:
   m_ObjectHideFlags: 0

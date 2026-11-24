@@ -2,9 +2,9 @@ using UnityEngine;
 
 public enum DamageType
 {
-    Blunt,
-    Crushing,
-    Impact
+    Blunt, //2
+    Crushing, //3
+    Impact //1
 }
 
 [System.Serializable]

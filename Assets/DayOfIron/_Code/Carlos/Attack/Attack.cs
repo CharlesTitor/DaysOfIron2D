@@ -4,6 +4,7 @@ public class Attack : MonoBehaviour
 {
     [SerializeField] private float _damage = 20f;
     private IDamageable _target;
+    public AttackData _attackData;
 
     public void AttackAction()
     {;
@@ -12,19 +13,20 @@ public class Attack : MonoBehaviour
         {
             return;
         }
+
+        //_target.TakeDamage(_damage);
         
         int randomNumber = 0;
 
-        _target.TakeDamage(_damage);
-        if (attackData.damageType==DamageType.Impact)
+        if (_attackData.damageType==DamageType.Impact)
         {
             randomNumber= Random.Range(1, 3);
         }
-        else if (attackData.damageType==DamageType.Blunt)
+        else if (_attackData.damageType==DamageType.Blunt)
         {
             randomNumber= Random.Range(1, 4);
         }
-        else if (attackData.damageType==DamageType.Crushing)
+        else if (_attackData.damageType==DamageType.Crushing)
         {
             randomNumber= Random.Range(1, 5);
         }
@@ -33,7 +35,7 @@ public class Attack : MonoBehaviour
         {
             Debug.Log("Attack successful!");
 
-            _target.TakeDamage(attackData.fixedDamage);
+            _target.TakeDamage(_attackData.fixedDamage);
         }
         else
         {

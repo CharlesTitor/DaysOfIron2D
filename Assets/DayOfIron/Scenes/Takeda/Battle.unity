@@ -222,6 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   _possibleAttacksQuantity: 3
+  _turnManager: {fileID: 1432714857}
 --- !u!114 &187490753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1595,6 +1596,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TurnManager
   iron: {fileID: 11400000, guid: 5871a99662716084cb0eaa37692710a0, type: 2}
+  _player: {fileID: 1827705970}
+  _enemy: {fileID: 187490751}
 --- !u!1 &1596396440
 GameObject:
   m_ObjectHideFlags: 0

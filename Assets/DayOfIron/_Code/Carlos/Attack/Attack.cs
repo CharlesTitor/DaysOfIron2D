@@ -45,6 +45,6 @@ public class Attack : MonoBehaviour
         _turnManager.EndTurn();
     }
 
-    public void setAttackDamage(float damageValue)=>_damage = damageValue;
+    public void setAttackDamage(int damageValue)=>_attackData.fixedDamage = damageValue;
     public void setAttackTarget(Health validTarget) => _target = validTarget;
 }

@@ -5,22 +5,22 @@ public class EnemyAI : MonoBehaviour
 {
     private int _rNGsus;
     [SerializeField] private int _possibleAttacksQuantity;
+    private Attack _basicAttack;
+    private Attack _mediumAttack;
+    private Attack _heavyAttack;
 
-    private void Awake()
-    {
+    private Attack _randomizedAttack;
 
-    }
-
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        _basicAttack.setAttackDamage(10);
+        //_basicAttack.setAttackTarget(Player);
+        _mediumAttack.setAttackDamage(20);
+        //_basicAttack.setAttackTarget(Player);
+        _heavyAttack.setAttackDamage(40);
+        //_basicAttack.setAttackTarget(Player);
+        _randomizedAttack.setAttackDamage(Random.Range(0, 101));
+        //_basicAttack.setAttackTarget(Player);
     }
 
     private void AttackSelection()
@@ -29,17 +29,17 @@ public class EnemyAI : MonoBehaviour
         switch (_rNGsus)
         {
             case 1:
-                //attack 1
+                _basicAttack.AttackAction();
                 break;
             case 2:
-                //attack 2
+                _mediumAttack.AttackAction();
                 break;
             case 3:
-                //attack 3
+                _heavyAttack.AttackAction();
                 break;
             default:
                 Debug.Log("They execute a RANDOMIZED attack!");
-                //damage=Random.Range(0,101);
+                _randomizedAttack.AttackAction();
                 break;
         }
     }

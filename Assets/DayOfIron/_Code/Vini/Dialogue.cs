@@ -1,7 +1,7 @@
 using UnityEngine;
 using System.Collections;
 
-public class Dialogue : MonoBehaviour
+/*public class Dialogue : MonoBehaviour
 {
    private bool isPlayerInRange;
 
@@ -31,3 +31,4 @@ public class Dialogue : MonoBehaviour
 
     }
 }
+*/

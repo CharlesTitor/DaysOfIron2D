@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: be7ea1e1877f47342979978e16642f15, type: 3}
   m_Name: BrokenBomb
   m_EditorClassIdentifier: Assembly-CSharp::ItemData
-  ItemName: BrokenBomb
+  ItemName: Broken Bomb
   ItemIcon: {fileID: -2073734406412880, guid: 1c5096e8ef6705245ac4f35477c97cbc, type: 3}
   ItemDescription: La bomba de agua que esta descompuesta
   ItemType: 2

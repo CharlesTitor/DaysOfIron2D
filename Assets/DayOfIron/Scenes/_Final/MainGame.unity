@@ -313,6 +313,56 @@ MonoBehaviour:
   TMPFont: {fileID: 0}
   Icon: {fileID: 0}
   Audio: {fileID: 0}
+--- !u!114 &110642164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110642158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEditor.NodeEventHolder
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 522597674}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: EnterBattle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  NodeID: 1
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 0}
+  Audio: {fileID: 0}
+--- !u!114 &110642167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 110642158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00abedce3cdbbba46bf2d86c9518c9f0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEditor.NodeEventHolder
+  Event:
+    m_PersistentCalls:
+      m_Calls: []
+  NodeID: 0
+  TMPFont: {fileID: 0}
+  Icon: {fileID: 8682405701818297608, guid: c24fce60c8e737c40aaa89fcd5e5f3da, type: 3}
+  Audio: {fileID: 0}
 --- !u!1 &120434098 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4907750673144422993, guid: 92db1c2e51ae3ac48a4424f9284b07ed, type: 3}
@@ -410,17 +460,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
---- !u!114 &362139241 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2947765678495091754, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
-  m_PrefabInstance: {fileID: 8137490563788704830}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DialogueEditor.NPCConversation
 --- !u!114 &522597674 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4403361882713924607, guid: 2d944b6fca3250f4cb17b96057c980eb, type: 3}
@@ -622,7 +661,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7a2ee0c8996416448e510650473d8f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ConversationStarter
-  _npcConversation: {fileID: 362139241}
+  _npcConversation: {fileID: 2002227974}
   _interactionDistance: 2
 --- !u!1 &1579753511
 GameObject:
@@ -723,6 +762,50 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2629038198156435572, guid: a04e1a9ab354f0d49ad730499c42ef84, type: 3}
   m_PrefabInstance: {fileID: 2917409436336625718}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2002227973 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6144843218171796065, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
+  m_PrefabInstance: {fileID: 8137490563788704830}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2002227974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2002227973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83189876d4d389f43b7dd2e925aa112e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogueEditor.NPCConversation
+  CurrentIDCounter: 2
+  json: '{"Options":[],"Parameters":[],"SpeechNodes":[{"Connections":[{"__type":"EditableSpeechConnection:#DialogueEditor","Conditions":[],"NodeUID":1}],"EditorInfo":{"isRoot":true,"xPos":215.6,"yPos":22},"ID":0,"ParamActions":[],"TMPFontGUID":null,"Text":"hola
+    te voy a matar","parentUIDs":[],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":"malo","OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0},{"Connections":[],"EditorInfo":{"isRoot":false,"xPos":209.6,"yPos":186.400009},"ID":1,"ParamActions":[],"TMPFontGUID":null,"Text":null,"parentUIDs":[0],"AdvanceDialogueAutomatically":false,"AudioGUID":null,"AutoAdvanceShouldDisplayOption":false,"IconGUID":null,"Name":null,"OptionUIDs":null,"SpeechUID":0,"TimeUntilAdvance":0,"Volume":0}]}'
+  saveVersion: 110
+  DefaultName: 
+  DefaultSprite: {fileID: 0}
+  DefaultFont: {fileID: 0}
+  NodeSerializedDataList:
+  - {fileID: 110642167}
+  - {fileID: 110642164}
+  ContinueFont: {fileID: 0}
+  EndConversationFont: {fileID: 0}
+  Event:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 522597674}
+        m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
+        m_MethodName: EnterBattle
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &2025421783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1533,13 +1616,17 @@ PrefabInstance:
       propertyPath: Event.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 70291645}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 2947765678495091754, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 6190818714487978971, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 867635664}
+    - targetCorrespondingSourceObject: {fileID: 6144843218171796065, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2002227974}
     - targetCorrespondingSourceObject: {fileID: 984315636693228120, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 110642161}
@@ -1549,6 +1636,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 984315636693228120, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
       insertIndex: -1
       addedObject: {fileID: 110642163}
+    - targetCorrespondingSourceObject: {fileID: 984315636693228120, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 110642167}
+    - targetCorrespondingSourceObject: {fileID: 984315636693228120, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 110642164}
   m_SourcePrefab: {fileID: 100100000, guid: 1dd6fe72f0fdf1f439d13745b10e60fb, type: 3}
 --- !u!1001 &8355878742437484465
 PrefabInstance:

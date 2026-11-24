@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TurnManager : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class TurnManager : MonoBehaviour
 
     private TurnState _currentTurn;
     private bool _battleEnded;
+    [SerializeField] private ItemData iron;
 
     void Start()
     {
@@ -27,9 +29,11 @@ public class TurnManager : MonoBehaviour
 
     public void EndTurn()
     {
-        if (_battleEnded)
-           
+        if (_battleEnded) {
+            InventoryManager.Instance.AddItem(iron,4);
+            SceneManager.LoadScene(2);
             return;
+        }
 
         if (_currentTurn == TurnState.Player)
 

@@ -38,7 +38,7 @@ public class CursorManager : MonoBehaviour
                 Cursor.SetCursor(_interactTexture, _cursorHotSpot, CursorMode.Auto);
                 break;
             case CursorType.Talk:
-                _cursorHotSpot = new Vector2(0f,_talkTexture.height);
+                _cursorHotSpot = new Vector2(23f,25f);
                 Cursor.SetCursor(_talkTexture, _cursorHotSpot, CursorMode.Auto);
                 break;
             case CursorType.Forbidden:

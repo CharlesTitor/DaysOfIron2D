@@ -4,6 +4,7 @@ public class Hammer : MonoBehaviour
 {
     public HammerData weaponData;
     public SpriteRenderer spriteRenderer;
+    private TurnManager _turnState;
 
     [SerializeField] private Attack _attack;
 
@@ -31,8 +32,13 @@ public class Hammer : MonoBehaviour
         Debug.Log("Placeholder: " + weaponData.basicAttack.placeholderName + " | Damage: " + weaponData.basicAttack.fixedDamage + " (" + weaponData.basicAttack.damageType + ")");
         return weaponData.basicAttack;
         */
-        _attack.AttackAction(weaponData.basicAttack);
+        _attack._attackData=weaponData.basicAttack;
+        _attack.AttackAction();
+        _turnState.EndTurn();
+
+        return weaponData.basicAttack;
     }
+
 
     public AttackData UseMediumAttack()
     {
@@ -40,15 +46,27 @@ public class Hammer : MonoBehaviour
         Debug.Log("Placeholder: " + weaponData.mediumAttack.placeholderName + " | Damage: " + weaponData.mediumAttack.fixedDamage + " (" + weaponData.mediumAttack.damageType + ")");
         return weaponData.mediumAttack;
         */
-        _attack.AttackAction(weaponData.mediumAttack);
+        
+        _attack._attackData=weaponData.mediumAttack;
+        _attack.AttackAction();
+        _turnState.EndTurn();
+
+        return weaponData.mediumAttack;
+
     }
+
 
     public AttackData UseHeavyAttack()
     {
-        /*
-        Debug.Log("Placeholder: " + weaponData.heavyAttack.placeholderName + " | Damage: " + weaponData.heavyAttack.fixedDamage + " (" + weaponData.heavyAttack.damageType + ")");
+        /*Debug.Log("Placeholder: " + weaponData.heavyAttack.placeholderName + " | Damage: " + weaponData.heavyAttack.fixedDamage + " (" + weaponData.heavyAttack.damageType + ")");
         return weaponData.heavyAttack;
         */
-        _attack.AttackAction(weaponData.heavyAttack);
+        
+        _attack._attackData=weaponData.heavyAttack;
+        _attack.AttackAction();
+        _turnState.EndTurn();
+        
+        return weaponData.heavyAttack;
     }
+    
 }

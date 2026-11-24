@@ -43,4 +43,6 @@ public class Attack : MonoBehaviour
         }
     }
 
+    public void setAttackDamage(float damageValue)=>_damage = damageValue;
+    public void setAttackTarget(IDamageable validTarget) => _target = validTarget;
 }

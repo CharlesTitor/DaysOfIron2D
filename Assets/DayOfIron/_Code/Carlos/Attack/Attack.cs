@@ -16,4 +16,6 @@ public class Attack : MonoBehaviour
         _target.TakeDamage(_damage);
     }
 
+    public void setAttackDamage(float damageValue)=>_damage = damageValue;
+    public void setAttackTarget(IDamageable validTarget) => _target = validTarget;
 }

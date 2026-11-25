@@ -2,13 +2,13 @@ using UnityEngine;
 
 public class Attack : MonoBehaviour
 {
-    [SerializeField] private float _damage = 20f;
+    //[SerializeField] private float _damage = 20f;
     [SerializeField] private Health _target;
     public AttackData _attackData;
     [SerializeField] private TurnManager _turnManager;
 
     public void AttackAction()
-    {;
+    {
 
         if( _target == null )
         {
@@ -17,31 +17,45 @@ public class Attack : MonoBehaviour
 
         //_target.TakeDamage(_damage);
         
-        int randomNumber = 0;
+        int randomNumber = Random.Range(1, 101);
 
-        if (_attackData.damageType==DamageType.Impact)
+        if (_attackData.damageType == DamageType.Impact)
         {
-            randomNumber= Random.Range(1, 3);
+            if (randomNumber >= 90)
+            {
+                _target.TakeDamage(_attackData.fixedDamage);
+                Debug.Log("Attack successful!");
+            }
+            else
+            {
+                Debug.Log("Attack missed!");
+            }
         }
-        else if (_attackData.damageType==DamageType.Blunt)
+        else if (_attackData.damageType == DamageType.Blunt)
         {
-            randomNumber= Random.Range(1, 4);
+            if (randomNumber >= 81)
+            {
+                _target.TakeDamage(_attackData.fixedDamage);
+                Debug.Log("Attack successful!");
+            }
+            else
+            {
+                Debug.Log("Attack missed!");
+            }
         }
-        else if (_attackData.damageType==DamageType.Crushing)
+        else if (_attackData.damageType == DamageType.Crushing)
         {
-            randomNumber= Random.Range(1, 5);
+            if (randomNumber >= 61)
+            {
+                _target.TakeDamage(_attackData.fixedDamage);
+                Debug.Log("Attack successful!");
+            }
+            else
+            {
+                Debug.Log("Attack missed!");
+            }
         }
 
-        if (randomNumber==1)
-        {
-            Debug.Log("Attack successful!");
-
-            _target.TakeDamage(_attackData.fixedDamage);
-        }
-        else
-        {
-            Debug.Log("Attack missed!");
-        }
         _turnManager.EndTurn();
     }
 

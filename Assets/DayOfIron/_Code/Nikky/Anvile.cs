@@ -3,7 +3,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Anvil : MonoBehaviour, IInteractable
+public class Anvile : MonoBehaviour, IInteractable
 {
     [SerializeField] private ItemData _ironItemData;
     [SerializeField] private ItemData _brokenBombItemData;

@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
 
     [SerializeField] private GameObject _pauseMenu;
+    [SerializeField] private string _battleSceneName;
 
     public void ChangeScene(int sceneID)
     {
@@ -26,5 +27,10 @@ public class GameManager : MonoBehaviour
     public void ExitPauseMenu()
     {
         _pauseMenu.SetActive(false);
+    }
+
+    public void EnterBattle()
+    {
+        SceneManager.LoadScene(_battleSceneName);
     }
 }

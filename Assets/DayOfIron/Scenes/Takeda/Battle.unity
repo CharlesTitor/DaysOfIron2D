@@ -377,6 +377,7 @@ Transform:
   m_Children:
   - {fileID: 1432714856}
   - {fileID: 1912328109}
+  - {fileID: 1029462686}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &448225637
@@ -664,15 +665,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7578357089359220969, guid: 0fca46007bf33614996dfc4e3029ff94, type: 3}
       propertyPath: m_LocalScale.x
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7578357089359220969, guid: 0fca46007bf33614996dfc4e3029ff94, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7578357089359220969, guid: 0fca46007bf33614996dfc4e3029ff94, type: 3}
       propertyPath: m_LocalScale.z
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7578357089359220969, guid: 0fca46007bf33614996dfc4e3029ff94, type: 3}
       propertyPath: m_LocalPosition.x
@@ -887,6 +888,51 @@ MonoBehaviour:
     fixedDamage: 20
     damageType: 0
   _turnManager: {fileID: 1432714857}
+--- !u!1 &1029462685
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1029462686}
+  - component: {fileID: 1029462687}
+  m_Layer: 0
+  m_Name: Inventory Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1029462686
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029462685}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -976.4428, y: -561.05365, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 392771689}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1029462687
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029462685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6d5cf9c60eb1cf4b92686523f419313, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::InventoryManager
+  Inventory: []
 --- !u!1 &1110512665
 GameObject:
   m_ObjectHideFlags: 0
@@ -1639,6 +1685,7 @@ MonoBehaviour:
   iron: {fileID: 11400000, guid: 5871a99662716084cb0eaa37692710a0, type: 2}
   _player: {fileID: 1827705970}
   _enemy: {fileID: 187490751}
+  _attacksCanvas: {fileID: 382828409}
 --- !u!1 &1596396440
 GameObject:
   m_ObjectHideFlags: 0

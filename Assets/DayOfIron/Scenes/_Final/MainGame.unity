@@ -1200,9 +1200,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4993945131080976738, guid: 602a67f67502a44488ad5b368ca6faad, type: 3}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4993945131080976738, guid: 602a67f67502a44488ad5b368ca6faad, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -6983972039077482120, guid: a7d2b620f34a1d84db072fe387c45e61, type: 3}
     - target: {fileID: 5208788854621044891, guid: 602a67f67502a44488ad5b368ca6faad, type: 3}
       propertyPath: m_Name
       value: MainUI
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842415122205035972, guid: 602a67f67502a44488ad5b368ca6faad, type: 3}
+      propertyPath: m_fontColor.b
+      value: 0.8039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842415122205035972, guid: 602a67f67502a44488ad5b368ca6faad, type: 3}
+      propertyPath: m_fontColor.g
+      value: 0.8039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842415122205035972, guid: 602a67f67502a44488ad5b368ca6faad, type: 3}
+      propertyPath: m_fontColor.r
+      value: 0.8039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 6842415122205035972, guid: 602a67f67502a44488ad5b368ca6faad, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4291677645
       objectReference: {fileID: 0}
     - target: {fileID: 7193465419176736966, guid: 602a67f67502a44488ad5b368ca6faad, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target

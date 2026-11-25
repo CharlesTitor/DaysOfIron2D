@@ -15,6 +15,7 @@ public class TurnManager : MonoBehaviour
     [SerializeField] private ItemData iron;
     [SerializeField] private Health _player;
     [SerializeField] private Health _enemy;
+    [SerializeField] private GameObject _attacksCanvas;
 
     void Start()
     {
@@ -25,6 +26,7 @@ public class TurnManager : MonoBehaviour
     {
         _currentTurn = TurnState.Player;
         _battleEnded = false;
+        _attacksCanvas.SetActive(true);
 
         Debug.Log("Player Turn");
     }
@@ -35,7 +37,8 @@ public class TurnManager : MonoBehaviour
         if (_battleEnded)
         {
             if(_enemy.CurrentHealth<=0){ InventoryManager.Instance.AddItem(iron, 1); }
-            SceneManager.LoadScene(2);
+            //SceneManager.LoadScene(2);
+            SceneManager.UnloadSceneAsync("Battle");
             return;
         }
 
@@ -43,6 +46,7 @@ public class TurnManager : MonoBehaviour
 
         {
             _currentTurn = TurnState.Enemy;
+            _attacksCanvas.SetActive(false);
             Debug.Log("Enemy Turn");
         }
 
@@ -50,6 +54,7 @@ public class TurnManager : MonoBehaviour
 
         {
             _currentTurn = TurnState.Player;
+            _attacksCanvas.SetActive(true);
             Debug.Log("Player Turn");
         }
     }

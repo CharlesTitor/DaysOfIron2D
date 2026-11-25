@@ -31,6 +31,6 @@ public class GameManager : MonoBehaviour
 
     public void EnterBattle()
     {
-        SceneManager.LoadScene(_battleSceneName);
+        SceneManager.LoadSceneAsync(_battleSceneName,LoadSceneMode.Additive);
     }
 }

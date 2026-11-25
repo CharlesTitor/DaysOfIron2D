@@ -1,24 +1,31 @@
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnemyAI : MonoBehaviour
 {
     private int _rNGsus;
     [SerializeField] private int _possibleAttacksQuantity;
     private Attack _enemyAttack;
+    private Health _enemyHealth;
     [SerializeField] private TurnManager _turnManager;
+    [SerializeField] private Sprite _dotExe;
+    private UnityEngine.UI.Image _image;
 
     private void Start()
     {
-        if (!_enemyAttack)
-        {
-            _enemyAttack = GetComponent<Attack>();
-        }
+        if (!_enemyAttack){ _enemyAttack = GetComponent<Attack>(); }
+        if (!_enemyHealth){ _enemyHealth = GetComponent<Health>(); }
+        if (_image==null) { _image = GetComponent<UnityEngine.UI.Image>(); }
     }
 
     private void Update()
     {
         if (_turnManager.IsEnemyTurn()) {
+            if (_enemyHealth.CurrentHealth <= 40)
+            {
+                _image.sprite = _dotExe;
+            }
             AttackSelection();
         }
     }

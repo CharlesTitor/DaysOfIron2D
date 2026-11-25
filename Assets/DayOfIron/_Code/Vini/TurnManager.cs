@@ -37,7 +37,6 @@ public class TurnManager : MonoBehaviour
         if (_battleEnded)
         {
             if(_enemy.CurrentHealth<=0){ InventoryManager.Instance.AddItem(iron, 1); }
-            //SceneManager.LoadScene(2);
             SceneManager.UnloadSceneAsync("Battle");
             return;
         }

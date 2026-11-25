@@ -175,6 +175,22 @@ PrefabInstance:
       propertyPath: _moveIndicator
       value: 
       objectReference: {fileID: 1752355183}
+    - target: {fileID: 8798544989549587508, guid: 1f53d5b6c4361ec4686778c89a10d571, type: 3}
+      propertyPath: m_Size.x
+      value: 0.10565708
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798544989549587508, guid: 1f53d5b6c4361ec4686778c89a10d571, type: 3}
+      propertyPath: m_Size.y
+      value: 0.14936799
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798544989549587508, guid: 1f53d5b6c4361ec4686778c89a10d571, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.00067270355
+      objectReference: {fileID: 0}
+    - target: {fileID: 8798544989549587508, guid: 1f53d5b6c4361ec4686778c89a10d571, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.05671652
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -659,6 +675,28 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ConversationStarter
   _npcConversation: {fileID: 2002227974}
   _interactionDistance: 2
+--- !u!95 &1572818273
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572818263}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3a152c83bb2e0f94f9cd8cfe4df724b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1579753511
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,6 +1230,14 @@ PrefabInstance:
       propertyPath: _playerPosition
       value: 
       objectReference: {fileID: 1443135513}
+    - target: {fileID: 1029696383831855979, guid: d246dc2191bbaee4ba7110290e3fb87d, type: 3}
+      propertyPath: m_Size.y
+      value: 0.77975017
+      objectReference: {fileID: 0}
+    - target: {fileID: 1029696383831855979, guid: d246dc2191bbaee4ba7110290e3fb87d, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.025983363
+      objectReference: {fileID: 0}
     - target: {fileID: 1117582823161134057, guid: d246dc2191bbaee4ba7110290e3fb87d, type: 3}
       propertyPath: _playerPosition
       value: 
@@ -1271,6 +1317,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4143094877146273895, guid: d246dc2191bbaee4ba7110290e3fb87d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1572818268}
+    - targetCorrespondingSourceObject: {fileID: 4143094877146273895, guid: d246dc2191bbaee4ba7110290e3fb87d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1572818273}
   m_SourcePrefab: {fileID: 100100000, guid: d246dc2191bbaee4ba7110290e3fb87d, type: 3}
 --- !u!1001 &8137490563788704830
 PrefabInstance:

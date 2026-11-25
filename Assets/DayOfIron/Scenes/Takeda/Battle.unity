@@ -223,6 +223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::EnemyAI
   _possibleAttacksQuantity: 3
   _turnManager: {fileID: 1432714857}
+  _dotExe: {fileID: 5118573420478581763, guid: b1ce6616a2d9ecc4aa2841180b1fd433, type: 3}
 --- !u!114 &187490753
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2002,6 +2003,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   _pauseMenu: {fileID: 0}
   _battleSceneName: Battle
+  _mainUI: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

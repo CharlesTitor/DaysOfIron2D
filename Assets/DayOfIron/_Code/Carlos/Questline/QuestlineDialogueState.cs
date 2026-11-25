@@ -6,7 +6,6 @@ public class QuestlineDialogueState : MonoBehaviour , IInteractable
 
     [SerializeField] private float _interactionDistance = 1f;
 
-    private InventoryManager _itemsCheck;
     [SerializeField] private NPCConversation _dialogueStartQuest;
     [SerializeField] private NPCConversation _dialogueIsQuestStarted;
     [SerializeField] private NPCConversation _dialogueCompletingQuest;
@@ -25,19 +24,21 @@ public class QuestlineDialogueState : MonoBehaviour , IInteractable
 
     public void Interact(IInteractor interactor)
     {
-        if(_itemsCheck.HasItem(_iron, 0) && _itemsCheck.HasItem(_brokenBomb, 0))
+        if (!_iron) { Debug.Log("no existe iron"); }
+        if (!_brokenBomb) { Debug.Log("no existe bomba"); }
+        if (!InventoryManager.Instance.HasItem(_iron, 1) && !InventoryManager.Instance.HasItem(_brokenBomb, 1))
         {
             ConversationManager.Instance.StartConversation(_dialogueStartQuest);
         }
-        if (_itemsCheck.HasItem(_iron, 0) && _itemsCheck.HasItem(_brokenBomb, 1))
+        else if (!InventoryManager.Instance.HasItem(_iron, 1) && InventoryManager.Instance.HasItem(_brokenBomb, 1))
         {
             ConversationManager.Instance.StartConversation(_dialogueIsQuestStarted);
         }
-        if (_itemsCheck.HasItem(_iron, 3) && _itemsCheck.HasItem(_brokenBomb, 1))
+        else if (InventoryManager.Instance.HasItem(_iron, 3) && InventoryManager.Instance.HasItem(_brokenBomb, 1))
         {
             ConversationManager.Instance.StartConversation(_dialogueCompletingQuest);
         }
-        if (_itemsCheck.HasItem(_repairedBomb, 1))
+        else if (InventoryManager.Instance.HasItem(_repairedBomb, 1))
         {
             ConversationManager.Instance.StartConversation(_dialogueIsQuestCompleted);
         }

@@ -1023,8 +1023,8 @@ GameObject:
   - component: {fileID: 8126295549476693316}
   - component: {fileID: 5488820151644790397}
   - component: {fileID: 1007516062869184827}
-  - component: {fileID: 5041236681330050104}
   - component: {fileID: 369615764696224434}
+  - component: {fileID: 5011482944982123054}
   m_Layer: 0
   m_Name: Lider de aldea
   m_TagString: Untagged
@@ -1144,20 +1144,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.0000009536743, y: 0}
   m_Size: {x: 0.32, y: 0.37}
   m_Direction: 0
---- !u!114 &5041236681330050104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3356742769355941622}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a2ee0c8996416448e510650473d8f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConversationStarter
-  _npcConversation: {fileID: 0}
-  _interactionDistance: 1.6
 --- !u!114 &369615764696224434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1173,6 +1159,26 @@ MonoBehaviour:
   _renderer: {fileID: 0}
   _outlineMaterial: {fileID: 0}
   _cursorType: 2
+--- !u!114 &5011482944982123054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3356742769355941622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d930a3e98fa534da80a1430261da08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestlineDialogueState
+  _interactionDistance: 2
+  _dialogueStartQuest: {fileID: 0}
+  _dialogueIsQuestStarted: {fileID: 0}
+  _dialogueCompletingQuest: {fileID: 0}
+  _dialogueIsQuestCompleted: {fileID: 0}
+  _iron: {fileID: 11400000, guid: 5871a99662716084cb0eaa37692710a0, type: 2}
+  _brokenBomb: {fileID: 11400000, guid: bb6675be99edf6b4c998adce7447ad41, type: 2}
+  _repairedBomb: {fileID: 11400000, guid: 36936819e78abef4ab5617c4bd796190, type: 2}
 --- !u!1 &4088523481819308784
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,8 +1345,8 @@ GameObject:
   - component: {fileID: 3004041860701417235}
   - component: {fileID: 233826505530666105}
   - component: {fileID: 7216451886175845665}
-  - component: {fileID: 8665737257902052170}
   - component: {fileID: 3861462554734691418}
+  - component: {fileID: 3500399421642377789}
   m_Layer: 0
   m_Name: "Pap\xE1"
   m_TagString: Untagged
@@ -1483,20 +1489,6 @@ PolygonCollider2D:
       - {x: 0.07029125, y: 0.07874312}
       - {x: 0.060133874, y: 0.1637411}
   m_UseDelaunayMesh: 1
---- !u!114 &8665737257902052170
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4190754833268895359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a7a2ee0c8996416448e510650473d8f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::ConversationStarter
-  _npcConversation: {fileID: 0}
-  _interactionDistance: 1.6
 --- !u!114 &3861462554734691418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,6 +1504,26 @@ MonoBehaviour:
   _renderer: {fileID: 0}
   _outlineMaterial: {fileID: 0}
   _cursorType: 2
+--- !u!114 &3500399421642377789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4190754833268895359}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8d930a3e98fa534da80a1430261da08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::QuestlineDialogueState
+  _interactionDistance: 2
+  _dialogueStartQuest: {fileID: 0}
+  _dialogueIsQuestStarted: {fileID: 0}
+  _dialogueCompletingQuest: {fileID: 0}
+  _dialogueIsQuestCompleted: {fileID: 0}
+  _iron: {fileID: 11400000, guid: 5871a99662716084cb0eaa37692710a0, type: 2}
+  _brokenBomb: {fileID: 11400000, guid: bb6675be99edf6b4c998adce7447ad41, type: 2}
+  _repairedBomb: {fileID: 11400000, guid: 36936819e78abef4ab5617c4bd796190, type: 2}
 --- !u!1 &4276713870544310989
 GameObject:
   m_ObjectHideFlags: 0

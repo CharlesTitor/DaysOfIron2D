@@ -185,8 +185,8 @@ MonoBehaviour:
     - Mario
     Caudillo'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bac2cb8746e56724b84dbad2c0d607a7, type: 2}
+  m_sharedMaterial: {fileID: 2498784149136132012, guid: bac2cb8746e56724b84dbad2c0d607a7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -210,7 +210,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 60.5
+  m_fontSize: 68.75
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -299,8 +299,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -110, y: 101}
-  m_SizeDelta: {x: 160, y: 30}
+  m_AnchoredPosition: {x: -110, y: 50.956665}
+  m_SizeDelta: {x: 200.0087, y: 80.0433}
   m_Pivot: {x: 1, y: 0}
 --- !u!114 &152448540
 MonoBehaviour:
@@ -530,10 +530,11 @@ MonoBehaviour:
     - Sophia Barrueta
 
 
-    -Uyiikoo'
+    -
+    Uyiikoo'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bac2cb8746e56724b84dbad2c0d607a7, type: 2}
+  m_sharedMaterial: {fileID: 2498784149136132012, guid: bac2cb8746e56724b84dbad2c0d607a7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -745,8 +746,8 @@ MonoBehaviour:
   m_text: "Developers\n- Carlos Ram\xEDrez\r\n- Carlos Takeda\r\n- Nuribeth Rosales\r\n-
     Alejandro Ruiz\r\n- Paolo Roa\r\n- Vinicios Kalkann\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bac2cb8746e56724b84dbad2c0d607a7, type: 2}
+  m_sharedMaterial: {fileID: 2498784149136132012, guid: bac2cb8746e56724b84dbad2c0d607a7, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -770,7 +771,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 56.85
+  m_fontSize: 62.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -1205,8 +1206,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Return
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 4a0bb0bb335f92b4d9488902179eea96, type: 2}
-  m_sharedMaterial: {fileID: -6830549845037530777, guid: 4a0bb0bb335f92b4d9488902179eea96, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 2374c79cbc3229841b3bcd5422ea444d, type: 2}
+  m_sharedMaterial: {fileID: 1783079660352572180, guid: 2374c79cbc3229841b3bcd5422ea444d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

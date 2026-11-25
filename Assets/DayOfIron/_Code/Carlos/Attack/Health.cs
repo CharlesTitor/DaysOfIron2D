@@ -41,7 +41,7 @@ public class Health : MonoBehaviour, IDamageable
     public void IsDead()
     {
         _isDead = true;
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
     
 }

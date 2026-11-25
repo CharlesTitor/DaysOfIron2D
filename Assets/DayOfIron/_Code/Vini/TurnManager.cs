@@ -13,24 +13,28 @@ public class TurnManager : MonoBehaviour
     private TurnState _currentTurn;
     private bool _battleEnded;
     [SerializeField] private ItemData iron;
+    [SerializeField] private Health _player;
+    [SerializeField] private Health _enemy;
 
     void Start()
     {
-    StartBattle();
+        StartBattle();
     }
 
     public void StartBattle()
     {
-     _currentTurn = TurnState.Player;
-     _battleEnded = false;
+        _currentTurn = TurnState.Player;
+        _battleEnded = false;
 
-    Debug.Log("Player Turn");
+        Debug.Log("Player Turn");
     }
 
     public void EndTurn()
     {
-        if (_battleEnded) {
-            InventoryManager.Instance.AddItem(iron,4);
+        if (_player.CurrentHealth<=0||_enemy.CurrentHealth<=0) { EndBattle(); }
+        if (_battleEnded)
+        {
+            if(_enemy.CurrentHealth<=0){ InventoryManager.Instance.AddItem(iron, 1); }
             SceneManager.LoadScene(2);
             return;
         }
@@ -52,8 +56,8 @@ public class TurnManager : MonoBehaviour
 
     public void EndBattle()
     {
-     _battleEnded = true;
-     _currentTurn = TurnState.Finished;
+        _battleEnded = true;
+        _currentTurn = TurnState.Finished;
 
         Debug.Log("Battle Finished");
     }

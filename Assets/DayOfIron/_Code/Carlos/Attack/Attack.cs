@@ -3,8 +3,9 @@ using UnityEngine;
 public class Attack : MonoBehaviour
 {
     [SerializeField] private float _damage = 20f;
-    private IDamageable _target;
+    [SerializeField] private Health _target;
     public AttackData _attackData;
+    [SerializeField] private TurnManager _turnManager;
 
     public void AttackAction()
     {;
@@ -41,8 +42,9 @@ public class Attack : MonoBehaviour
         {
             Debug.Log("Attack missed!");
         }
+        _turnManager.EndTurn();
     }
 
-    public void setAttackDamage(float damageValue)=>_damage = damageValue;
-    public void setAttackTarget(IDamageable validTarget) => _target = validTarget;
+    public void setAttackDamage(int damageValue)=>_attackData.fixedDamage = damageValue;
+    public void setAttackTarget(Health validTarget) => _target = validTarget;
 }

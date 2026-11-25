@@ -134,6 +134,11 @@ public class InventoryManager : MonoBehaviour
         return GetQuantity(typeOfItem)>=cuantityOfItem;
     }
 
+    public bool DoesNotHasItem(ItemData typeOfItem)
+    {
+        return GetQuantity(typeOfItem) <= 0;
+    }
+
     private void UpdateUI(int index)
     {
         if (InventoryManagerUI.Instance!=null)

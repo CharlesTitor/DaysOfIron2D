@@ -7,8 +7,8 @@ public class CanvasController : MonoBehaviour
 
     private void Start()
     {
-        _inventoryCanvas.SetActive(false);
-        _hotbarPanel.SetActive(true);
+        if (_inventoryCanvas != null) { _inventoryCanvas.SetActive(false); }
+        if (_hotbarPanel != null) { _hotbarPanel.SetActive(true); }
     }
     
     public void OpenCloseInventory()

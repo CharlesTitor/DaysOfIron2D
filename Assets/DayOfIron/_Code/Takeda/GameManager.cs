@@ -43,7 +43,7 @@ public class GameManager : MonoBehaviour
     public void EnterBattle()
     {
         _mainUI.SetActive(false);
-        SceneManager.LoadScene(_battleSceneName,LoadSceneMode.Additive);
+        SceneManager.LoadSceneAsync(_battleSceneName,LoadSceneMode.Additive);
     }
 
     private void OnSceneUnloaded(Scene scene)

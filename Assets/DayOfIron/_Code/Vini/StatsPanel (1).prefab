@@ -396,6 +396,7 @@ GameObject:
   - component: {fileID: 7578357089359220969}
   - component: {fileID: 4450306584347233258}
   - component: {fileID: 5285810393723617238}
+  - component: {fileID: 6294479442068070397}
   m_Layer: 5
   m_Name: StatsPanel (1)
   m_TagString: Untagged
@@ -464,6 +465,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6294479442068070397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4318466742561047933}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c737661bb0c6f142944b751e536afc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::StatusPanel
+  nameLabel: {fileID: 4974247061336208331}
+  levelLabel: {fileID: 2999772417365524491}
+  healthSlider: {fileID: 0}
+  healthSliderBar: {fileID: 6757997095589407098}
+  healthLabel: {fileID: 6729345001582401305}
 --- !u!1 &6218526456159646417
 GameObject:
   m_ObjectHideFlags: 0

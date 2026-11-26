@@ -26,7 +26,7 @@ public class QuestlineDialogueState : MonoBehaviour , IInteractable
     {
         if (!_iron) { Debug.Log("no existe iron"); }
         if (!_brokenBomb) { Debug.Log("no existe bomba"); }
-        if (!InventoryManager.Instance.HasItem(_iron, 1) && !InventoryManager.Instance.HasItem(_brokenBomb, 1))
+        if (!InventoryManager.Instance.HasItem(_brokenBomb, 1))
         {
             ConversationManager.Instance.StartConversation(_dialogueStartQuest);
         }

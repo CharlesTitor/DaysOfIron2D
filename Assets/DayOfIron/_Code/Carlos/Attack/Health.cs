@@ -1,6 +1,5 @@
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Rendering;
+using UnityEngine.UI;
 
 public class Health : MonoBehaviour, IDamageable
 {
@@ -8,14 +7,35 @@ public class Health : MonoBehaviour, IDamageable
     public float CurrentHealth { get => _currentHealth; set => _currentHealth = value; }
     bool IDamageable.IsDead { get => _isDead; set => _isDead = value; }
 
-    private float _maxHealth = 100f;
+    [SerializeField] private float _maxHealth = 100f;
     private float _currentHealth;
     private bool _isDead = false;
+
+    private Image _image;
+    private float _timer=0;
+    private float _fadeoutDuration = 0.5f;
+
+
+    //[SerializeField] private Image _mask;
+
+
     void Awake()
     {
         _currentHealth = _maxHealth;
+        _image = GetComponent<Image>();
     }
 
+    void Update()
+    {
+        _timer += Time.deltaTime;
+        if (_image.color != Color.white)
+        {
+            _image.color = new Color(
+                _image.color.r, 
+                Mathf.Min(1,_image.color.g+Time.deltaTime/_fadeoutDuration), 
+                Mathf.Min(1,_image.color.b+Time.deltaTime/_fadeoutDuration));
+        }
+    }
 
     public void TakeDamage(float damage)
     {
@@ -25,6 +45,8 @@ public class Health : MonoBehaviour, IDamageable
         }
 
         _currentHealth -= damage;
+        //_mask.fillAmount = _currentHealth / _maxHealth;
+        _image.color = Color.red;
 
         if (_currentHealth < 0f)
         {

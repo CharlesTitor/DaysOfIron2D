@@ -209,6 +209,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a024c8c193f79024494893bfc7a95b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+  _maxHealth: 150
 --- !u!114 &187490752
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -609,7 +610,7 @@ MonoBehaviour:
   _target: {fileID: 187490751}
   _attackData:
     placeholderName: Crushing Attack
-    fixedDamage: 40
+    fixedDamage: 50
     damageType: 1
   _turnManager: {fileID: 1432714857}
 --- !u!1001 &791159318
@@ -886,7 +887,7 @@ MonoBehaviour:
   _target: {fileID: 187490751}
   _attackData:
     placeholderName: Blunt Attack
-    fixedDamage: 20
+    fixedDamage: 25
     damageType: 0
   _turnManager: {fileID: 1432714857}
 --- !u!1 &1029462685
@@ -1357,7 +1358,7 @@ MonoBehaviour:
   _target: {fileID: 187490751}
   _attackData:
     placeholderName: Impact Attack
-    fixedDamage: 10
+    fixedDamage: 15
     damageType: 2
   _turnManager: {fileID: 1432714857}
 --- !u!1 &1310526248
@@ -1958,6 +1959,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a024c8c193f79024494893bfc7a95b98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Health
+  _maxHealth: 100
 --- !u!1 &1912328108
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,7 @@ public class Attack : MonoBehaviour
 
         if( _target == null )
         {
+            Debug.Log("Target not found");
             return;
         }
 
@@ -21,7 +22,7 @@ public class Attack : MonoBehaviour
 
         if (_attackData.damageType == DamageType.Impact)
         {
-            if (randomNumber >= 90)
+            if (randomNumber <= 90)
             {
                 _target.TakeDamage(_attackData.fixedDamage);
                 Debug.Log("Attack successful!");
@@ -33,7 +34,7 @@ public class Attack : MonoBehaviour
         }
         else if (_attackData.damageType == DamageType.Blunt)
         {
-            if (randomNumber >= 81)
+            if (randomNumber <= 61)
             {
                 _target.TakeDamage(_attackData.fixedDamage);
                 Debug.Log("Attack successful!");
@@ -45,7 +46,7 @@ public class Attack : MonoBehaviour
         }
         else if (_attackData.damageType == DamageType.Crushing)
         {
-            if (randomNumber >= 61)
+            if (randomNumber <= 31)
             {
                 _target.TakeDamage(_attackData.fixedDamage);
                 Debug.Log("Attack successful!");

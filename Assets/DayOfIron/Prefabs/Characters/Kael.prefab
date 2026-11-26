@@ -83,7 +83,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -613060087
+  m_SortingLayerID: 380031061
   m_SortingLayer: 5
   m_SortingOrder: 2
   m_MaskInteraction: 0
@@ -249,8 +249,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00067270355, y: -0.065514304}
-  m_Size: {x: 0.105657086, y: 0.13177237}
+  m_Offset: {x: -0.00067270355, y: -0.05671652}
+  m_Size: {x: 0.10565708, y: 0.14936799}
   m_Direction: 0
 --- !u!1 &7664633697679736436
 GameObject:

@@ -610,7 +610,7 @@ MonoBehaviour:
   _target: {fileID: 187490751}
   _attackData:
     placeholderName: Crushing Attack
-    fixedDamage: 40
+    fixedDamage: 50
     damageType: 1
   _turnManager: {fileID: 1432714857}
 --- !u!1001 &791159318
@@ -887,7 +887,7 @@ MonoBehaviour:
   _target: {fileID: 187490751}
   _attackData:
     placeholderName: Blunt Attack
-    fixedDamage: 20
+    fixedDamage: 25
     damageType: 0
   _turnManager: {fileID: 1432714857}
 --- !u!1 &1029462685
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   _target: {fileID: 187490751}
   _attackData:
     placeholderName: Impact Attack
-    fixedDamage: 10
+    fixedDamage: 15
     damageType: 2
   _turnManager: {fileID: 1432714857}
 --- !u!1 &1310526248

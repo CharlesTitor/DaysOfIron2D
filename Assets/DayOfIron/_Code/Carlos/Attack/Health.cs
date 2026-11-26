@@ -15,6 +15,10 @@ public class Health : MonoBehaviour, IDamageable
     private float _timer=0;
     private float _fadeoutDuration = 0.5f;
 
+
+    //[SerializeField] private Image _mask;
+
+
     void Awake()
     {
         _currentHealth = _maxHealth;
@@ -41,6 +45,7 @@ public class Health : MonoBehaviour, IDamageable
         }
 
         _currentHealth -= damage;
+        //_mask.fillAmount = _currentHealth / _maxHealth;
         _image.color = Color.red;
 
         if (_currentHealth < 0f)

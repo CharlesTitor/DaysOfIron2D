@@ -1,5 +1,6 @@
 using System;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,6 +20,10 @@ public class TextControl : MonoBehaviour
     private int _fadeCount;
     private float _timer;
     private FadeState _currentFadeState;
+    [Header("Objects to disable on final message")]
+    [SerializeField] private GameObject _progressBar;
+    [SerializeField] private GameObject _nextButton;
+    private bool _canNext;
     private enum FadeState
     {
         Neutral,
@@ -32,10 +37,12 @@ public class TextControl : MonoBehaviour
         _fadeCount = 0;
         _timer = 0f;
         _currentFadeState = FadeState.Neutral;
+        _canNext = true;
         try
         {
             _text.text = _textList[0];
-        }catch (Exception e)
+        }
+        catch (Exception e)
         {
             Debug.Log(e.Message);
         }
@@ -43,22 +50,24 @@ public class TextControl : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(_fadeCount+" "+_currentFadeState+" "+_timer);
-        if (_fadeCount >= _textList.Length) { return; }
+        Debug.Log(_fadeCount + " " + _currentFadeState + " " + _timer);
+        if (_fadeCount >= _textList.Length-1&&_currentFadeState==FadeState.Neutral) { Destroy(this); }
         _timer += Time.deltaTime;
         switch (_currentFadeState)
         {
             case FadeState.Neutral:
-                if (_timer >= _transitionInterval*(_fadeCount+1) && _timer < _transitionInterval * (_fadeCount + 2))
+                if (_timer >= _transitionInterval * (_fadeCount + 1)-_transitionDuration && _timer < _transitionInterval * (_fadeCount + 2))
                 {
                     _currentFadeState++;
-                    _fadeCount++;
+                    //_fadeCount++;
                 }
                 break;
             case FadeState.FadeOut:
                 _uIGroup.alpha -= Time.deltaTime / _transitionDuration;
-                if (_uIGroup.alpha <= 0) {
+                if (_uIGroup.alpha <= 0)
+                {
                     _currentFadeState++;
+                    _fadeCount++;
                     /*switch (_fadeCount)
                     {
                         case 0:
@@ -70,16 +79,20 @@ public class TextControl : MonoBehaviour
                             break;
                     }*/
                     _text.text = _textList[_fadeCount];
-                    if (_fadeCount == _textList.Length-1)
+                    if (_fadeCount == _textList.Length - 1)
                     {
                         _text.horizontalAlignment = HorizontalAlignmentOptions.Center;
+                        _progressBar.SetActive(false);
+                        _nextButton.SetActive(false);
                     }
                 }
                 break;
             case FadeState.FadeIn:
                 _uIGroup.alpha += Time.deltaTime / _transitionDuration;
-                if (_uIGroup.alpha >= 1) {
+                if (_uIGroup.alpha >= 1)
+                {
                     _currentFadeState = FadeState.Neutral;
+                    _canNext = true;
                 }
                 break;
         }
@@ -89,11 +102,14 @@ public class TextControl : MonoBehaviour
 
     public void GoToNextText()
     {
-        Debug.Log("NextButtonPressed");
-        //_timer += _transitionInterval;
-        _timer = _transitionInterval * (_fadeCount + 1);
-        _fadeCount++;
-        _currentFadeState = FadeState.FadeOut;
+        if (_canNext) {
+            Debug.Log("NextButtonPressed");
+            //_timer += _transitionInterval;
+            _timer = _transitionInterval * (_fadeCount + 1) - _transitionDuration;
+            //_fadeCount++;
+            _currentFadeState = FadeState.FadeOut;
+            _canNext = false;
+        }
     }
 
 }

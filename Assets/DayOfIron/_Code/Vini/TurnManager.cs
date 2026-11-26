@@ -12,10 +12,14 @@ public class TurnManager : MonoBehaviour
 
     private TurnState _currentTurn;
     private bool _battleEnded;
+    private bool _holdUpSceneOpened;
+
     [SerializeField] private ItemData iron;
     [SerializeField] private Health _player;
     [SerializeField] private Health _enemy;
     [SerializeField] private GameObject _attacksCanvas;
+
+    [SerializeField] private string _holdUpSceneName;
 
     void Start()
     {
@@ -26,31 +30,42 @@ public class TurnManager : MonoBehaviour
     {
         _currentTurn = TurnState.Player;
         _battleEnded = false;
-        _attacksCanvas.SetActive(true);
+        _holdUpSceneOpened=false;
 
         Debug.Log("Player Turn");
     }
 
     public void EndTurn()
     {
-        if (_player.CurrentHealth<=0||_enemy.CurrentHealth<=0) { EndBattle(); }
+        
+        //jugador pierde
+        if (_player.CurrentHealth<=0) 
+        {
+            EndBattle();  
+            SceneManager.UnloadSceneAsync(gameObject.scene);
+            return;
+        }
+        //Abrimos la escena Hold up
+        if (_enemy.CurrentHealth<=20 && !_holdUpSceneOpened)
+        {
+            _holdUpSceneOpened= true;
+            EndBattle();
+            SceneManager.LoadScene(_holdUpSceneName, LoadSceneMode.Additive);
+            return;
+        }
+
         if (_battleEnded)
         {
-            if(_enemy.CurrentHealth<=0){ InventoryManager.Instance.AddItem(iron, 1); }
-            SceneManager.UnloadSceneAsync("Battle");
             return;
         }
 
         if (_currentTurn == TurnState.Player)
-
         {
             _currentTurn = TurnState.Enemy;
             _attacksCanvas.SetActive(false);
             Debug.Log("Enemy Turn");
         }
-
         else if (_currentTurn == TurnState.Enemy)
-
         {
             _currentTurn = TurnState.Player;
             _attacksCanvas.SetActive(true);

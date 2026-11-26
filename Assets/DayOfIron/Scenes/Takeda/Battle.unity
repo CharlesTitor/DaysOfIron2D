@@ -1687,6 +1687,7 @@ MonoBehaviour:
   _player: {fileID: 1827705970}
   _enemy: {fileID: 187490751}
   _attacksCanvas: {fileID: 382828409}
+  _holdUpSceneName: HoldUp
 --- !u!1 &1596396440
 GameObject:
   m_ObjectHideFlags: 0

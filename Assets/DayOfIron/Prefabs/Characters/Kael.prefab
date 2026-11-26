@@ -83,8 +83,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -613060087
-  m_SortingLayer: 4
+  m_SortingLayerID: 380031061
+  m_SortingLayer: 5
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6986679559077003075, guid: 6a02e8d7f940bc14ab9725cd8eaba03f, type: 3}
@@ -148,7 +148,7 @@ MonoBehaviour:
       m_Flags: 0
     m_Flags: 0
     m_Priority: 0
-  _speed: 1.3
+  _speed: 1.8
   _groundLayer:
     serializedVersion: 2
     m_Bits: 8
@@ -249,8 +249,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00067270355, y: 0.0042919237}
-  m_Size: {x: 0.105657086, y: 0.271384}
+  m_Offset: {x: -0.00067270355, y: -0.05671652}
+  m_Size: {x: 0.10565708, y: 0.14936799}
   m_Direction: 0
 --- !u!1 &7664633697679736436
 GameObject:
@@ -321,7 +321,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 0.44
+  orthographic size: 0.84
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

@@ -1,15 +1,14 @@
-using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.SceneManagement;
 
 public class HotbarManager : MonoBehaviour
 {
     public static HotbarManager Instance;
 
-    [SerializeField] private TMP_Text _ironQuantityText;
-    [SerializeField] private TMP_Text _brokenBombQuantityText;
-    [SerializeField] private TMP_Text _repairedBombQuantityText;
+    [SerializeField] private GameObject _hotbarSlotPrefab;
+    [SerializeField] private Transform _hotbarContainer;
+
+    private List<HotbarSlotUI> _hotbarSlots=new List<HotbarSlotUI>();
     
     private void Awake()
     {
@@ -23,18 +22,61 @@ public class HotbarManager : MonoBehaviour
             Destroy(gameObject);
             return;
         }
+    }
 
+    private void Start()
+    {
         UpdateHotbar();
     }
 
-    //Cambia el 'x0'
+    private void CreateHotbarSlot()
+    {
+        GameObject newSlot=Instantiate(_hotbarSlotPrefab, _hotbarContainer);
+
+        HotbarSlotUI hotbarSlot=newSlot.GetComponent<HotbarSlotUI>();
+
+        if (hotbarSlot==null)
+        {
+            Destroy(newSlot);
+            return;
+        }
+
+        _hotbarSlots.Add(hotbarSlot);
+    }
+
     public void UpdateHotbar()
     {
-        Debug.Log("Updating Hotbar");
-        //IGUAL
-        _ironQuantityText.text = "x" + ItemsManager.Instance._ironQuantity;
+        if (InventoryManager.Instance == null)
+        {
+            return;
+        }
+        
+        while (_hotbarSlots.Count<InventoryManager.Instance.Inventory.Count)
+        {
+            int previousCount=_hotbarSlots.Count;
 
-        _brokenBombQuantityText.text = "x" + ItemsManager.Instance._brokenBombQuantity;
-        _repairedBombQuantityText.text = "x" + ItemsManager.Instance._repairedBombQuantity;
+            CreateHotbarSlot();
+
+            if (_hotbarSlots.Count==previousCount)
+            {
+                return;
+            }
+        }
+        for (int i=0; i<_hotbarSlots.Count; i++)
+        {
+            if (i<InventoryManager.Instance.Inventory.Count)
+            {
+                _hotbarSlots[i].gameObject.SetActive(true);
+
+                Item item = InventoryManager.Instance.Inventory[i];
+
+                _hotbarSlots[i].SetItem(item);
+            }
+            else
+            {
+                _hotbarSlots[i].ClearSlot();
+                _hotbarSlots[i].gameObject.SetActive(false);
+            }
+        }
     }
 }

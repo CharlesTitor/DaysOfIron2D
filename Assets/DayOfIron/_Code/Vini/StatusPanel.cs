@@ -1,14 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class StatusPanel : MonoBehaviour
 {
-    public Text nameLabel;
-    public Text levelLabel;
+    public TextMeshProUGUI nameLabel;
+    public TextMeshProUGUI levelLabel;
 
     public Slider healthSlider;
     public Image healthSliderBar;
-    public Text healthLabel;
+    public TextMeshProUGUI healthLabel;
 
     public void SetStats(string name, Stats stats)
     {

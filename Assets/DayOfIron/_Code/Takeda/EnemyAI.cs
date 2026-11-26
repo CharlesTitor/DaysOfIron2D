@@ -22,7 +22,7 @@ public class EnemyAI : MonoBehaviour
     private void Update()
     {
         if (_turnManager.IsEnemyTurn()) {
-            if (_enemyHealth.CurrentHealth <= 40)
+            if (_enemyHealth.CurrentHealth <= _enemyHealth.MaxHealth/2)
             {
                 _image.sprite = _dotExe;
             }

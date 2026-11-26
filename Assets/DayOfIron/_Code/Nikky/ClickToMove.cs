@@ -3,6 +3,7 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.EventSystems;
+using System;
 
 public class ClickToMove : MonoBehaviour, IInteractor
 {
@@ -82,6 +83,28 @@ public class ClickToMove : MonoBehaviour, IInteractor
         }
 
         Vector3 mouseWorldPosition= GetMouseWorldPosition();
+
+        Collider2D hitCollider = Physics2D.OverlapPoint(new Vector2(mouseWorldPosition.x, mouseWorldPosition.y));
+        try
+        {
+            CursorObject currentCursorObject = hitCollider.GetComponentInChildren<CursorObject>();
+            if (currentCursorObject == null)
+            {
+            }
+            if (currentCursorObject != null)
+            {
+                if (currentCursorObject.getCursorType() != CursorManager.CursorType.Default)
+                {
+                    Debug.Log("Clicked an object; not moving");
+                    return;
+                }
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.Log(e.Message);
+        }
+        
 
         if (_coroutine != null)
         {

@@ -39,6 +39,7 @@ public class CursorObject : MonoBehaviour
         }
     }
 
+    public CursorManager.CursorType getCursorType(){ return _cursorType; }
 
     private void OnMouseExit() => ReturnCursorToDefault();
 

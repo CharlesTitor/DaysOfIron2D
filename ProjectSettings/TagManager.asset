@@ -53,6 +53,12 @@ TagManager:
   - name: Verdura
     uniqueID: 2852321291
     locked: 0
+  - name: Kael
+    uniqueID: 380031061
+    locked: 0
+  - name: Entre kael y personajes
+    uniqueID: 321009507
+    locked: 0
   - name: Personajes
     uniqueID: 3681907209
     locked: 0
